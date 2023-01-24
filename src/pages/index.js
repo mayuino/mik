@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <div className={styles.buttons}>
             <div className={styles.notice_button}>
-              <h2>お問合せ</h2>
+              <h3>会社資料ダウンロード</h3>
             </div>
             <div className={styles.saiyou_button}>
               <h2>エンジニア採用情報</h2>
@@ -206,20 +206,32 @@ export default function Home() {
          </div>
         </main>
         <footer className={styles.footer}>
+          <div className={styles.footer_menu}>
           <ul>
             <li>会社情報</li>
             <li>経営理念</li>
             <li>採用情報</li>
             <li>プライバシーポリシ</li>
           </ul>
+          </div>
 
           <div className={styles.company_data}>
-            <h3>株式会社MIK</h3>
-            <p>〒001-0014</p>
-            <p>北海道札幌市北区北14条西3丁目2-21<br/>
-            小池ビル2F</p>
-            <p>TEL 011-299-7361</p>
-            </div>  
+            <div className={styles.company_icon}>
+            <Image
+                    src="/company_name.svg"
+                    alt="MIK icon"
+                    width={85}
+                    height={60}
+              />
+              </div>
+              
+              <div className={styles.syozaichi}>
+              <p>〒001-0014</p>
+              <p>北海道札幌市北区北14条西3丁目2-21<br/>
+              小池ビル2F</p>
+              <p>TEL 011-299-7361</p>
+              </div>
+            </div>
           </footer>
     </>
   )
