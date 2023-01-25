@@ -5,13 +5,13 @@ import styles from '@/styles/Home.module.css'
 import { Header } from '@/components/Header'
 import { Top } from '@/components/Top'
 import { MenuBar } from '@/components/MenuBar'
-import { ContentMain } from '@/components/Content/main'
 import { SNS } from '@/components/SNS'
 import { Footer } from '@/components/Footer'
+import { ContentConsulting } from '@/components/Content/consulting'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Consulting() {
   return (
     <>
       <Head>
@@ -25,7 +25,7 @@ export default function Home() {
       <main className={styles.main}>
         <Top/>
         <MenuBar/>
-        <ContentMain/>
+        <ContentConsulting/>
         <SNS/>
       </main>
       <Footer/>
