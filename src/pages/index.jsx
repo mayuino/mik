@@ -8,10 +8,21 @@ import { MenuBar } from '@/components/MenuBar'
 import { ContentMain } from '@/components/Content/main'
 import { SNS } from '@/components/SNS'
 import { Footer } from '@/components/Footer'
+import { ContentPeople } from '@/components/Content/people'
+import Link from 'next/link'
+import { SelectContent } from '@/components/Content'
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [content, setContent] = useState("");
+
+  const  handleClick = (e,id) =>  {
+      setContent(id);
+      console.log(id);
+  };
+
   return (
     <>
       <Head>
@@ -25,7 +36,7 @@ export default function Home() {
       <main className={styles.main}>
         <Top/>
         <MenuBar/>
-        <ContentMain/>
+         <SelectContent selected_content ={content}/>
         <SNS/>
       </main>
       <Footer/>

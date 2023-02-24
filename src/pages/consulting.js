@@ -26,7 +26,6 @@ export default function Consulting() {
         <Top/>
         <MenuBar/>
         <ContentConsulting/>
-        <SNS/>
       </main>
       <Footer/>
       </>

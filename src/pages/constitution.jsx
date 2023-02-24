@@ -8,6 +8,7 @@ import { MenuBar } from '@/components/MenuBar'
 import { SNS } from '@/components/SNS'
 import { Footer } from '@/components/Footer'
 import { ContentClient } from '@/components/Content/client'
+import { ContentConstitution } from '@/components/Content/constitution'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,10 +24,9 @@ export default function Client () {
 
      <Header/>
       <main className={styles.main}>
-        <Top/>
-        <MenuBar/>
-        <ContentClient/>
-        <SNS/>
+      <Top/>
+          <MenuBar/>
+        <ContentConstitution/>
       </main>
       <Footer/>
       </>

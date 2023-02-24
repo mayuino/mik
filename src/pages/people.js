@@ -26,7 +26,7 @@ export default function People() {
         <Top/>
         <MenuBar/>
         <ContentPeople/>
-        <SNS/>
+        {/*<SNS/>*/}
       </main>
       <Footer/>
       </>

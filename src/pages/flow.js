@@ -26,7 +26,6 @@ export default function Flow () {
         <Top/>
         <MenuBar/>
         <ContentFlow/>
-        <SNS/>
       </main>
       <Footer/>
       </>

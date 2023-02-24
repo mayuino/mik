@@ -26,7 +26,6 @@ export default function ChargeUp () {
         <Top/>
         <MenuBar/>
         <ContentChargeUp/>
-        <SNS/>
       </main>
       <Footer/>
       </>
