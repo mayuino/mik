@@ -6,6 +6,7 @@ export const ContentChargeUp = () =>{
     <div className={styles.content_chargeup}>
       <div className={styles.content_chargeup_top}>
         <h1>エンジニア収入アップ実績</h1>
+        <p>MIKへの入社後、収入を大きく伸ばす方がどんどん増えています。</p>
       </div>
       <div className={styles.chargeup_outframe}>
       <div className={styles.chargeup_frame}>

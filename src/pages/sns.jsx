@@ -5,14 +5,13 @@ import styles from "@/styles/Home.module.css";
 import { Header } from "@/components/Header";
 import { Top } from "@/components/Top";
 import { MenuBar } from "@/components/MenuBar";
-import { SNS } from "@/components/Content/sns";
+import { Content_SNS } from "@/components/Content/sns";
 import { Footer } from "@/components/Footer";
-import { ContentClient } from "@/components/Content/gaiyou";
-import { ContentConstitution } from "@/components/Content/constitution";
+import { ContentPeople } from "@/components/Content/people";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Client() {
+export default function People() {
   return (
     <>
       <Head>
@@ -26,7 +25,7 @@ export default function Client() {
       <main className={styles.main}>
         <Top />
         <MenuBar />
-        <ContentConstitution />
+        <Content_SNS/>
       </main>
       <Footer />
     </>

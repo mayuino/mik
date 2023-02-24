@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-import { Header } from '@/components/Header'
-import { Top } from '@/components/Top'
-import { MenuBar } from '@/components/MenuBar'
-import { SNS } from '@/components/SNS'
-import { Footer } from '@/components/Footer'
-import { ContentConsulting } from '@/components/Content/consulting'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
+import { Header } from "@/components/Header";
+import { Top } from "@/components/Top";
+import { MenuBar } from "@/components/MenuBar";
+import { SNS } from "@/components/Content/sns";
+import { Footer } from "@/components/Footer";
+import { Content_Consulting } from "@/components/Content/consulting";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Consulting() {
   return (
@@ -21,13 +21,13 @@ export default function Consulting() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     <Header/>
+      <Header />
       <main className={styles.main}>
-        <Top/>
-        <MenuBar/>
-        <ContentConsulting/>
+        <Top />
+        <MenuBar />
+        <Content_Consulting />
       </main>
-      <Footer/>
-      </>
-  )
+      <Footer />
+    </>
+  );
 }

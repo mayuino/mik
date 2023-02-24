@@ -5,9 +5,10 @@ export const Header_MenuBar = () => {
   return(
     <div className={styles.single_menu_bar}>
     <ul>
-      <li className={styles.single_menu_tab}><Link href={"/"}>会社概要</Link></li>
+      <li className={styles.single_menu_tab}><Link href={"/gaiyou"}>会社概要</Link></li>
       <li className={styles.single_menu_tab}><Link href={"/"}>経営理念</Link></li>
       <li className={styles.single_menu_tab}><Link href={"/"}>会社資料</Link></li>
+      <li className={styles.single_menu_tab}><Link href={"/"}>事業範囲</Link></li>
       <li className={styles.single_menu_tab}><Link href={"/"}>採用情報</Link></li>
       <li className={styles.single_menu_tab}><Link href={"/"}>お問い合わせ</Link></li>
     </ul>

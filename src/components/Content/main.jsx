@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export const ContentMain = () =>{
   return(
-    <div className={styles.content_main}>
-      <div className={styles.content_main_top}>
+    <div className={styles.content_main_frame}>
+      <div className={styles.content_main_title}>
         <h1>MIKの特徴</h1>
       </div>
 
@@ -76,9 +76,7 @@ export const ContentMain = () =>{
             className={styles.content_item4}
           />
       </div>
-      <div className={styles.content_main_bottom}>
-      </div>
-  </div>
+       </div>
 
   )
 }
