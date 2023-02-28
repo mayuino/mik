@@ -8,10 +8,12 @@ import { MenuBar } from "@/components/MenuBar";
 import { Content_SNS } from "@/components/Content/sns";
 import { Footer } from "@/components/Footer";
 import { ContentPeople } from "@/components/Content/people";
+import { Content_Gaiyou } from "@/components/Content/gaiyou";
+import { Content_Rinen } from "@/components/Content/rinen";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function SNS() {
+export default function Rinen() {
   return (
     <>
       <Head>
@@ -22,11 +24,7 @@ export default function SNS() {
       </Head>
 
       <Header />
-      <main className={styles.main}>
-        <Top />
-        <MenuBar />
-        <Content_SNS/>
-      </main>
+        <Content_Rinen/>
       <Footer />
     </>
   );

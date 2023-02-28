@@ -10,8 +10,8 @@ import { SNS } from "@/components/Content/sns";
 import { Footer } from "@/components/Footer";
 import { ContentPeople } from "@/components/Content/people";
 import Link from "next/link";
-import { SelectContent } from "@/components/Content";
 import { useState } from "react";
+import { Content_Ex_LINE } from "@/components/Content/ex_LINE";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +36,8 @@ export default function Home() {
       <main className={styles.main}>
         <Top />
         <MenuBar />
-        <SelectContent selected_content={content} />
+        <ContentMain/>
+        <Content_Ex_LINE/>
       </main>
       <Footer />
     </>

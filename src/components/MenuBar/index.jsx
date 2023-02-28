@@ -11,8 +11,8 @@ export const MenuBar = () => {
       <li className={styles.menu_tab}><Link href={"/consulting"}>キャリアコンサル</Link></li>
       <li className={styles.menu_tab}><Link href={"/constitution"}>MIKの構成</Link></li>
       <li className={styles.menu_tab}><Link href={"/flow"}>採用までの流れ</Link></li>
-      <li className={styles.menu_tab}><Link href={"/flow"}>社内LINE</Link></li>
-      <li className={styles.menu_tab}><Link href={"/flow"}>独自制度</Link></li>
+      <li className={styles.menu_tab}><Link href={"/internal_line"}>社内LINE</Link></li>
+      <li className={styles.menu_tab}><Link href={"/system"}>独自制度</Link></li>
       <li className={styles.menu_tab}><Link href={"/sns"}>SNS</Link></li>
      </ul>
 

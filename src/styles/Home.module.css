@@ -199,7 +199,7 @@ height:660px;
 
  .twitter_frame{
   width:100%;
-  height:2000px;
+  height:980px;
   background: #FFFFFF;
   border: 18px solid #C9E265;
   border-radius: 2px;
@@ -210,26 +210,29 @@ height:660px;
  }
 
  .twitter{
-  padding:70px 10px 10px 10px ;
- 
+  width:100%;
+  height:750px;
+  padding:0px 10px 10px 10px ;
+  
   background: #FFFFFF;
   border-radius: 10px;
-
-
+  display:flex;
+  justify-content:center;
  }
 
  .twitter_title {
-  height:130px;
+  height:110px;
   width:100%;
    font-size:28px;
    color: #C9E265;
    display:flex;
    align-items:center;
+   padding-left:60px;
  }
  .twitter_column{
   display:flex;
   width:1100px;
-  height:870px;
+  height:500px;
   margin-left:20px;
  }
 
@@ -237,6 +240,9 @@ height:660px;
   width:800px;
   height:800px;
   overflow:scroll;
+
+  display:flex;
+  justyfy-content:center;
  }
 
 
@@ -249,16 +255,37 @@ height:660px;
 
  .twitter_tags {
   width:250px;
-  padding-top:700px;
-  padding-left:10px;
+  padding-left:30px;
  }
+
+
+ .line_frame
+ {
+    width:100%;
+    height:400px;
+    background:#C9E265;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+ }
+
+ .line_title{
+  width:800px;
+  height:70px;
+  display:flex;
+  align-items:center;
+ }
+
  .line{
-  margin-top:50px;
-  padding:20px 20px;
-  width:1100px;
-  height:330px;
+  margin-top:-18px;
+  padding:40px;
+  width:800px;
   background: #FFFFFF;
-  border-radius: 10px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
  }
 
  .line h2{
@@ -269,6 +296,7 @@ height:660px;
  .line_content{
   display:flex;
   justify-content:center;
+  align-items:center;
  }
 
  .line_paragrah{
@@ -456,12 +484,17 @@ height:660px;
 .content_consul_title{
   width:100%;
   height:120px;
-  color:#C9E265;
-  font-size:28px;
+
   padding-left:65px;
 
   display:flex;
-  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.content_consul_title h2{
+  color:#C9E265;
+  font-size:38px;
 }
 
 .consulting{
@@ -782,6 +815,117 @@ align-items:center;
 .gaiyou_td{
   border:solid 0.5px;
   padding:15px;
+}
+
+
+
+.Internal_Line_frame{
+  width:100%;
+  height:1500px;
+  background: #FFFFFF;
+  border: 18px solid #C9E265;
+  border-radius: 2px;
+
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+.Internal_Line_title{
+  width:1000px;
+  height:180px;
+
+  padding-left:65px;
+
+  display:flex;
+  flex-direction:column;
+  justify-contetn:center;
+}
+
+.Internal_Line_title h1{
+  color:#C9E265;
+  font-size:50px;
+}
+
+.Internal_Line_merit{
+  width:900px;
+  height:330px;
+  border:8px solid  #C9E265;
+
+  padding:20px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.merit_content{
+  display:flex;
+  justify-content:center;
+  margin-top:10px;
+}
+
+.merit_discription{
+  width:600px;
+  padding-left:60px;
+  display:flex;
+  align-items:center;
+  line-height:34px;
+}
+
+
+
+
+
+.system_frame{
+  width:100%;
+  height:1500px;
+  background: #FFFFFF;
+  border: 18px solid #C9E265;
+  border-radius: 2px;
+
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+.system_title{
+  width:1000px;
+  height:120px;
+
+  padding-left:65px;
+
+  display:flex;
+  flex-direction:column;
+  
+}
+
+.system_title h1{
+  color:#C9E265;
+  font-size:50px;
+}
+
+.system{
+  width:900px;
+  height:370px;
+  border:8px solid  #C9E265;
+
+  padding:20px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.system_content{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+}
+
+.system_discription{
+  width:550px;
+  padding-left:30px;
+  display:flex;
+  align-items:center;
 }
 
 

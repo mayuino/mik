@@ -8,10 +8,11 @@ import { MenuBar } from "@/components/MenuBar";
 import { Content_SNS } from "@/components/Content/sns";
 import { Footer } from "@/components/Footer";
 import { ContentPeople } from "@/components/Content/people";
+import { Content_InternalLINE } from "@/components/Content/internal_LINE";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function SNS() {
+export default function Internal_Line() {
   return (
     <>
       <Head>
@@ -25,7 +26,7 @@ export default function SNS() {
       <main className={styles.main}>
         <Top />
         <MenuBar />
-        <Content_SNS/>
+        <Content_InternalLINE/>
       </main>
       <Footer />
     </>

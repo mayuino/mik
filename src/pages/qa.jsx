@@ -8,10 +8,15 @@ import { MenuBar } from "@/components/MenuBar";
 import { Content_SNS } from "@/components/Content/sns";
 import { Footer } from "@/components/Footer";
 import { ContentPeople } from "@/components/Content/people";
+import { Content_Gaiyou } from "@/components/Content/gaiyou";
+import { Content_Rinen } from "@/components/Content/rinen";
+import { Content_Range } from "@/components/Content/range";
+import { Content_Saiyou } from "@/components/Content/saiyou";
+import { Content_QA } from "@/components/Content/qa";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function SNS() {
+export default function QA() {
   return (
     <>
       <Head>
@@ -22,11 +27,7 @@ export default function SNS() {
       </Head>
 
       <Header />
-      <main className={styles.main}>
-        <Top />
-        <MenuBar />
-        <Content_SNS/>
-      </main>
+        <Content_QA/>
       <Footer />
     </>
   );

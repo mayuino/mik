@@ -7,6 +7,7 @@ export const Content_Consulting = () =>{
     <div className={styles.content_consul_frame}>
       <div className={styles.content_consul_title}>
       <h2>MIKのコンサルティング</h2>
+      <p>MIKは、あなたが岐路に立つたびに、コンサルティングを行います。</p>
       </div>
 
       <div className={styles.consulting}>
