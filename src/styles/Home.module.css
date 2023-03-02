@@ -789,7 +789,7 @@ align-items:center;
 /*会社概要*/
 .content_gaiyou{
   width:100%;
-  height:700px;
+  height:750px;
   background: #FFFFFF;
   border: 18px solid #C9E265;
   border-radius: 2px;
@@ -926,6 +926,233 @@ align-items:center;
   padding-left:30px;
   display:flex;
   align-items:center;
+}
+
+
+
+
+.content_rinen{
+  width:100%;
+  height:1400px;
+  background: #FFFFFF;
+  border: 18px solid #C9E265;
+  border-radius: 2px;
+
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+.rinen_title{
+  width:1000px;
+  height:120px;
+
+  padding-left:65px;
+
+  display:flex;
+  align-items:center;
+  
+}
+
+.rinen_title h1{
+  color:#C9E265;
+  font-size:50px;
+}
+
+.rinen{
+  width:900px;
+  height:370px;
+  border:8px solid  #C9E265;
+
+  padding:20px;
+
+  margin-bottom:30px;
+}
+.rinen h1{
+  font-family: 'Hiragino Mincho Pro';
+  font-size:35px;}
+
+
+  .rinen_content{
+    display:flex;
+    justify-content:center;
+
+  }
+
+
+
+.rinen_content_discription{
+  width:500px;
+  padding-left:70px;
+  display:flex;
+
+  margin-top:40px;
+}
+
+
+.content_panflet{
+  width:100%;
+  height:1200px;
+  background: #FFFFFF;
+  border: 18px solid #C9E265;
+  border-radius: 2px;
+
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+.panflet_title{
+  width:1000px;
+  height:120px;
+
+  padding-left:65px;
+
+  display:flex;
+  align-items:center;
+  
+}
+
+.panflet_title h1{
+  color:#C9E265;
+  font-size:50px;
+}
+
+.panflet{
+  width:900px;
+  height:500px;
+  border:8px solid  #C9E265;
+
+  padding:20px;
+
+  margin-bottom:30px;
+}
+
+  .panflet_content{
+    display:flex;
+    justify-content:center;
+
+    margin-top:10px;
+
+  }
+
+
+
+.panflet_content_discription{
+  width:500px;
+  padding-left:70px;
+  margin-top:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+
+.download_button{
+  height:55px;
+  background:#C9E265;
+  border:0px none;
+  border-radius:10px;
+}
+
+
+
+
+
+.content_range{
+  width:100%;
+  height:3800px;
+  background: #FFFFFF;
+  border: 18px solid #C9E265;
+  border-radius: 2px;
+
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+.range_title{
+  width:1000px;
+  padding-left:65px;
+
+  display:flex;
+  align-items:center;
+  
+}
+
+.range_title h1{
+  color:#C9E265;
+  font-size:50px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.range{
+  width:900px;
+  height:1100px;
+  border:10px solid #C9E265;
+  background-image:;
+  padding:20px;
+
+  margin-bottom:30px;
+
+  font-family: 'Hiragino Mincho Pro';
+  line-height:30px;
+ }
+.range h1{
+  margin-top:20px;
+  margin-bottom:20px;
+
+  font-family: 'Hiragino Mincho Pro';
+  font-size:35px;}
+
+ .range_discription{
+
+  width:700px;
+  display:flex;
+  flex-direction:column;
+  padding-left:35px;
+}
+
+.content_inquiry{
+  width:100%;
+  height:820px;
+  background: #FFFFFF;
+  border: 18px solid #C9E265;
+  border-radius: 2px;
+
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+.inquiry_title{
+  width:900px;
+
+  display:flex;
+  flex-direction:column;
+  margin-bottom:30px;
+  
+}
+
+.inquiry_title h1{
+  color:#C9E265;
+  font-size:50px;
+
+}
+
+.inquiry_form{
+  width:900px;
+  height:600px;
+  border:8px solid #C9E265;
+}
+
+.inquiry_textarea{
+  width:600px;
+  height:300px;
 }
 
 

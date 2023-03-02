@@ -12,11 +12,11 @@ import { Content_Gaiyou } from "@/components/Content/gaiyou";
 import { Content_Rinen } from "@/components/Content/rinen";
 import { Content_Range } from "@/components/Content/range";
 import { Content_Saiyou } from "@/components/Content/saiyou";
-import { Content_QA } from "@/components/Content/qa";
+import { Content_Inquiry } from "@/components/Content/inqiary";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function QA() {
+export default function Inquiry() {
   return (
     <>
       <Head>
@@ -27,7 +27,7 @@ export default function QA() {
       </Head>
 
       <Header />
-        <Content_QA/>
+        <Content_Inquiry/>
       <Footer />
     </>
   );

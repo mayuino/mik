@@ -21,6 +21,10 @@ export const Content_Gaiyou = () =>{
             <th className={styles.gaiyou_th}>代表者</th>
             <td className={styles.gaiyou_td}>代表取締役　大沼　貴明</td>
             </tr>
+            <tr>
+            <th className={styles.gaiyou_th}>資本金</th>
+            <td className={styles.gaiyou_td}>2700万円</td>
+            </tr>
           <tr>
             <th className={styles.gaiyou_th}>本社所在地</th>
             <td className={styles.gaiyou_td}>北海道札幌市北区北十四条西３丁目2-21</td>
