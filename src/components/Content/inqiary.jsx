@@ -8,27 +8,27 @@ export const Content_Inquiry = () =>{
         <h1>お問合せ</h1>
         <p>弊社につきまして、確認されたいことがございましたら、本フォームにご記入いただき、送信ボタンをクリックしてください。追って担当者よりご連絡をさせていただきます。</p>
       </div>
+      <form>
       <div className={styles.inquiry_form}>
       <h2>問い合わせフォーム</h2>
+      <div  className={styles.inquiry_input}>
+      <div className={styles.inquiry_input_name}>
       <h4>お名前</h4>
-     <input type="text"/>
-     <h4>連絡先メールアドレス</h4>
-     <input type="text"/>
-     <h4>お問い合わせの種類</h4>
-     <label>
-     <input type="radio" name="お問い合わせの種類"/>
-     <span>弊社の事業について</span>
-     <input type="radio" name="お問い合わせの種類"/>
-     <span>弊社の制度について</span>
-     <input type="radio" name="お問い合わせの種類"/>
-     <span>採用について</span>
-     <input type="radio" name="お問い合わせの種類"/>
-     <span>その他</span>
-     </label>
+      <input type="text" id="name"/>
+     </div>
+     <div className={styles.inquiry_input_mail}>
+     <h4>ご連絡先メールアドレス</h4>
+     <input type="text" id="mail"/>
+     </div>
+     </div>
+    
+   
+     
      <h4>お問合せ内容</h4>
      <textarea className={styles.inquiry_textarea} name="お問合せ内容"/>
      <button>送信</button>
      </div>
+     </form>
            </div>
 
   )

@@ -11,11 +11,11 @@ import { ContentPeople } from "@/components/Content/people";
 import { Content_Gaiyou } from "@/components/Content/gaiyou";
 import { Content_Rinen } from "@/components/Content/rinen";
 import { Content_Range } from "@/components/Content/range";
-import { Content_Saiyou } from "@/components/Content/saiyou";
+import { Content_Recruit, Content_Saiyou } from "@/components/Content/recruit";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Saiyou() {
+export default function Recruit() {
   return (
     <>
       <Head>
@@ -26,7 +26,7 @@ export default function Saiyou() {
       </Head>
 
       <Header />
-        <Content_Saiyou/>
+      <Content_Recruit />
       <Footer />
     </>
   );
