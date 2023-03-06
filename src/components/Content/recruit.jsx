@@ -1,5 +1,6 @@
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
+import { Link } from 'react-router-dom'
 
 export const Content_Recruit = () =>{
   return(
@@ -111,7 +112,7 @@ export const Content_Recruit = () =>{
         </li>
         </ul>
         </div>
-
+        <button className={styles.search_button}>検索する</button>
    
       </div>
       <div className={styles.recruit_title_mid}>
@@ -123,13 +124,14 @@ export const Content_Recruit = () =>{
         <ul className={styles.recruit_mid_content}>
 
      
-          <li className={styles.recruit_mid_items}>
+          <li className={styles.recruit_mid_items}><a href='/recruit_detail'>
           <h3>■急募■セキュリティソフト更新対応【京都府内】【未経験者大歓迎】</h3>
           <hr/>
           <h4>年棒　3,000,000円〜6,000,000円</h4>
           <h4>勤務地　京都府</h4>
           <h4>勤務時間　9：00〜18：00</h4>
           <p>最終更新日：2023/2/27</p>
+          </a>
           </li>
 
           <li className={styles.recruit_mid_items}>

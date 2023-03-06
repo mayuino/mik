@@ -151,6 +151,8 @@ height:660px;
 
   padding:0px 20px 0px 20px;
   justify-content:space-around;
+
+  overflow:scroll;
  }
 
  .content_main_2{
@@ -417,7 +419,7 @@ height:660px;
  .people_frame hr{
   width:545px;
   height:0px;
-  border: 0.5px solid #000000;
+  border: 0.5px solid #ddd;
   margin-top:10px;
   margin-bottom:15px;
 }
@@ -571,7 +573,7 @@ font-size:12px;
 
 .content_chargeup{
   width:100%;
-  height:2500px;
+  height:2600px;
   background: #FFFFFF;
   border: 18px solid #C9E265;
   border-radius: 2px;
@@ -579,6 +581,8 @@ font-size:12px;
   display:flex;
   flex-direction:column;
   align-items:center;
+
+
 }
 
 .content_chargeup_top{
@@ -595,9 +599,7 @@ font-size:12px;
 
 .content_chargeup_top h1{ color:#C9E265;}
 .content_chargeup_top p{ 
-  margin-left:20px;
-  margin-top:20px;
-  font-size:17px;}
+  font-size:15px;}
 
 .chargeup_outframe{
   display:flex;
@@ -605,15 +607,14 @@ font-size:12px;
 }
 
 .chargeup_frame{
-  width:1050px;
+  width:100%;
   height:504px;
   padding:30px;
   background:#FFFFFF;
   border:5px solid #C9E265;
-  margin-top:0px;
-  margin-bottom:50px;
-
-
+  margin-top:20px;
+  margin-bottom:80px;
+  
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -621,27 +622,27 @@ font-size:12px;
 
 .chargeup_price{
   position:absolute;
-  left:860px;
-  top:990px;
+  left:820px;
+  top:960px;
 }
 
 .chargeup_price40{
   position:absolute;
-  left:870px;
-  top:1540px;
+  left:850px;
+  top:1570px;
 }
 
 
 .chargeup_price160{
   position:absolute;
-  left:860px;
-  top:2060px;
+  left:820px;
+  top:2150px;
 }
 
 .chargeup_price120{
   position:absolute;
-  left:860px;
-  top:2620px;
+  left:820px;
+  top:2760px;
 }
 
 .chargeup_image{
@@ -851,7 +852,7 @@ align-items:center;
 }
 
 .Internal_Line_merit{
-  width:900px;
+  width:850px;
   height:330px;
   border:8px solid  #C9E265;
 
@@ -867,11 +868,12 @@ align-items:center;
 }
 
 .merit_discription{
-  width:600px;
+  width:500px;
   padding-left:60px;
   display:flex;
   align-items:center;
-  line-height:34px;
+ 
+  font-size:15px;
 }
 
 
@@ -908,8 +910,9 @@ align-items:center;
 }
 
 .system{
-  width:900px;
-  height:370px;
+ 
+  width:850px;
+  height:350px;
   border:8px solid  #C9E265;
 
   padding:20px;
@@ -917,17 +920,25 @@ align-items:center;
   margin-bottom:30px;
 }
 
+.system h2{
+  font-family: 'Hiragino Mincho Pro';
+  padding-left:20px;
+  font-size:28px;
+}
+
 .system_content{
   display:flex;
   justify-content:center;
-  margin-top:20px;
+  margin-top:10px;
 }
 
 .system_discription{
-  width:550px;
-  padding-left:30px;
+  width:500px;
+  padding-left:50px;
   display:flex;
-  align-items:center;
+
+
+  font-size:14px;
 }
 
 
@@ -1129,22 +1140,20 @@ align-items:center;
   display:flex;
   flex-direction:column;
   align-items:center;
-
-  overflow:scroll;
-
 }
 
 .recruit_title{
-  width:1100px;
+  height:120px;
+  width:100%;
   margin-top:30px;
   color:#C9E265;
-  font-size:28px;
+  font-size:23px;
   margin-top:20px;
 }
 
 .recruit_search_frame{
   width:700px;
-  height:400px;
+  height:500px;
 
   display:flex;
   flex-direction:column;
@@ -1180,11 +1189,21 @@ align-items:center;
   padding-left:5px;
 }
 
+.search_button{
+  width:400px;
+  margin-top:20px;
+  height:50px;
+  background:#C9E265;
+  border:0px none;
+  border-radius:5px;
+}
+
 
 .recruit_frame{
   display:flex;
   flex-direction:column;
   align-items:center;
+  overflow:scroll;
 }
 
 .recruit_mid_content{
@@ -1242,6 +1261,67 @@ align-items:center;
   align-self:flex-end;
 
 }
+
+.content_recruit_detail{
+  width:100%;
+  height:1500px;
+  background: #FFFFFF;
+  border: 18px solid #C9E265;
+  border-radius: 2px;
+
+  display:flex;
+  flex-direction:column;
+  
+  overflow:scroll;
+}
+
+.recruit_detail_title{
+  font-size:10px;
+  width:100%;
+  height:100px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.detail_content{
+  height:150px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.detail_content p{
+  padding:10px;
+  font-size:13px;
+}
+
+.detail_content_title{
+  height:45px;
+  background:#C9E265;
+  width:100%;
+
+  display:flex;
+  align-items:center;
+
+  color:#FFFFFF;
+  padding-left:10px;
+}
+
+.oubo_button_wrapper{
+  display:flex;
+  justify-content:center;
+  margin-top:100px;
+}
+
+.oubo_button{
+  width:270px;
+  height:55px;
+  background:#C9E265;
+  border:0px none;
+  border-radius:10px;
+}
+
 
 
 .content_inquiry{
@@ -1313,6 +1393,79 @@ align-items:center;
   background:#C9E265;
   border:0px none;
   border-radius:5px;
+}
+
+
+.content_oubo{
+  width:100%;
+  height:2500px;
+  background: #FFFFFF;
+  border: 18px solid #C9E265;
+  border-radius: 2px;
+
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+.oubo_top_bar{
+  width:100%;
+  height:60px;
+  background:#C9E265;
+
+  color:#FFFFFF;
+  font-weight:700;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.oubo_form{
+  margin-top:30px;
+  width:750px;
+  border:5px solid #C9E265;
+  padding:30px;
+}
+
+.oubo_form h4{
+  font-size:14px;
+  padding-left:10px;
+}
+
+.oubo_input_text{
+  width:250px;
+  height:45px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  margin:10px;
+}
+
+.oubo_input_long{
+  width:500px;
+  height:45px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  margin:10px;
+}
+
+.oubo_input_area{
+  width:500px;
+  height:200px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  margin:10px;
+}
+
+.oubo_kakunin_button{
+  width:400px;
+  margin-top:20px;
+  height:50px;
+  background:#C9E265;
+  border:0px none;
+  border-radius:25px;
+
 }
 
 
