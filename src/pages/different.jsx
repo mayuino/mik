@@ -7,7 +7,7 @@ import { Top } from "@/components/Top";
 import { MenuBar } from "@/components/MenuBar";
 import { SNS } from "@/components/Content/sns";
 import { Footer } from "@/components/Footer";
-import { Content_Consulting } from "@/components/Content/consulting";
+import { Content_Consulting, Content_Different } from "@/components/Content/different";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +25,7 @@ export default function Consulting() {
       <main className={styles.main}>
         <Top />
         <MenuBar />
-        <Content_Consulting />
+        <Content_Different/>
       </main>
       <Footer />
     </>
