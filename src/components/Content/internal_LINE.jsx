@@ -7,18 +7,27 @@ export const Content_InternalLINE = () => {
 <>
     <div className={styles.Internal_Line_frame}  >
     <div className={styles.Internal_Line_title}>
+    <div className={styles.Line_title_left}>
     <h1>社内公式LINE</h1>
     <p>弊社には、札幌、大阪、盛岡、福岡にエンジニアがおり、それぞれが働く現場も異なっています。<br/>社内の情報を全社員にくまなくお伝えし、社員みんなの声をしっかりと聞くために、MIKでは、「社内LINE」をコミュニケーションツールとして活用しています。</p>
+    </div>
+    <Image
+              src="/LINE_Brand_icon.svg"
+              alt="line icon"
+              width={180}
+              height={160}
+              className={styles.line_icon}
+            />
     </div>
     <div className={styles.Internal_Line_merit}>
       <h4>社内公式LINEのメリット１</h4>
       <h2>伝わりやすい</h2>
       <div className={styles.merit_content}>
-    <Image
-              src="/LINE_Brand_icon.svg"
+      <Image
+              src="/ouen-minna.jpg"
               alt="line icon"
               width={180}
-              height={180}
+              height={160}
               className={styles.line_icon}
             />
       <div className={styles.merit_discription}>
@@ -32,10 +41,10 @@ export const Content_InternalLINE = () => {
       <h2>社員一人一人の声が届きやすい</h2>
       <div className={styles.merit_content}>
     <Image
-              src="/LINE_Brand_icon.svg"
+              src="/BtoB2.jpg"
               alt="line icon"
               width={180}
-              height={180}
+              height={160}
               className={styles.line_icon}
             />
       <div className={styles.merit_discription}>
@@ -49,10 +58,10 @@ export const Content_InternalLINE = () => {
       <h2>意思表示しやすい</h2>
       <div className={styles.merit_content}>
     <Image
-              src="/LINE_Brand_icon.svg"
+              src="/keitai.jpg"
               alt="line icon"
-              width={180}
-              height={180}
+              width={240}
+              height={150}
               className={styles.line_icon}
             />
       <div className={styles.merit_discription}>

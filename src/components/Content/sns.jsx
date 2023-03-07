@@ -1,7 +1,10 @@
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
+import { TwitterTweetEmbed } from 'react-twitter-embed'
 
-export const Content_SNS = () => {
+export const Content_SNS = (props) => {
+  console.log(props)
+  
   return(
 
 <>
@@ -12,8 +15,11 @@ export const Content_SNS = () => {
     </div>
         <div className={styles.twitter}>
         <div className={styles.twitter_content}>
-             <a class="twitter-timeline" href="https://twitter.com/MIK84267256?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>   
+          <TwitterTweetEmbed tweetId={"1633115952328876033"}
+         />
+          <TwitterTweetEmbed tweetId={"1617807023860781057"}
+        />
+            </div>   
       <div className={styles.twitter_tags}>
         <h5>＃株式会社MIK</h5>
         <h5>＃育てるキャリア</h5><br/>

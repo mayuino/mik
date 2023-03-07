@@ -12,7 +12,7 @@ import { ContentPeople } from "@/components/Content/people";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function SNS() {
-  return (
+   return (
     <>
       <Head>
         <title>株式会社MIK</title>
