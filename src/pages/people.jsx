@@ -1,26 +1,20 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
 import { Header } from "@/components/Header";
 import { Top } from "@/components/Top";
 import { MenuBar } from "@/components/MenuBar";
-import { Content_SNS } from "@/components/Content/sns";
 import { Footer } from "@/components/Footer";
 import { ContentPeople } from "@/components/Content/people";
 import HeadElement from "@/components/Head";
 
-const inter = Inter({ subsets: ["latin"] });
 
-export default function SNS() {
-   return (
+export default function People() {
+  return (
     <>
-   <HeadElement title="MIKのSNS"/>
+      <HeadElement title="MIKの人々"/>
 
       <Header />
         <Top />
         <MenuBar />
-        <Content_SNS/>
+        <ContentPeople />
       <Footer />
     </>
   );

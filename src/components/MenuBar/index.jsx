@@ -5,7 +5,7 @@ export const MenuBar = () => {
   return(
     <div className={styles.menu_bar}>
     <ul>
-      <li className={styles.menu_tab}><Link href={"/"}>MIKの特徴</Link></li>
+      <li className={styles.menu_tab}><Link href={"/main"}>MIKではじめよう</Link></li>
       <li className={styles.menu_tab}><Link href={"/people"}>MIKの人々</Link></li>
       <li className={styles.menu_tab}><Link href={"/charge_up"}>収入アップ実績</Link></li>
       <li className={styles.menu_tab}><Link href={"/different"}>他の派遣会社との違い</Link></li>
