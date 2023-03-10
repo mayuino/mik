@@ -1,24 +1,8 @@
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
-import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 
 export const Content_Recruit = () =>{
-
-  const[info,setInfo] = useState([]);
-
-  const getInfo = useCallback(async() =>{
-    const res = await fetch("/recruit.json");
-    const json = await res.json();
-    console.log(json);
-    setInfo(json);
-  },
-  [] )
-
-  useEffect(() => {
-    getInfo();
-  },[getInfo])
-
   return(
     <div className={styles.content_recruit}>
       <div className={styles.recruit_title}>
@@ -138,23 +122,9 @@ export const Content_Recruit = () =>{
       </div>
   
         <ul className={styles.recruit_mid_content}>
-          {info.map(info => {
-            return(
-              <li className={styles.recruit_mid_items} key={info.id}>
-                <h3>{info.name}</h3>
-                <hr/>
-                <h4>年棒　{info.payment.payment_low}円〜{info.payment.payment_high}円</h4>
-                <h4>勤務地　{info.area.job_area}</h4>
-                <h4>勤務時間　{info.time.job_start_time}〜{info.time.job_end_time}</h4>
-                <p>最終更新日：{info.koushin_bi}</p>
-              </li>
-            )
-          }
-            )}
-        
-</ul>
+
      
-          {/* <li className={styles.recruit_mid_items}><a href='/recruit_detail'>
+          <li className={styles.recruit_mid_items}><a href='/recruit_detail'>
           <h3>■急募■セキュリティソフト更新対応【京都府内】【未経験者大歓迎】</h3>
           <hr/>
           <h4>年棒　3,000,000円〜6,000,000円</h4>
@@ -288,12 +258,12 @@ export const Content_Recruit = () =>{
           <h4>勤務地　大阪府大阪市</h4>
           <h4>勤務時間　9：00〜18：00</h4>
           <p>最終更新日：2023/2/15</p>
-          </li> */}
+          </li>
 
 
 
-{/* 
-        </ul> */}
+
+        </ul>
      
       </div>
       
