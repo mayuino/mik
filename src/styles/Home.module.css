@@ -6,15 +6,39 @@
   align-items:center;
 }
 
-.main {
+.single_menu_bar ul{
+  max-width:70%;
+  height:auto;
+  display:flex;
+  margin-left:120px; 
+}
+
+.single_menu_tab{
+  width:150px;
+  height:auto;
+  background:#C9E265;
+  color:#FFFFFF;
+  display:flex;
+  align-items:flex-end;
+  font-weight:700;
+
+}
+
+.top_image_frame{
+  background-image:url("/images/top_job_image.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height: auto;
+  width:100%;
+  min-height:700px;
+  overflow:hidden;
+  display:flex;
+  
 }
 
 .top_title_frame{
-  position:absolute;
-  top:150px;
-  left:270px;
   width:580px;
-  height:520px;
+  min-height:580px;
   background: rgba(138, 136, 136, 0.7);
   transform: rotate(0.2deg);
 
@@ -25,12 +49,12 @@
 }
 
 .top_title{
-  width:550px;
-  height:550px;
+  min-width:550px;
+  min-height:550px;
   font-family: 'Hiragino Mincho Pro';
   font-style: normal;
   font-weight: 600;
-  font-size: 79px;
+  font-size: 46px;
   line-height: 115px;
 
 display: flex;
@@ -38,55 +62,56 @@ align-items: center;
 text-align: center;
 justify-content:center;
 color: #C9E265;
-
-border: 1.5px solid #C9E265;
+background:rgba(0,0,0,0.5);
+flex-direction:column;
+padding-right:20px;
+padding-left:20px;
 }
 
-.top_image{
-width:100%;
-height:660px;
+@media (max-width:600px){
+  .top_title{
+    font-size:25px;
+    width:100%;
+    line-height: 75px;
+    padding-left:0px;
+    justify-content:center;
+  }
+  .top_image_frame{
+    height:600px;
 }
+}
+
+
+
 .top_discription{
-  
-  height:463px;
-  width:283px;
+  height:200px;
+  width:100%;
+
   font-family: 'Hiragino Mincho Pro';
+  color:#FFF;
   display:flex;
+  flex-direction:column;
   justify-content:center;
   align-items:center;
   line-height:23px;
-  border: 0.5px solid #FFFFFF;
- 
 
-}
+  background:rgba(0,0, 0, 0.7);
+  margin-bottom:50px;
+ }
 
-.top_discription_frame{
-  position:absolute;
-  top:270px;
-  right:10px;
-  height:448px;
-  width:303px;
-  background:rgba(138, 136, 136, 0.8);
-  font-size:14px;
-  color:#FFFFFF;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
 
-.top_image_frame{
-  background:#C9E265;
-}
 
 
 .menu_bar{
-  width:100%;
-  height:130px;
+  max-width:100%;
+  height:auto;
   display:flex;
   background:#C9E265;
   justify-content:center;
   align-items:center;
   flex-wrap:wrap;
+  padding-top:10px;
+  padding-bottom:10px;
 
   overflow:auto;
 }
@@ -286,8 +311,8 @@ height:660px;
  }
  .footer{
   background:black;
-  width:100%;
-  height:250px;
+  max-width:100%;
+  height:auto;
  }
 
  .footer_top{
@@ -303,8 +328,9 @@ height:660px;
 
  .footer_content{
   width:100%;
-  height: 200px;
+  height: auto;
   display:flex;
+  flex-direction:column;
   justify-content:space-between;
 
   padding:10px ;
@@ -313,6 +339,7 @@ height:660px;
  }
 
  .footer li{
+  width:250px;
   list-style:none;
   font-weight:700;
   margin-bottom:7px;
@@ -320,6 +347,8 @@ height:660px;
  }
 
  .footer_menu{
+  height:auto;
+
  }
 
  .company_data{
@@ -362,26 +391,6 @@ height:660px;
     width:330px;
   
   }
-
-
-
-.single_menu_bar ul{
-  width:750px;
-  height:40px;
-  display:flex;
-  margin-left:120px;
-}
-
-.single_menu_tab{
-  width:200px;
-  height:40px;
-  background:#C9E265;
-  color:#FFFFFF;
-  display:flex;
-  align-items:flex-end;
-  font-weight:700;
-
-}
 
 
 
@@ -1182,17 +1191,18 @@ align-items:center;
 }
 
 .recruit_title{
-  height:120px;
+  height:100px;
   width:100%;
   margin-top:30px;
   color:#C9E265;
   font-size:23px;
   margin-top:20px;
+  padding-left:30px;
 }
 
 .recruit_search_frame{
   width:700px;
-  height:500px;
+  height:550px;
 
   display:flex;
   flex-direction:column;
@@ -1202,7 +1212,7 @@ align-items:center;
   border:5px solid #C9E265;
 
   margin-top:20px;
-  padding:10px;
+  padding:10px 10px 20px 10px;
 }
 
 .search_1{
@@ -1259,7 +1269,7 @@ align-items:center;
   background:#C9E265;
   color:#FFFFFF;
 
-  margin-top:20px;
+  margin-top:40px;
   margin-bottom:10px;
 
   display:flex;

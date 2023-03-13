@@ -10,12 +10,12 @@ export const Footer = () => {
       <p>Created by MIK /©︎MIK,inc 2023</p>
       </div>
      <div className={styles.footer_content}>
-      <div className={styles.footer_menu}>
-      <ul>
+      <div>
+      <ul  className={styles.footer_menu}>
         <li>会社情報</li>
         <li>経営理念</li>
         <li>採用情報</li>
-        <li>プライバシーポリシ</li>
+        <li>プライバシーポリシー</li>
       </ul>
       </div>
 

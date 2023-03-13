@@ -54,7 +54,7 @@
   "koushin_bi":"2023年2月27日",
   "search_items":{
     "area":"kyouto",
-    "type":"",
+    "type":"software",
     "language":"",
     "tsuukin":true,
     "remote":false,
@@ -181,8 +181,8 @@
       "koushin_bi":"2023年2月20日",
       "search_items":{
         "area":"oosaka",
-        "type":"",
-        "language":"",
+        "type":"system",
+        "language":"C#",
         "tsuukin":true,
         "remote":false,
         "mikeiken":false,
