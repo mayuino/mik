@@ -12,7 +12,7 @@ export const Content_Recruit_Detail = () =>{
 
     <div className={styles.recruit_detail_title}>
       <h1>■急募■セキュリティソフト更新対応【京都府内】【未経験者大歓迎】</h1>
-       <a href={"/oubo"} className={styles.oubo_button}>応募する</a>
+       <Link href={"/oubo"} className={styles.oubo_button}>応募する</Link>
      </div>
      <div className={styles.detail_content_wrapper}>
       <div className={styles.detail_content}>
