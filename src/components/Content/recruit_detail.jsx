@@ -106,8 +106,8 @@ export const Content_Recruit_Detail = () =>{
  </div>
  </div>
  <div className={styles.oubo_button_wrapper}>
-      <a href={"/oubo"}
-      className={styles.oubo_button}>応募する</a>
+      <Link href={"/oubo"}
+      className={styles.oubo_button}>応募する</Link>
  </div>
  </div>
 
