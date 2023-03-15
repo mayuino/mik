@@ -1,7 +1,8 @@
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
+import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'
+
 
 export const Content_Recruit = () =>{
 
@@ -246,17 +247,22 @@ export const Content_Recruit = () =>{
         <ul className={styles.recruit_mid_content}>
           {filteredData.map(item => {
             return(
-              <li className={styles.recruit_mid_items} key={item.id}>
+               <li className={styles.recruit_mid_items} key={item.id}> 
+                <Link href={`/recruit/${item.id}`}>
                 <h3>{item.name}</h3>
+                
                 <hr/>
                 <h4>年棒　{item.payment.payment_low}円〜{item.payment.payment_high}円</h4>
                 <h4>勤務地　{item.area.job_area}</h4>
                 <h4>勤務時間　{item.time.job_start_time}〜{item.time.job_end_time}</h4>
                 <p>最終更新日：{item.koushin_bi}</p>
-              </li>
+                </Link>
+               </li>
+        
+
             )
           }
-            )}
+      )}
         
 </ul>
      

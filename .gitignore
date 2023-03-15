@@ -31,4 +31,4 @@ yarn-error.log*
 # vercel
 .vercel
 src/components/Content/inqiary.jsx
-src/components/Content/recruit-back.jsx
+

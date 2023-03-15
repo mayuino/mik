@@ -21,10 +21,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Recruit() {
   return (
     <>
-      <HeadElement title="応募フォーム"/>
+      <HeadElement title="応募フォーム" />
 
       <Header />
-      <Content_Oubo/>
+      <Content_Oubo />
       <Footer />
     </>
   );

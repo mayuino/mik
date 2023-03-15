@@ -1,117 +1,203 @@
-import styles from '@/styles/Home.module.css'
-import Image from 'next/image'
-import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import styles from "@/styles/Home.module.css";
+import Image from "next/image";
+import Link from "next/link";
+import { useCallback, useEffect, useState } from "react";
+import React from "react";
+import useSWR, { useSWRConfig } from "swr";
 
-export const Content_Recruit_Detail = () =>{
+export const Content_Recruit_Detail = (props) => {
+  const {id} = props;
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+  const { data, error, isLoading } = useSWR("/recruit.json", fetcher);
+  const { cache } = useSWRConfig();
+  const [recruitObject, setRecruitObject] = useState();
+
+  const updateRecruitObject = useCallback(() => {
+      if(data){
+            const job_no = id -1;
+            const object = data[job_no];
+            setRecruitObject( object);
+            console.log(object)
+            }
+  },[data, id]);
+
+  useEffect(() => {
+      updateRecruitObject();
+    }, [updateRecruitObject,id,data]);
+
+  if (error) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
+
+  console.log("data:",data);
+  console.log("recroutObject",recruitObject);
 
 
-  return(  
-  
+  return (
+      <>
     <div className={styles.content_recruit_detail}>
+ 
+      <div className={styles.recruit_detail_title}>
+        <h1>{recruitObject?.name}</h1>
+        <Link href={"/oubo"} className={styles.oubo_button}>
+          応募する
+        </Link>
+      </div>
+      
+        <div className={styles.detail_content}>
+          <div className={styles.detail_content_title}>
+            <h3>仕事内容</h3>
+          </div>
+          <p>{recruitObject?.job_detail?.gaiyou}</p>
 
-    <div className={styles.recruit_detail_title}>
-      <h1>■急募■セキュリティソフト更新対応【京都府内】【未経験者大歓迎】</h1>
-       <Link href={"/oubo"} className={styles.oubo_button}>応募する</Link>
-     </div>
-     <div className={styles.detail_content_wrapper}>
+          <h5>{recruitObject?.job_detail?.midashi}</h5>
+          <ul>
+            <li>
+              <p>{recruitObject?.job_detail?.job1}</p>
+            </li>
+            <li>
+              <p>{recruitObject?.job_detail?.job2}</p>
+            </li>
+            <li>
+              <p>{recruitObject?.job_detail?.job3}</p>
+            </li>
+            <li>
+              <p>{recruitObject?.job_detail?.job4}</p>
+            </li>
+          </ul>
+          <p>{recruitObject?.job_detail?.hosoku}</p>
+        </div>
+        
+       { recruitObject?.environment?.OS &&
       <div className={styles.detail_content}>
-      <div className={styles.detail_content_title}>
-     <h3>仕事内容</h3>
-      </div>
-     <p>メーカー内でのヘルプデスクを担当頂きます。</p>
+          <div className={styles.detail_content_title}>
+            <h3>環境</h3>
+          </div>
+          <ul>
+            <li>
+              <p>OS:{recruitObject?.environment?.OS}</p>
+            </li>
+            <li>
+              <p>言語：{recruitObject?.environment?.language}</p>
+            </li>
+            <li>
+              <p>フレームワーク:{recruitObject?.environment?.framework}</p>
+            </li>
+            <li>
+              <p>DB:{recruitObject?.environment?.DB}</p>
+            </li>
+          </ul>
+        </div>}
 
-      <h5>【詳細】</h5>
-      <p>
-      対象端末の利用者と日程調整（電話orメール）
-      調整できた日に、アンインストール、インストール
+        <div className={styles.detail_content}>
+          <div className={styles.detail_content_title}>
+            <ul>
+              <li>
+                <h3>{recruitObject?.condition1}</h3>
+              </li>
+              <li>
+                <h3>{recruitObject?.condition2}</h3>
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.detail_content}>
+            <div className={styles.detail_content_title}>
+              <h3>募集人数・募集背景</h3>
+            </div>
+            <p>{recruitObject?.bosyu_background}</p>
+          </div>
+
+          <div className={styles.detail_content}>
+            <div className={styles.detail_content_title}>
+              <h3>勤務地</h3>
+            </div>
+            <p>{recruitObject?.area?.job_area}</p>
+            <p>◎{recruitObject?.area?.job_area_hosoku1}</p>
+            <p>※{recruitObject?.area?.job_area_hosoku2}</p>
+          </div>
+
+          <div className={styles.detail_content}>
+            <div className={styles.detail_content_title}>
+              <h3>勤務時間</h3>
+            </div>
+            <p>
+              {recruitObject?.time?.job_start_time} ～{" "}
+              {recruitObject?.time?.job_end_time} <br />◎
+              {recruitObject?.time?.job_time_hosoku}
+            </p>
+          </div>
+
+          <div className={styles.detail_content}>
+            <div className={styles.detail_content_title}>
+              <h3>給与</h3>
+            </div>
+            <p>
+              年俸　{recruitObject?.payment?.payment_low}　～　
+              {recruitObject?.payment?.payment_high}
+              <br />◎{recruitObject?.payment?.payment_hosoku}
+            </p>
+          </div>
+
+          <div className={styles.detail_content}>
+            <div className={styles.detail_content_title}>
+              <h3>休日休暇</h3>
+            </div>
+            <ul>
+              <li>
+                <p>{recruitObject?.holiday?.jouken1}</p>
+              </li>
+              <li>
+                <p>{recruitObject?.holiday?.jouken2}</p>
+              </li>
+              <li>
+                <p>{recruitObject?.holiday?.jouken3}</p>
+              </li>
+              <li>
+                <p>{recruitObject?.holiday?.jouken4}</p>
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.detail_content}>
+            <div className={styles.detail_content_title}>
+              <h3>福利厚生</h3>
+            </div>
+
+            <ul>
+              <li>
+                <p>{recruitObject?.fukuri?.fukuri1}</p>
+              </li>
+              <li>
+                <p>{recruitObject?.fukuri?.fukuri2}</p>
+              </li>
+              <li>
+                <p>{recruitObject?.fukuri?.fukuri3}</p>
+              </li>
+              <li>
+                <p>{recruitObject?.fukuri?.fukuri4}</p>
+              </li>
+              <li>
+                <p>{recruitObject?.fukuri?.fukuri5}</p>
+              </li>
+              <li>
+                <p>{recruitObject?.fukuri?.fukuri6}</p>
+              </li>
+              <li>
+                <p>{recruitObject?.fukuri?.soudan}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
     
-      　ウイルスソフトの全社切替があり端末管理のソフトから一斉に、
-      　アンインストール・インストールを実施し、
-      　そこから漏れた分を個別に対応していただきます。
-      　
-      また、上記以外も詳細は決まっておりませんが、
-      インフラキッティング、ヘルプデスクのお手伝いも致します。
-
-      興味ある方はお気軽にご応募ください！！</p>
       </div>
+      <div className={styles.oubo_button_wrapper}>
+          <Link href={"/oubo"} className={styles.oubo_button}>
+            応募する
+          </Link>
+        </div> 
+      </>
 
-<div className={styles.detail_content}>
-<div className={styles.detail_content_title}>
-<h3>応募資格・条件</h3>
-</div>
-<p>高卒以上/未経験OK</p>
-</div>
-
-<div className={styles.detail_content}>
-<div className={styles.detail_content_title}>
-
-<h3>募集人数・募集背景</h3>
-</div>
-<p>２０１４年９月に設立した弊社は２０１９年９月に従来の経営体制を一新し、エンジニアリング事業を主とする会社としてスタートを切りました。
-<br/>
-・エンジニアとして技術力を向上したい<br/>
-・年収をあげたい<br/>
-・マネージメントをしたい<br/>
-等いろいろな思いを持たれている方はまずはご相談ください！！</p>
-</div>
-
-<div className={styles.detail_content}>
-      <div className={styles.detail_content_title}>
-<h3>勤務地</h3>
-</div>
-<p>京都府京都市<br/>
-◎勤務地ご相談可能です<br/>
-※転勤ございません</p>
-</div>
-
-<div className={styles.detail_content}>
-      <div className={styles.detail_content_title}>
-<h3>勤務時間</h3>
-</div>
-<p>9:00 ～ 18:00<br/>
-◎プロジェクトにより異なります</p>
-</div>
-
-<div className={styles.detail_content}>
-      <div className={styles.detail_content_title}>
-<h3>給与</h3>
-</div>
-<p>年俸　3,000,000円　～　6,000,000円<br/>
-◎直近の給与や経験年数を考慮して検討致します</p>
-</div>
-
-<div className={styles.detail_content}>
-      <div className={styles.detail_content_title}>
-<h3>休日休暇</h3>
-</div>
-<p>完全週休2日制
-◇ 年間休日120日以上
-祝日・年末年始・GW・年次有給休暇・慶弔休暇あり
-◇ 夏季休暇
-◇ 年末年始休暇</p>
-</div>
-
-<div className={styles.detail_content}>
-      <div className={styles.detail_content_title}>
-<h3>福利厚生</h3>
-</div>
-<p>◇ 雇用保険
-◇ 労災保険
-◇ 厚生年金
-◇ 健康保険
-◇ 交通費支給あり
-◇ 資格取得支援・手当てあり
-※住宅手当・社宅については応相談</p>
- </div>
- </div>
- <div className={styles.oubo_button_wrapper}>
-      <Link href={"/oubo"}
-      className={styles.oubo_button}>応募する</Link>
- </div>
- </div>
-
-
-
-  )
-}
+    
+  );
+};
