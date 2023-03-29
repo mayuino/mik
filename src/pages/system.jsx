@@ -18,9 +18,9 @@ export default function System() {
     <>
     <HeadElement title="MIKの独自制度"/>
 
-      <Header />
+
         <Top />
-        <MenuBar />
+
         <Content_system/>
       <Footer />
     </>

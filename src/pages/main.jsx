@@ -17,17 +17,12 @@ import HeadElement from "@/components/Head";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function MainPage() {
-  
-
   return (
-      <>
-    <HeadElement title="株式会社MIK"/>
-      <Header />
-        <Top />
-        <MenuBar />
-        <ContentMain/>
-        <Content_Ex_LINE/>
+    <>
+      <HeadElement title="株式会社MIK" />
+      <Top />
+      <ContentMain />
       <Footer />
-      </>
+    </>
   );
 }

@@ -16,13 +16,9 @@ export default function ChargeUp() {
   return (
     <>
     <HeadElement title="エンジニア給与アップ実績"/>
-
-      <Header />
-      <main className={styles.main}>
         <Top />
-        <MenuBar />
         <ContentChargeUp />
-      </main>
+
       <Footer />
     </>
   );

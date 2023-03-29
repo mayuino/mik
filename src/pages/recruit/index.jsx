@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Content_Recruit } from "@/components/Content/recruit";
 import HeadElement from "@/components/Head";
+import { SecondHeader } from "@/components/SecondHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +12,7 @@ export default function Recruit() {
     <>
       <HeadElement title="採用情報" />
 
-      <Header />
+      <SecondHeader />
       <Content_Recruit />
       <Footer />
     </>

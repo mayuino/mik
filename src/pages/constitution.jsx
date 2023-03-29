@@ -16,14 +16,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Client() {
   return (
     <>
-     <HeadElement title="MIKの構成"/>
-
-      <Header />
-      <main className={styles.main}>
+     <HeadElement title="MIKの構成"/> 
         <Top />
-        <MenuBar />
         <ContentConstitution />
-      </main>
       <Footer />
     </>
   );

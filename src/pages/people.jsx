@@ -10,10 +10,7 @@ export default function People() {
   return (
     <>
       <HeadElement title="MIKの人々"/>
-
-      <Header />
-        <Top />
-        <MenuBar />
+           <Top />
         <ContentPeople />
       <Footer />
     </>

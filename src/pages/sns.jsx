@@ -16,10 +16,7 @@ export default function SNS() {
    return (
     <>
    <HeadElement title="MIKのSNS"/>
-
-      <Header />
         <Top />
-        <MenuBar />
         <Content_SNS/>
       <Footer />
     </>

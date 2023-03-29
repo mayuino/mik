@@ -12,6 +12,7 @@ import { Content_Gaiyou } from "@/components/Content/gaiyou";
 import { Content_Rinen } from "@/components/Content/rinen";
 import { Content_Range } from "@/components/Content/range";
 import HeadElement from "@/components/Head";
+import { SecondHeader } from "@/components/SecondHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function Range() {
     <>
      <HeadElement title="MIKの事業領域"/>
 
-      <Header />
+      <SecondHeader/>
         <Content_Range/>
       <Footer />
     </>

@@ -10,10 +10,8 @@ export default function Flow() {
   return (
     <>
     <HeadElement title="採用までの流れ"/>
-
-      <Header />
         <Top />
-        <MenuBar />
+
         <ContentFlow />
       <Footer />
     </>

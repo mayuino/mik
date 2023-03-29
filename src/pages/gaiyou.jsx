@@ -10,6 +10,7 @@ import { Footer } from "@/components/Footer";
 import { ContentPeople } from "@/components/Content/people";
 import { Content_Gaiyou } from "@/components/Content/gaiyou";
 import HeadElement from "@/components/Head";
+import { SecondHeader } from "@/components/SecondHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function Gaiyou() {
     <>
      <HeadElement title="MIKの会社概要"/>
 
-      <Header />
+      <SecondHeader />
         <Content_Gaiyou/>
       <Footer />
     </>
