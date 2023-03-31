@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Header_MenuBar } from '../Header_Menu'
 import mobileStyles from '@/styles/mobile.module.css'
 import { useEffect, useState } from 'react'
+import HamburgerMenu from '../hamburger_menu'
 
 export const Header = () => {
   const [isPhone, setIsPhone] = useState(false);
@@ -25,7 +26,7 @@ export const Header = () => {
               width={250}
               height={108}
       /></Link>
-      {isPhone ? null : 
+      {isPhone ?( <div className={mobileStyles.header_menu}><HamburgerMenu/></div>): 
       <Header_MenuBar/>}
     </header>
   )

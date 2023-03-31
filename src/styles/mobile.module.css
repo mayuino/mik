@@ -4,8 +4,30 @@
 
     height: 250px;
     display: flex;
+    flex-direction:column-reverse;
     justify-content: center;
   }
+
+
+  /*ハンバーガーメニュー*/
+.header_menu{
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  margin-right:50px;
+  
+}
+
+.ham_menu_item{
+  list-style:none;
+  padding-top:8px;
+  font-size:16px;
+  color:rgba(0,0,0,0.6)
+}
+
+
+
+
 
   .top_image_frame {
     background-image: url("/images/phone600.png");
