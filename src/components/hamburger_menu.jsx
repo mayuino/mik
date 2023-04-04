@@ -18,7 +18,7 @@ const HamburgerMenu = () => {
     bmBurgerButton : { 
       position : 'fixed' , 
       width : '36px' , 
-      height : '30px' , 
+      height : '50px' , 
       left : '36px' , 
       top : '36px' ,
       display:'none',
@@ -56,8 +56,8 @@ const HamburgerMenu = () => {
       padding : '10px', 
       } , 
     bmItem : { 
-      display : 'inline-block' 
-    } , 
+      display : 'inline-block', 
+       } , 
     bmOverlay : { 
       background : 'rgba(0, 0, 0, 0.0)' 
     } 
