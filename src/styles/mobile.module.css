@@ -38,7 +38,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 
     position:relative;
   }
@@ -60,7 +60,7 @@
     border-radius:5px;
     overflow: auto;
     position:absolute;
-    top:480px;
+    top:450px;
 
   }
 
@@ -295,7 +295,7 @@
   }
 
   .people_frame_right {
-    width: 60%;
+    width: 80%;
     height: auto;
 
     display: flex;
