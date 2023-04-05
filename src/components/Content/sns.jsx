@@ -24,12 +24,15 @@ export const Content_SNS = (props) => {
           <div
             className={`${styles.twitter_tags} ${mobileStyles.twitter_tags}`}
           >
+            <div>
             <h5>＃株式会社MIK</h5>
             <h5>＃育てるキャリア</h5>
-            <br />
+            </div>
+            <div>
             <p>
               MIKのキャンペーン情報や、エンジニアになりたい方、エンジニアのキャリアを再考したい方へのヒントをつぶやいています。
             </p>
+            </div>
           </div>
         </div>
       </div>
