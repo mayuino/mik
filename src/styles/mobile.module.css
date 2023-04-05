@@ -112,7 +112,7 @@
     margin-top: 10px;
     margin-left: 50px;
     margin-bottom: 300px;
-    font-size: 12px;
+    font-size: 13px;
 
     font-family: "Zen Maru Gothic", sans-serif;
   }
@@ -131,6 +131,7 @@
     border: none 0px;
     font-size: 25px;
     font-family: "Zen Maru Gothic";
+    background:#FFF;
   }
 
   .main2 {
