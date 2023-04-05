@@ -13,7 +13,7 @@ export const ContentPeople = () => {
       <h2>ソフトウェア開発エンジニア部門</h2>
       <hr/>
       <div className={`${styles.people_frame_left} ${mobileStyles.people_frame_left}`}>
-        <Image src="/A-san.png" alt="Asan" width={264} height={264} />
+        <Image src="/A-san.png" alt="Asan" width={264} height={264} className={`${styles.people_image} ${mobileStyles.people_image}`} />
             <h4>株式会社MIK</h4>
             <h4>ソフトウェア開発エンジニア</h4>
             <h4>Aさん</h4>
@@ -37,7 +37,7 @@ export const ContentPeople = () => {
       <h2>サーバーエンジニア部門</h2>
       <hr/>
       <div className={`${styles.people_frame_left} ${mobileStyles.people_frame_left}`}>
-      <Image src="/B-san.png" alt="Bsan" width={264} height={264} />
+      <Image src="/B-san.png" alt="Bsan" width={264} height={264} className={`${styles.people_image} ${mobileStyles.people_image}`} />
             <h4>株式会社MIK</h4>
             <h4>ソフトウェア開発エンジニア</h4>
             <h4>Bさん</h4>
@@ -59,7 +59,7 @@ export const ContentPeople = () => {
       <h2>移動体通信部門</h2>
       <hr/>
       <div className={`${styles.people_frame_left} ${mobileStyles.people_frame_left}`}>
-      <Image src="/C-san.png" alt="Csan"  width={264} height={264} />
+      <Image src="/C-san.png" alt="Csan"  width={264} height={264} className={`${styles.people_image} ${mobileStyles.people_image}`}/>
             <h4>株式会社MIK</h4>
             <h4>モバイル基地局設計エンジニア</h4>
             <h4>Cさん</h4>
@@ -87,7 +87,7 @@ export const ContentPeople = () => {
       <h2>営業部門</h2>
       <hr/>
       <div className={`${styles.people_frame_left} ${mobileStyles.people_frame_left}`}>
-      <Image src="/eigyo.png" alt="eigyou"  width={264} height={264} />
+      <Image src="/eigyo.png" alt="eigyou"  width={264} height={264} className={`${styles.people_image} ${mobileStyles.people_image}`}/>
             <h4>株式会社MIK</h4>
             <h4>営業部</h4>
             <h4>村上さん</h4>
@@ -110,7 +110,7 @@ export const ContentPeople = () => {
       <h2>経営企画部門</h2>
       <hr/>
       <div className={`${styles.people_frame_left} ${mobileStyles.people_frame_left}`}>
-      <Image src="/kikaku.png" alt="kikaku"  width={264} height={264} />
+      <Image src="/kikaku.png" alt="kikaku"  width={264} height={264} className={`${styles.people_image} ${mobileStyles.people_image}`}/>
             <h4>株式会社MIK</h4>
             <h4>経営企画室</h4>
             <h4>井上さん</h4>

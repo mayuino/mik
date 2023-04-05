@@ -283,8 +283,8 @@
   }
 
   .people_frame_left {
-    width: 380px;
-    height: 380px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     background: #fff;
     display: flex;
