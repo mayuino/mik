@@ -1,6 +1,7 @@
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
 import mobileStyles from '@/styles/mobile.module.css'
+import Link from 'next/link'
 
 export const Content_Gaiyou = () =>{
   return(
@@ -48,7 +49,7 @@ export const Content_Gaiyou = () =>{
             </tr>
           <tr>
             <th className={`${styles.gaiyou_th} ${mobileStyles.gaiyou_th}`}>その他</th>
-            <td className={`${styles.gaiyou_td} ${mobileStyles.gaiyou_td}`}>労働者派遣法第２３条第５項に基づく情報提供</td>
+            <td className={`${styles.gaiyou_td} ${mobileStyles.gaiyou_td}`}><Link href={"https://drive.google.com/file/d/1vSJGR7c3nQgfpkwh1U3ub-hFMNppUza3/view?usp=share_link"}>労働者派遣法第２３条第５項に基づく情報提供</Link></td>
           </tr>
         </tbody>
       </table>
