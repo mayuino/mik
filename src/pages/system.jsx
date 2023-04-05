@@ -20,7 +20,7 @@ export default function System() {
     <HeadElement title="MIKの独自制度"/>
 
 
-    <SecondHeader />
+    <Top />
 
         <Content_system/>
       <Footer />

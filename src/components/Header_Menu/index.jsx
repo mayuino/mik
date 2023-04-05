@@ -4,6 +4,7 @@ import Link from 'next/link'
 export const Header_MenuBar = () => {
   return(
     <div className={styles.single_menu_bar}>
+      <div></div>
     <ul>
       <li className={styles.single_menu_tab}><Link href={"/gaiyou"}>会社概要</Link></li>
       <li className={styles.single_menu_tab}><Link href={"/rinen"}>経営理念</Link></li>

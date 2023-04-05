@@ -27,7 +27,7 @@ export const Header = () => {
               height={108}
       /></Link>
       {isPhone ?( <div className={mobileStyles.header_menu}><HamburgerMenu/></div>): 
-      <Header_MenuBar/>}
+     <div><Header_MenuBar/></div>}
     </header>
   )
 }

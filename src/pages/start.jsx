@@ -22,7 +22,7 @@ export default function MIKStartPage() {
   return (
     <>
       <HeadElement title="株式会社MIK" />
-      <SecondHeader />
+      <Top />
 
       <ContentStart />
       <Content_Ex_LINE />

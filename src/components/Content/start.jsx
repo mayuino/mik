@@ -19,7 +19,7 @@ export const ContentStart = () =>{
   return(
     <div className={`${styles.content_main_frame} ${mobileStyles.content_main_frame}`}>
       <div className={`${styles.content_main_title} ${mobileStyles.content_main_title}`}>
-        <h1>ITエンジニアへの第一歩は、<br/>MIKからはじめよう。</h1>
+        <h1>ITエンジニアへの第一歩は、MIKからはじめよう。</h1>
        
       </div>
       <div className={`${styles.hajime_content} ${mobileStyles.hajime_content}`}>

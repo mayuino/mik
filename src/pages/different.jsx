@@ -11,7 +11,7 @@ export default function Different() {
     <>
       <HeadElement title="従来の派遣会社との違い" />
 
-      <SecondHeader />
+      <Top />
 
       <Content_Different />
       <Footer />

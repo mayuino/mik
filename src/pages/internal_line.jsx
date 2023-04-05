@@ -19,7 +19,7 @@ export default function Internal_Line() {
     <>
       <HeadElement title="MIKの社内LINE" />
 
-      <SecondHeader />
+      <Top />
       <Content_InternalLINE />
       <Footer />
     </>

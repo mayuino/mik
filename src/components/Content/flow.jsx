@@ -24,7 +24,7 @@ export const ContentFlow = () =>{
       </div>
      
       <div className={`${styles.flow_down} ${mobileStyles.flow_down}`}>
-      <Image src="/flow_triangle.svg" alt="Asan" width={200} height={111} />
+      <Image src="/triangle_down.svg" alt="Asan" width={200} height={111} ></Image>
       </div>
 
         <div className={`${styles.step_frame} ${mobileStyles.step_frame}`}>
@@ -47,7 +47,7 @@ export const ContentFlow = () =>{
         </div>
 
         <div className={`${styles.flow_down} ${mobileStyles.flow_down}`}>
-      <Image src="/flow_triangle.svg" alt="Asan" width={200} height={111} />
+      <Image src="/triangle_down.svg" alt="Asan" width={200} height={111} />
       </div>
 
         <div className={`${styles.step_frame} ${mobileStyles.step_frame}`}>
@@ -71,7 +71,7 @@ export const ContentFlow = () =>{
         </div>
 
         <div className={`${styles.flow_down} ${mobileStyles.flow_down}`}>
-      <Image src="/flow_triangle.svg" alt="Asan" width={200} height={111} />
+      <Image src="/triangle_down.svg" alt="Asan" width={200} height={111} />
       </div>
 
         <div className={`${styles.step_frame} ${mobileStyles.step_frame}`}>
@@ -91,7 +91,7 @@ export const ContentFlow = () =>{
         </div>
 
         <div className={`${styles.flow_down} ${mobileStyles.flow_down}`}>
-      <Image src="/flow_triangle.svg" alt="sankaku" width={200} height={111}  />
+      <Image src="/triangle_down.svg" alt="sankaku" width={200} height={111}  />
       </div>
 
         <div className={`${styles.step_frame} ${mobileStyles.step_frame}`}>
@@ -111,7 +111,7 @@ export const ContentFlow = () =>{
         </div>
 
         <div className={`${styles.flow_down} ${mobileStyles.flow_down}`}>
-      <Image src="/flow_triangle.svg" alt="Asan" width={200} height={111} />
+      <Image src="/triangle_down.svg" alt="Asan" width={200} height={111} />
       </div>
 
         <div className={`${styles.step_frame} ${mobileStyles.step_frame}`}>
@@ -131,7 +131,7 @@ export const ContentFlow = () =>{
         </div>
 
         <div className={`${styles.flow_down} ${mobileStyles.flow_down}`}>
-      <Image src="/flow_triangle.svg" alt="Asan" width={200} height={111} />
+      <Image src="/triangle_down.svg" alt="Asan" width={200} height={111} />
       </div>
 
         <div className={`${styles.step_frame} ${mobileStyles.step_frame}`}>

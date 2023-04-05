@@ -12,7 +12,16 @@ export const Content_SNS = (props) => {
         <div
           className={`${styles.twitter_title} ${mobileStyles.twitter_title}`}
         >
-          <h2>MIK公式twitterアカウント</h2>
+          <h1>MIK公式twitterアカウント</h1>
+          
+            <p>
+              MIKのキャンペーン情報や、エンジニアになりたい方、エンジニアのキャリアを再考したい方へのヒントをつぶやいています。
+            </p>
+            
+            
+            <h5>＃株式会社MIK</h5>
+            <h5>＃育てるキャリア</h5>
+            
         </div>
         <div className={`${styles.twitter} ${mobileStyles.twitter}`}>
           <div
@@ -21,19 +30,7 @@ export const Content_SNS = (props) => {
             <TwitterTweetEmbed tweetId={"1633115952328876033"} />
             <TwitterTweetEmbed tweetId={"1617807023860781057"} />
           </div>
-          <div
-            className={`${styles.twitter_tags} ${mobileStyles.twitter_tags}`}
-          >
-            <div>
-            <h5>＃株式会社MIK</h5>
-            <h5>＃育てるキャリア</h5>
-            </div>
-            <div>
-            <p>
-              MIKのキャンペーン情報や、エンジニアになりたい方、エンジニアのキャリアを再考したい方へのヒントをつぶやいています。
-            </p>
-            </div>
-          </div>
+  
         </div>
       </div>
     </>

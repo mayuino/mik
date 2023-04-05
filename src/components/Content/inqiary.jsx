@@ -126,7 +126,7 @@ export const Content_Inquiry = () => {
             </div>
             <div className={`${styles.oubo_name} ${mobileStyles.oubo_name}`}>
               <h4>お名前(ふりがな)</h4>
-              <div>
+           
                 <input
                   className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
                   placeholder="やまだ"
@@ -135,8 +135,8 @@ export const Content_Inquiry = () => {
                   onChange={(e) => setNameSeiKana(e.target.value)}
                   type="text"
                 />
-              </div>
-              <div>
+          
+         
                 <input
                   className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
                   value={name_mei_kana}
@@ -145,7 +145,7 @@ export const Content_Inquiry = () => {
                   type="text"
                   name="name_mei_kana"
                 />
-              </div>
+      
             </div>
 
             <div

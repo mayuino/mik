@@ -21,14 +21,7 @@ export const ContentChargeUp = () => {
         >
           <h2>ソフトウェアエンジニア</h2>
           <h2>20代前半　男性　Sさん</h2>
-          <Image
-            src="/up100.svg"
-            alt="charge up Y san"
-            width={270}
-            height={200}
-            className={`${styles.chargeup_price} ${mobileStyles.chargeup_price}`}
-          />
-          <Image
+            <Image
             src="/chargeup_Ssan.svg"
             alt="charge up S san"
             width={746}
@@ -55,13 +48,7 @@ export const ContentChargeUp = () => {
         >
           <h2>インフラエンジニア</h2>
           <h2>20代後半　女性　Kさん</h2>
-          <Image
-            src="/up40.svg"
-            alt="charge up Y san"
-            width={240}
-            height={200}
-            className={`${styles.chargeup_price} ${mobileStyles.chargeup_price}`}
-          />
+      
           <Image
             src="/20dai_f_ksan.svg"
             alt="charge up K san"
@@ -85,13 +72,7 @@ export const ContentChargeUp = () => {
         >
           <h2>ソフトウェアエンジニア</h2>
           <h2>30代前半　男性　Hさん</h2>
-          <Image
-            src="/up160.svg"
-            alt="charge up Y san"
-            width={270}
-            height={250}
-            className={`${styles.chargeup_price} ${mobileStyles.chargeup_price}`}
-          />
+      
           <Image
             src="/30dai_hsan.svg"
             alt="charge up S san"
@@ -120,13 +101,7 @@ export const ContentChargeUp = () => {
         >
           <h2>ソフトウェアエンジニア</h2>
           <h2>40代後半　男性　Yさん</h2>
-          <Image
-            src="/up120.svg"
-            alt="charge up Y san"
-            width={270}
-            height={250}
-            className={`${styles.chargeup_price} ${mobileStyles.chargeup_price}`}
-          />
+     
           <Image
             src="/40dai_ysan.svg"
             alt="charge up Y san"
