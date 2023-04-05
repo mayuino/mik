@@ -10,15 +10,16 @@ import { Footer } from "@/components/Footer";
 import { ContentClient } from "@/components/Content/gaiyou";
 import { ContentConstitution } from "@/components/Content/constitution";
 import HeadElement from "@/components/Head";
+import { SecondHeader } from "@/components/SecondHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Client() {
   return (
     <>
-     <HeadElement title="MIKの構成"/> 
-        <Top />
-        <ContentConstitution />
+      <HeadElement title="MIKの構成" />
+      <SecondHeader />
+      <ContentConstitution />
       <Footer />
     </>
   );

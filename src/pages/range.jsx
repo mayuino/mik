@@ -19,10 +19,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Range() {
   return (
     <>
-     <HeadElement title="MIKの事業領域"/>
+      <HeadElement title="MIKの事業領域" />
 
-      <SecondHeader/>
-        <Content_Range/>
+      <SecondHeader />
+      <Content_Range />
       <Footer />
     </>
   );

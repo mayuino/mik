@@ -10,7 +10,7 @@ export const ContentPeople = () => {
     </div>
     <div className={`${styles.people_frame_wrapper} ${mobileStyles.people_frame_wrapper}`}>
       <div className={`${styles.people_frame} ${mobileStyles.people_frame}`}>
-      <h2>ソフトウェア開発エンジニア部門</h2>
+      <h2>ソフトウェア開発<br/>エンジニア部門</h2>
       <hr/>
       <div className={`${styles.people_frame_left} ${mobileStyles.people_frame_left}`}>
         <Image src="/A-san.png" alt="Asan" width={264} height={264} className={`${styles.people_image} ${mobileStyles.people_image}`} />

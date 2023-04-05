@@ -10,16 +10,17 @@ import { Footer } from "@/components/Footer";
 import { ContentPeople } from "@/components/Content/people";
 import { Content_InternalLINE } from "@/components/Content/internal_LINE";
 import HeadElement from "@/components/Head";
+import { SecondHeader } from "@/components/SecondHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Internal_Line() {
   return (
     <>
-     <HeadElement title="MIKの社内LINE"/>
+      <HeadElement title="MIKの社内LINE" />
 
-        <Top />
-        <Content_InternalLINE/>
+      <SecondHeader />
+      <Content_InternalLINE />
       <Footer />
     </>
   );

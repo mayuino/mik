@@ -25,6 +25,16 @@
     margin-left:5px;
     font-family: "Zen Maru Gothic", sans-serif;
   }
+  .ham2_menu_item{
+    width:200px;
+    list-style: none;
+    padding-top: 8px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom:20px;
+    margin-left:5px;
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
 
   .top_image_frame {
     background-image: url("/images/phone600.png");

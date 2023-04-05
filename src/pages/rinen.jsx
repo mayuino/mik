@@ -18,10 +18,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Rinen() {
   return (
     <>
-    <HeadElement title="経営理念"/>
+      <HeadElement title="経営理念" />
 
       <SecondHeader />
-        <Content_Rinen/>
+      <Content_Rinen />
       <Footer />
     </>
   );

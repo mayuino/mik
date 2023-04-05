@@ -8,15 +8,15 @@ import { MenuBar } from "@/components/MenuBar";
 import { Footer } from "@/components/Footer";
 import HeadElement from "@/components/Head";
 import { Content_BLOG } from "@/components/Content/blog";
-
+import { SecondHeader } from "@/components/SecondHeader";
 
 export default function BLOG() {
-   return (
+  return (
     <>
-   <HeadElement title="MIKのSNS"/>
+      <HeadElement title="MIKのSNS" />
 
-        <Top />
-          <Content_BLOG/>
+      <SecondHeader />
+      <Content_BLOG />
       <Footer />
     </>
   );

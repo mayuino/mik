@@ -19,10 +19,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Panflet() {
   return (
     <>
-   <HeadElement title="MIKの会社パンフレット"/>
+      <HeadElement title="MIKの会社パンフレット" />
 
       <SecondHeader />
-        <Content_Panflet/>
+      <Content_Panflet />
       <Footer />
     </>
   );

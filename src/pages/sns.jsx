@@ -9,15 +9,16 @@ import { Content_SNS } from "@/components/Content/sns";
 import { Footer } from "@/components/Footer";
 import { ContentPeople } from "@/components/Content/people";
 import HeadElement from "@/components/Head";
+import { SecondHeader } from "@/components/SecondHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function SNS() {
-   return (
+  return (
     <>
-   <HeadElement title="MIKのSNS"/>
-        <Top />
-        <Content_SNS/>
+      <HeadElement title="MIKのSNS" />
+      <SecondHeader />
+      <Content_SNS />
       <Footer />
     </>
   );

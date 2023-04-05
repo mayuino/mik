@@ -9,15 +9,16 @@ import { SNS } from "@/components/Content/sns";
 import { Footer } from "@/components/Footer";
 import { ContentChargeUp } from "@/components/Content/charge_up";
 import HeadElement from "@/components/Head";
+import { SecondHeader } from "@/components/SecondHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function ChargeUp() {
   return (
     <>
-    <HeadElement title="エンジニア給与アップ実績"/>
-        <Top />
-        <ContentChargeUp />
+      <HeadElement title="エンジニア給与アップ実績" />
+      <SecondHeader />
+      <ContentChargeUp />
 
       <Footer />
     </>

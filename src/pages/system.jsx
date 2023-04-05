@@ -10,6 +10,7 @@ import { Footer } from "@/components/Footer";
 import { ContentPeople } from "@/components/Content/people";
 import { Content_system } from "@/components/Content/system";
 import HeadElement from "@/components/Head";
+import { SecondHeader } from "@/components/SecondHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function System() {
     <HeadElement title="MIKの独自制度"/>
 
 
-        <Top />
+    <SecondHeader />
 
         <Content_system/>
       <Footer />

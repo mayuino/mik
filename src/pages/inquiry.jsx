@@ -7,7 +7,7 @@ import { SecondHeader } from "@/components/SecondHeader";
 export default function Inquiry() {
   return (
     <>
-  <HeadElement title="お問い合わせ"/>
+      <HeadElement title="お問い合わせ" />
 
       <SecondHeader />
       <Content_Inquiry />

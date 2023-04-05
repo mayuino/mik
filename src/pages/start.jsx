@@ -14,20 +14,19 @@ import { useState } from "react";
 import { Content_Ex_LINE } from "@/components/Content/ex_LINE";
 import HeadElement from "@/components/Head";
 import { ContentStart } from "@/components/Content/start";
+import { SecondHeader } from "@/components/SecondHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function MIKStartPage() {
-  
-
   return (
-      <>
-    <HeadElement title="株式会社MIK"/>
-        <Top />
-      
-        <ContentStart/>
-        <Content_Ex_LINE/>
+    <>
+      <HeadElement title="株式会社MIK" />
+      <SecondHeader />
+
+      <ContentStart />
+      <Content_Ex_LINE />
       <Footer />
-      </>
+    </>
   );
 }

@@ -17,10 +17,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Gaiyou() {
   return (
     <>
-     <HeadElement title="MIKの会社概要"/>
+      <HeadElement title="MIKの会社概要" />
 
       <SecondHeader />
-        <Content_Gaiyou/>
+      <Content_Gaiyou />
       <Footer />
     </>
   );
