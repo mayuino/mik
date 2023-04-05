@@ -45,7 +45,10 @@ const HamburgerMenu = () => {
       background : 'rgba(255, 255, 255, 0.9)' ,
       padding: '8px' , 
       fontSize : '1.15em' ,
-      height: 'auto'
+      height: 'auto',
+      borderRadius:'3%',
+      border:'3px solid #ddd'
+      
 
     } , 
     bmMorphShape : {
@@ -73,7 +76,7 @@ const HamburgerMenu = () => {
       <li className={mobileStyles.ham_menu_item}><Link href={"/panflet"}>会社資料</Link></li>
       <li className={mobileStyles.ham_menu_item}><Link href={"/range"}>事業領域</Link></li>
       <li className={mobileStyles.ham_menu_item}><Link href={"/recruit"}>採用情報</Link></li>
-      <li className={mobileStyles.ham_menu_item}><Link href={"/inquiry"}>お問い合わせ</Link></li>
+      <li className={mobileStyles.ham_menu_item}><Link href={"/contact"}>お問い合わせ</Link></li>
     </ul>
       </Menu>
     </>

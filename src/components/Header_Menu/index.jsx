@@ -10,7 +10,7 @@ export const Header_MenuBar = () => {
       <li className={styles.single_menu_tab}><Link href={"/panflet"}>会社資料</Link></li>
       <li className={styles.single_menu_tab}><Link href={"/range"}>事業領域</Link></li>
       <li className={styles.single_menu_tab}><Link href={"/recruit"}>採用情報</Link></li>
-      <li className={styles.single_menu_tab}><Link href={"/inquiry"}>お問い合わせ</Link></li>
+      <li className={styles.single_menu_tab}><Link href={"/contact"}>お問い合わせ</Link></li>
     </ul>
 
     </div>

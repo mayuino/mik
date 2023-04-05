@@ -1400,27 +1400,29 @@ align-items:center;
   background: #FFFFFF;
   //border: 18px solid #ddd;
   border-radius: 2px;
-
+  padding-top:20px;
   display:flex;
   flex-direction:column;
   align-items:center;
-
+  justify-content:center;
   padding-bottom:50px;
 }
 
 .recruit_title{
-  height:100px;
-  width:100%;
+  
+  width:90%;
+  height:auto;
   margin-top:30px;
   //color:#C9E265;
-  font-size:25px;
-  margin-top:20px;
+  font-size:18px;
   display:flex;
   justify-content:center;
+  align-items:center;
+  flex-direction:column;
 }
 
 .recruit_search_frame{
-  width:700px;
+  width:100%;
   height:550px;
 
   display:flex;
