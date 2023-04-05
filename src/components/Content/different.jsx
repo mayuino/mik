@@ -6,7 +6,7 @@ export const Content_Different = () => {
   return (
     <div className={`${styles.content_different_frame} ${mobileStyles.content_different_frame}`}>
       <div className={`${styles.content_different_title} ${mobileStyles.content_different_title}`}>
-        <h2>従来型派遣会社との違い</h2>
+        <h1>従来型派遣会社との違い</h1>
         <p>MIKは、従来型の派遣会社と以下の点で大きく違います。</p>
       </div>
 

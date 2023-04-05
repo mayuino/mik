@@ -6,7 +6,7 @@ export const ContentFlow = () =>{
   return(
     <div className={`${styles.content_flow} ${mobileStyles.content_flow}`}>
 
-      <div className={`${styles.flow_title} ${mobileStyles.flow_title}`}><h1>採用までの流れ</h1></div>
+      <div className={`${styles.flow_title} ${mobileStyles.flow_title}`}><h1>採用までの流れ</h1><p>弊社では、仕事探しから、就業まで以下のような流れで進みます。</p></div>
        <div className={`${styles.step_frame} ${mobileStyles.step_frame}`}>
         <h1>STEP1 気になる仕事を見つける</h1>
         <div className={`${styles.step_content} ${mobileStyles.step_content}`}>

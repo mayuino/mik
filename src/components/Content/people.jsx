@@ -7,6 +7,7 @@ export const ContentPeople = () => {
     <div>
     <div className={`${styles.people_title} ${mobileStyles.people_title}`}>
     <h1>MIKのエンジニア</h1>
+    <p>今、弊社で活躍しているエンジニアの方々です。</p>
     </div>
     <div className={`${styles.people_frame_wrapper} ${mobileStyles.people_frame_wrapper}`}>
       <div className={`${styles.people_frame} ${mobileStyles.people_frame}`}>
@@ -80,6 +81,7 @@ export const ContentPeople = () => {
 
         <div className={`${styles.people_title} ${mobileStyles.people_title}`}>
     <h1>MIKのスタッフ</h1>
+    <p>弊社スタッフは、毎日エンジニアのために日々邁進しています。</p>
     </div>
 
     <div className={`${styles.people_frame_wrapper} ${mobileStyles.people_frame_wrapper}`}>
