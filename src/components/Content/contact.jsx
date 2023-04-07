@@ -31,8 +31,8 @@ export const Content_Contact = () => {
     emailjs.init("xrcF5cpdui-OQMKFc");
 
     const templateParams = {
-      company:company,
-      department:department,
+      company: company,
+      department: department,
       name_sei: name_sei,
       name_mei: name_mei,
       name_sei_kana: name_sei_kana,
@@ -80,46 +80,42 @@ export const Content_Contact = () => {
               弊社へのお問い合わせは、お電話または、下記フォームよりご連絡いただきますようお願いいたします。
             </p>
           </div>
-
-          <div
-            className={`${styles.inquiry_form} ${mobileStyles.inquiry_form}`}
-          >
-            <h2>電話</h2>
-            <h3>011-299-7361</h3>
-          </div>
-
-          <form
-            onSubmit={handleSubmit}
-            className={`${styles.inquiry_form} ${mobileStyles.inquiry_form}`}
-          >
-            <h2>お問合せフォーム</h2>
-
+          <div className={`${styles.contact} ${mobileStyles.contact}`}>
             <div
-              className={`${styles.inquiry_input} ${mobileStyles.inquiry_input}`}
+              className={`${styles.contact_form} ${mobileStyles.contact_form}`}
             >
-            <h4>会社名</h4>
-            <input
-              value={company}
-              onChange={(e) => setCompany(e.target.value)}
-              placeholder="ABC株式会社"
-              className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
-              type="text"
-              name="company"
-            />
+              <h2>電話</h2>
+              <h3>011-299-7361</h3>
+            </div>
 
+            <form
+              onSubmit={handleSubmit}
+              className={`${styles.contact_form} ${mobileStyles.contact_form}`}
+            >
+              <h2>お問合せフォーム</h2>
+              <div
+                className={`${styles.contact_inputs} ${mobileStyles.contact_inputs}`}
+              >
+                <h4>会社名</h4>
+                <input
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                  placeholder="ABC株式会社"
+                  className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
+                  type="text"
+                  name="company"
+                />
 
-            <h4>部署</h4>
-            <input
-              value={department}
-              onChange={(e) => setDepartment(e.target.value)}
-              placeholder="総務部"
-              className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
-              type="text"
-              name="department"
-            />
+                <h4>部署</h4>
+                <input
+                  value={department}
+                  onChange={(e) => setDepartment(e.target.value)}
+                  placeholder="総務部"
+                  className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
+                  type="text"
+                  name="department"
+                />
 
-           
-              <div className={`${styles.oubo_name} ${mobileStyles.oubo_name}`}>
                 <h4>お名前</h4>
                 <input
                   value={name_sei}
@@ -137,34 +133,27 @@ export const Content_Contact = () => {
                   className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
                   type="text"
                 />
-              </div>
-              <div className={`${styles.oubo_name} ${mobileStyles.oubo_name}`}>
-                <h4>お名前(ふりがな)</h4>
-                <div>
-                  <input
-                    className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
-                    placeholder="やまだ"
-                    name="name_sei_kana"
-                    value={name_sei_kana}
-                    onChange={(e) => setNameSeiKana(e.target.value)}
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <input
-                    className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
-                    value={name_mei_kana}
-                    onChange={(e) => setNameMeiKana(e.target.value)}
-                    placeholder="たろう"
-                    type="text"
-                    name="name_mei_kana"
-                  />
-                </div>
-              </div>
 
-              <div
-                className={`${styles.oubo_input_mail} ${mobileStyles.oubo_input_mail}`}
-              >
+                <h4>お名前(ふりがな)</h4>
+
+                <input
+                  className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
+                  placeholder="やまだ"
+                  name="name_sei_kana"
+                  value={name_sei_kana}
+                  onChange={(e) => setNameSeiKana(e.target.value)}
+                  type="text"
+                />
+
+                <input
+                  className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
+                  value={name_mei_kana}
+                  onChange={(e) => setNameMeiKana(e.target.value)}
+                  placeholder="たろう"
+                  type="text"
+                  name="name_mei_kana"
+                />
+
                 <h4>ご連絡先メールアドレス</h4>
                 <input
                   value={mail}
@@ -175,28 +164,28 @@ export const Content_Contact = () => {
                   name="mail"
                   required
                 />
+
+                <h4>ご連絡先電話番号</h4>
+                <input
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  placeholder="090-0000-0000"
+                  className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
+                  type="text"
+                  name="phone"
+                />
+
+                <h4>お問合せ内容</h4>
+                <textarea
+                  className={`${styles.inquiry_textarea} ${mobileStyles.inquiry_textarea}`}
+                  name="postContent"
+                  value={post_content}
+                  onChange={(e) => setPostContent(e.target.value)}
+                  rows={10}
+                  cols={100}
+                  placeholder="お問合せ内容をこちらにご記入ください。"
+                />
               </div>
-
-              <h4>ご連絡先電話番号</h4>
-              <input
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                placeholder="090-0000-0000"
-                className={`${styles.oubo_input_text} ${mobileStyles.oubo_input_text}`}
-                type="text"
-                name="phone"
-              />
-
-              <h4>お問合せ内容</h4>
-              <textarea
-                className={`${styles.inquiry_textarea} ${mobileStyles.inquiry_textarea}`}
-                name="postContent"
-                value={post_content}
-                onChange={(e) => setPostContent(e.target.value)}
-                rows={10}
-                cols={100}
-                placeholder="お問合せ内容をこちらにご記入ください。"
-              />
 
               <button
                 className={`${styles.oubo_kakunin_button} ${mobileStyles.oubo_kakunin_button}`}
@@ -204,8 +193,8 @@ export const Content_Contact = () => {
               >
                 送信
               </button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       )}
       {status === "success" && (

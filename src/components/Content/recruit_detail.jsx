@@ -237,19 +237,19 @@ export const Content_Recruit_Detail = (props) => {
             </ul>
           </div>
         </div>
-      </div>
-      <div
-        className={`${styles.oubo_button_wrapper} ${mobileStyles.oubo_button_wrapper}`}
-      >
-        <Link
-          href={{
-            pathname: `/recruit/${id}/oubo`,
-            query: { job_title: encodedTitle },
-          }}
-          className={`${styles.oubo_button} ${mobileStyles.oubo_button}`}
+        <div
+          className={`${styles.oubo_button_wrapper} ${mobileStyles.oubo_button_wrapper}`}
         >
-          応募する
-        </Link>
+          <Link
+            href={{
+              pathname: `/recruit/${id}/oubo`,
+              query: { job_title: encodedTitle },
+            }}
+            className={`${styles.oubo_button} ${mobileStyles.oubo_button}`}
+          >
+            応募する
+          </Link>
+        </div>
       </div>
     </>
   );

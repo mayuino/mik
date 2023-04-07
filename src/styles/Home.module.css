@@ -16,44 +16,40 @@
 
 .second_header {
   width: 100%;
-  height:100px;
+  height: 100px;
   background-image: linear-gradient(to right, #c9e265, #4f9dff);
   display: flex;
   //align-items: space-between;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .single_menu_bar {
-  display:flex;
-  flex-direction:column;
-  padding-top:50px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
 }
 
 .single_menu_bar ul {
   width: 700px;
   height: auto;
   display: flex;
- 
+
   padding-top: 10px;
   padding-bottom: 10px;
- 
 
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .single_menu_tab {
   width: auto;
-  white-space:nowrap;
+  white-space: nowrap;
   padding-left: 20px;
   padding-right: 20px;
   height: auto;
   display: flex;
   font-weight: 300;
   font-family: "Zen Maru Gothic", sans-serif;
-  color:#FFF;
-  
+  color: #fff;
 }
-
-
 
 .top_image_frame {
   background-image: url("/images/top_6.png");
@@ -67,7 +63,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 20px;
-  position:relative;
+  position: relative;
 }
 
 .main1 {
@@ -106,7 +102,7 @@
   border: none 0px;
   font-size: 30px;
   font-family: "Zen Maru Gothic";
-  background:#FFF;
+  background: #fff;
 }
 
 .main2 {
@@ -150,11 +146,9 @@
   padding-left: 20px;
 } */
 
-
-
 .menu_bar {
-  position:absolute;
-  top:550px;
+  position: absolute;
+  top: 550px;
   max-width: 100%;
   height: auto;
   display: flex;
@@ -251,7 +245,6 @@
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
-
 .content_main_title {
   width: 100%;
   height: 200px;
@@ -269,10 +262,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
-
-
 
 .hajime_content {
   display: flex;
@@ -312,7 +301,7 @@
   border-radius: 2px;
 
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   font-family: "Zen Maru Gothic", sans-serif;
@@ -326,12 +315,11 @@
   background: #ffffff;
   border-radius: 10px;
   display: flex;
-  
+
   justify-content: center;
 }
 
-
-.twitter_title  {
+.twitter_title {
   width: 100%;
   height: 220px;
 
@@ -341,22 +329,20 @@
   font-size: 25px;
   font-family: "Zen Maru Gothic", sans-serif;
   padding-left: 60px;
-  padding-top:20px;
-  background:#FFF;
+  padding-top: 20px;
+  background: #fff;
 }
 
-.twitter_title  h1 {
+.twitter_title h1 {
   background-image: linear-gradient(to right, #0cc0df, #ffde59 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.twitter_title  p {
+.twitter_title p {
   padding-left: 20px;
   font-size: 15px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
-
-
 
 .twitter_content {
   width: 70%;
@@ -371,7 +357,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .twitter_logo {
@@ -380,7 +365,6 @@
   display: flex;
   justify-content: center;
 }
-
 
 .line_frame {
   width: 100%;
@@ -511,8 +495,6 @@
 }
 /*MIKで働く人々*/
 
-
-
 .people_title {
   width: 100%;
   height: 200px;
@@ -522,8 +504,8 @@
   justify-content: center;
   font-size: 25px;
   font-family: "Zen Maru Gothic", sans-serif;
-  padding-left: 0px;
-  background:#FFF;
+  padding-left: 60px;
+  background: #fff;
 }
 
 .people_title h1 {
@@ -536,11 +518,10 @@
   font-size: 15px;
 }
 
-
 .people_frame_wrapper {
   width: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   background: #fff;
   align-items: center;
   font-family: "Zen Maru Gothic", sans-serif;
@@ -551,7 +532,7 @@
   height: auto;
   margin: 20px;
   border: 5px solid #fff;
-  background:#FFF;
+  background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   padding: 10px;
@@ -598,7 +579,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  padding-bottom:30px;
+  padding-bottom: 30px;
 }
 .people_frame_right p {
   line-height: 30px;
@@ -635,7 +616,6 @@
   margin-top: 10px;
   margin-bottom: 15px;
 }
-
 
 .people {
   min-width: 870px;
@@ -701,8 +681,6 @@
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
-
-
 .content_different_title {
   width: 100%;
   height: 200px;
@@ -713,7 +691,7 @@
   font-size: 25px;
   font-family: "Zen Maru Gothic", sans-serif;
   padding-left: 60px;
-  background:#FFF;
+  background: #fff;
 }
 
 .content_different_title h1 {
@@ -869,8 +847,7 @@
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
-
-.content_constitution_title  {
+.content_constitution_title {
   width: 100%;
   height: 200px;
 
@@ -880,19 +857,18 @@
   font-size: 25px;
   font-family: "Zen Maru Gothic", sans-serif;
   padding-left: 60px;
-  background:#FFF;
+  background: #fff;
 }
 
-.content_constitution_title  h1 {
+.content_constitution_title h1 {
   background-image: linear-gradient(to right, #0cc0df, #ffde59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.content_constitution_title  p {
+.content_constitution_title p {
   padding-left: 20px;
   font-size: 15px;
 }
-
 
 .constitution_suii_frame {
   width: 90%;
@@ -928,12 +904,10 @@
   flex-direction: column;
   align-items: center;
   font-family: "Zen Maru Gothic", sans-serif;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
-
-
-.flow_title  {
+.flow_title {
   width: 100%;
   height: 200px;
 
@@ -943,19 +917,18 @@
   font-size: 25px;
   font-family: "Zen Maru Gothic", sans-serif;
   padding-left: 60px;
-  background:#FFF;
+  background: #fff;
 }
 
-.flow_title  h1 {
+.flow_title h1 {
   background-image: linear-gradient(to right, #0cc0df, #ffde59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.flow_title  p {
+.flow_title p {
   padding-left: 20px;
   font-size: 15px;
 }
-
 
 .step_frame {
   width: 800px;
@@ -1055,32 +1028,28 @@
   width: 78%;
   height: 200px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-contetn: center;
-  align-items:space-between;
-  padding-top:30px;
-  margin-bottom:40px;
-
+  align-items: space-between;
+  padding-top: 30px;
+  margin-bottom: 40px;
 }
 
-.Internal_Line_title h1{
+.Internal_Line_title h1 {
   background-image: linear-gradient(to right, #0cc0df, #ffde59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  
-  
 }
-.Internal_Line_title p{
-  padding-left:20px;
+.Internal_Line_title p {
+  padding-left: 20px;
 }
 
 .Line_title_left {
-  width:100%;
-  
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .Internal_Line_title h1 {
@@ -1131,9 +1100,7 @@
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
-
-
-.system_title  {
+.system_title {
   width: 100%;
   height: 200px;
 
@@ -1143,15 +1110,15 @@
   font-size: 25px;
   font-family: "Zen Maru Gothic", sans-serif;
   padding-left: 60px;
-  background:#FFF;
+  background: #fff;
 }
 
-.system_title  h1 {
+.system_title h1 {
   background-image: linear-gradient(to right, #0cc0df, #ffde59 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.system_title  p {
+.system_title p {
   padding-left: 20px;
   font-size: 15px;
 }
@@ -1160,9 +1127,9 @@
   width: 95%;
   height: auto;
   border: 8px solid #0cc0df;
-    border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
-    border-image-slice: 1;
-    border-radius: 10px;
+  border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
+  border-image-slice: 1;
+  border-radius: 10px;
 
   padding: 20px;
   margin-top: 30px;
@@ -1304,11 +1271,11 @@
   background-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
   border: 0px none;
   border-radius: 10px;
-  color:#FFF;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-size:16px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
 }
 
 .content_range {
@@ -1341,7 +1308,7 @@
 
 .range {
   width: 90%;
-  height:auto;
+  height: auto;
   border: 10px solid #c9e265;
   border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
   border-image-slice: 1;
@@ -1391,9 +1358,9 @@
   //lign-items: center;
   flex-direction: column;
 }
-.recruit_title h1{
-  font-size:50px;
-  padding-bottom:10px;
+.recruit_title h1 {
+  font-size: 50px;
+  padding-bottom: 10px;
 }
 
 .recruit_search_frame {
@@ -1406,7 +1373,7 @@
   align-items: center;
 
   border: 5px solid #c9e265;
-  border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
+  border-image:linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
   border-image-slice: 1;
   border-radius: 2px;
 
@@ -1441,11 +1408,11 @@
   width: 400px;
   margin-top: 20px;
   height: 50px;
-  background: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
+  background-image: linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
   border: 0px none;
   border-radius: 5px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -1465,23 +1432,25 @@
 }
 
 .recruit_title_mid {
-  width: 600px;
-  height: 45px;
-  background: #c9e265;
-  color: #ffffff;
+  width: 100%;
+    height: 45px;
+    background-image: linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
+    color: #ffffff;
 
-  margin-top: 40px;
-  margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .recruit_mid_items {
-  width: 600px;
+  width: 100%;
   height: 270px;
-  border: 5px solid#C9E265;
+  border:5px solid #FFF;
+  border-image: linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
+  border-image-slice:1;
   border-radius: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1595,11 +1564,13 @@
 .oubo_button {
   width: 270px;
   height: 55px;
-  background: #c9e265;
+  background-image: linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
   border: 0px none;
   border-radius: 10px;
   font-size: 15px;
-
+  font-weight:600;
+  color:#FFF;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1619,7 +1590,7 @@
 
 .inquiry_title {
   width: 70%;
-  padding-top:30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
@@ -1634,8 +1605,7 @@
 
 .inquiry_form {
   width: 70%;
-  height:auto;
-
+  height: auto;
 
   padding: 10px;
   display: flex;
@@ -1645,7 +1615,7 @@
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 .inquiry_form h2 {
   margin-bottom: 20px;
@@ -1667,11 +1637,11 @@
 
 .inquiry_textarea {
   width: 100%;
-    height: 200px;
-    padding: 15px 10px;
-    border: 1px solid #ddd;
-    border-radius:10px;
-    margin: 10px;
+  height: 200px;
+  padding: 15px 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .inquiry_form button {
@@ -1685,47 +1655,106 @@
   font-size: 20px;
   font-weight: 700;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-left: 40px;}
+  margin-left: 40px;
+}
 
+/*お問合せ*/
+.content_contact {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  //border: 18px solid #C9E265;
+  border-radius: 2px;
+  //font-family: "Zen Maru Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
 
+.contact_title {
+  width: 100%;
+  height: 120px;
 
-  /*お問合せ*/
-  .content_contact{
-    width: 100%;
-    height: auto;
-    background: #ffffff;
-    //border: 18px solid #C9E265;
-    border-radius: 2px;
-    //font-family: "Zen Maru Gothic", sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
 
-  }
+.contact_title h1 {
+  //color:#C9E265;
+  font-size: 50px;
+}
+.contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.contact_inputs {
+  width: 90%;
+}
 
+.contact_form {
+  width: 80%;
+  height: auto;
 
-  .contact_title {
-    width: 100%;
-    height: 120px;
-  
-    padding-left: 65px;
-  
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    padding-top:20px;
-    margin-bottom:20px;
-  }
-  
-  .contact_title h1 {
-    //color:#C9E265;
-    font-size: 50px;
-  }
-  
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 
+  margin-bottom: 50px;
+}
+.contact_form h2 {
+  margin-bottom: 20px;
+}
+
+.contact_form h4 {
+  align-self: flex-start;
+  padding-left: 5px;
+}
+
+/* .contact_form input {
+  width: 380px;
+  height: 45px;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+} */
+
+.inquiry_textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.inquiry_form button {
+  width: 80%;
+  margin-top: 20px;
+  height: 50px;
+  background-image: linear-gradient(to right, #0cc0df, #ffde59);
+  border: 0px none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-left: 40px;
+}
+
+/*応募画面*/
 .content_oubo {
   width: 100%;
   height: auto;
@@ -1740,10 +1769,15 @@
   align-items: center;
 }
 
+.oubo_top_title{
+  padding-top:30px;
+  padding-bottom:20px;
+}
+
 .oubo_top_bar {
   width: 100%;
   height: 60px;
-  background: #ddd;
+  background-image:  linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);;
 
   color: #ffffff;
   font-weight: 700;
@@ -1754,15 +1788,16 @@
 }
 
 .oubo_form {
-  margin-top: 30px;
+  margin-top: 0px;
   width: 100%;
   border: 5px solid #fff;
   padding: 30px;
   background: rgb(255, 255, 255, 0.3);
   border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  display: flex;
+    display: flex;
   justify-content: center;
+  flex-direction:column;
+  align-items:center;
 }
 
 .oubo_form h4 {
@@ -1775,11 +1810,12 @@
 
 .oubo_input_text {
   width: 70%;
-    padding: 15px 10px;
-    height: auto;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    margin: 10px;}
+  padding: 15px 10px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin: 10px;
+}
 
 .oubo_input_long {
   width: 500px;
@@ -1832,14 +1868,22 @@
   width: 400px;
   margin-top: 20px;
   height: 50px;
-  background: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
+  background: linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
   border: 0px none;
   border-radius: 25px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  color:#FFF;
 }
-
+.thanks_wrapper{
+  width:100%;
+  min-height:800px;
+  background:#FFF;
+  display:flex;
+  align-items:center;
+}
 .thanks {
   width: 100%;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1918,13 +1962,12 @@
 }
 
 /*blog*/
-.blog_frame{
-  width:100%;
-  min-height:100vh;
-  background:#FFF;
+.blog_frame {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
 
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
