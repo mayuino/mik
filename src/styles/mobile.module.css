@@ -943,6 +943,7 @@
   /*採用情報検索ページ*/
 
   .content_recruit {
+    
     width: 100%;
     height: auto;
     background: #ffffff;
@@ -1512,7 +1513,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    border-image:linear-gradient(to right, #0cc0df, #ffde59 180%);
+    border-image-slice: 1;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     margin-bottom: 50px;

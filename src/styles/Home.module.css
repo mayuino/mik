@@ -1347,6 +1347,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 .recruit_title {
@@ -1357,10 +1358,15 @@
   justify-content: center;
   //lign-items: center;
   flex-direction: column;
+  
 }
 .recruit_title h1 {
   font-size: 50px;
   padding-bottom: 10px;
+  background-image: linear-gradient(to right, #c9e265, #4f9dff 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 .recruit_search_frame {
@@ -1600,6 +1606,7 @@
   background-image: linear-gradient(to right, #0cc0df, #ffde59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 50px;
 }
 
@@ -1704,16 +1711,18 @@
   width: 80%;
   height: auto;
 
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-
+  border: 5px solid #c9e265;
+  border-image:linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
+  border-image-slice: 1;
+  border-radius:10px;
   margin-bottom: 50px;
 }
+
 .contact_form h2 {
   margin-bottom: 20px;
 }
@@ -1723,13 +1732,6 @@
   padding-left: 5px;
 }
 
-/* .contact_form input {
-  width: 380px;
-  height: 45px;
-
-  margin-top: 10px;
-  margin-bottom: 20px;
-} */
 
 .inquiry_textarea {
   width: 100%;
