@@ -64,10 +64,11 @@
   justify-content: space-between;
   padding-bottom: 20px;
   position: relative;
+  overflow:auto;
 }
 
 .sitting_image {
-  position: fixed;
+  position: absolute;
   top:400px;
   left:320px;
 }
