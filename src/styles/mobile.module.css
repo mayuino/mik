@@ -42,7 +42,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    height: 700px;
+    height: 800px;
 
     display: flex;
     flex-direction: column;
@@ -53,9 +53,18 @@
     position: relative;
   }
 
+
+
+  .female_image{
+    position:absolute;
+    top:200px;
+    right:50px;
+  }
+
   .menu_bar {
-    width: 80%;
-    height: auto;
+    margin-top:60px;
+    width: 70%;
+    height: 270px;
     display: flex;
     //background:white;
     //background-image: linear-gradient(to right, #C9E265, #4F9DFF);
@@ -68,14 +77,14 @@
     margin-bottom: 20px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    overflow: auto;
+    overflow-x:scroll;
     position: absolute;
     top: 450px;
   }
 
   .menu_bar ul {
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     margin-left: 6px;
     margin-right: 6px;
@@ -83,22 +92,25 @@
     padding: 10px;
     margin: 0px;
     justify-content: center;
+
   }
 
   .menu_tab {
-    width: 100%;
-    height: 70px;
+    width: 120px;
+    height: 90px;
     color: #ffffff;
     //background:#C9E265;
-    border: 3px solid #ffffff;
+    border: 1px solid #ffffff;
+    padding:10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: none;
     align-items: center;
     font-weight: 700;
     font-family: "Hiragino Kaku Gothic ProN";
     margin-bottom: 10px;
+    text-align:center;
 
     font-size: 13px;
   }
@@ -108,7 +120,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 850px;
+    height: 900px;
 
     display: flex;
     flex-direction: column;
@@ -149,9 +161,10 @@
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    height: 860px;
+    height: 950px;
     display: flex;
     flex-direction: column;
+    
   }
 
   .content_main_frame {
