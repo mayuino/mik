@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Header_MenuBar } from "../Header_Menu";
 import mobileStyles from '@/styles/mobile.module.css'
-import { HamburgerMenu2 } from "../hamburger_menu2";
+import { HamburgerMenu } from "../hamburger_menu2";
 
 export const SecondHeader = () => {
   const [isPhone, setIsPhone] = useState(false);
