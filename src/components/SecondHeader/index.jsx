@@ -28,7 +28,7 @@ export const SecondHeader = () => {
           height={108}
         />
       </Link>
-      {isPhone ?( <div className={mobileStyles.header_menu}><HamburgerMenu2/></div>) : <Header_MenuBar />}
+      {isPhone ?( <div className={mobileStyles.header_menu}><HamburgerMenu/></div>) : <Header_MenuBar />}
     </header>
   );
 };
