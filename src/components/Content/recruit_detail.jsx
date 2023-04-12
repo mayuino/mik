@@ -82,174 +82,240 @@ export const Content_Recruit_Detail = (props) => {
           </ul>
           <p>{recruitObject?.job_detail?.hosoku}</p>
         </div>
+      </div>
 
-        {recruitObject?.environment?.OS && (
-          <div
-            className={`${styles.detail_content} ${mobileStyles.detail_content}`}
-          >
-            <div
-              className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
-            >
-              <h3>環境</h3>
-            </div>
-            <ul>
-              <li>
-                <p>OS:{recruitObject?.environment?.OS}</p>
-              </li>
-              <li>
-                <p>言語：{recruitObject?.environment?.language}</p>
-              </li>
-              <li>
-                <p>フレームワーク:{recruitObject?.environment?.framework}</p>
-              </li>
-              <li>
-                <p>DB:{recruitObject?.environment?.DB}</p>
-              </li>
-            </ul>
-          </div>
-        )}
-
+      {recruitObject?.environment?.OS && (
         <div
           className={`${styles.detail_content} ${mobileStyles.detail_content}`}
         >
           <div
             className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
           >
-            <ul>
-              <li>
-                <h3>{recruitObject?.condition1}</h3>
-              </li>
-              <li>
-                <h3>{recruitObject?.condition2}</h3>
-              </li>
-            </ul>
+            <h3>環境</h3>
           </div>
-
-          <div
-            className={`${styles.detail_content} ${mobileStyles.detail_content}`}
-          >
-            <div
-              className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
-            >
-              <h3>募集人数・募集背景</h3>
-            </div>
-            <p>{recruitObject?.bosyu_background}</p>
-          </div>
-
-          <div
-            className={`${styles.detail_content} ${mobileStyles.detail_content}`}
-          >
-            <div
-              className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
-            >
-              <h3>勤務地</h3>
-            </div>
-            <p>{recruitObject?.area?.job_area}</p>
-            <p>◎{recruitObject?.area?.job_area_hosoku1}</p>
-            <p>※{recruitObject?.area?.job_area_hosoku2}</p>
-          </div>
-
-          <div
-            className={`${styles.detail_content} ${mobileStyles.detail_content}`}
-          >
-            <div
-              className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
-            >
-              <h3>勤務時間</h3>
-            </div>
-            <p>
-              {recruitObject?.time?.job_start_time} ～{" "}
-              {recruitObject?.time?.job_end_time} <br />◎
-              {recruitObject?.time?.job_time_hosoku}
-            </p>
-          </div>
-
-          <div
-            className={`${styles.detail_content} ${mobileStyles.detail_content}`}
-          >
-            <div
-              className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
-            >
-              <h3>給与</h3>
-            </div>
-            <p>
-              年俸　{recruitObject?.payment?.payment_low}　～　
-              {recruitObject?.payment?.payment_high}
-              <br />◎{recruitObject?.payment?.payment_hosoku}
-            </p>
-          </div>
-
-          <div
-            className={`${styles.detail_content} ${mobileStyles.detail_content}`}
-          >
-            <div
-              className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
-            >
-              <h3>休日休暇</h3>
-            </div>
-            <ul>
+          <ul>
+            <li>
+              <p>OS：{recruitObject?.environment?.OS}</p>
+            </li>
+            <li>
+              <p>言語：{recruitObject?.environment?.language}</p>
+            </li>
+            <li>
+              <p>フレームワーク：{recruitObject?.environment?.framework}</p>
+            </li>
+            {recruitObject?.environment?.DB ?? (
               <li>
-                <p>{recruitObject?.holiday?.jouken1}</p>
+                <p>DB：{recruitObject?.environment?.DB}</p>
               </li>
+            )}
+            {recruitObject?.environment?.package && (
               <li>
-                <p>{recruitObject?.holiday?.jouken2}</p>
+                <p>パッケージ・ツール：{recruitObject?.environment?.package}</p>
               </li>
-              <li>
-                <p>{recruitObject?.holiday?.jouken3}</p>
-              </li>
-              <li>
-                <p>{recruitObject?.holiday?.jouken4}</p>
-              </li>
-            </ul>
-          </div>
-
-          <div
-            className={`${styles.detail_content} ${mobileStyles.detail_content}`}
-          >
-            <div
-              className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
-            >
-              <h3>福利厚生</h3>
-            </div>
-
-            <ul>
-              <li>
-                <p>{recruitObject?.fukuri?.fukuri1}</p>
-              </li>
-              <li>
-                <p>{recruitObject?.fukuri?.fukuri2}</p>
-              </li>
-              <li>
-                <p>{recruitObject?.fukuri?.fukuri3}</p>
-              </li>
-              <li>
-                <p>{recruitObject?.fukuri?.fukuri4}</p>
-              </li>
-              <li>
-                <p>{recruitObject?.fukuri?.fukuri5}</p>
-              </li>
-              <li>
-                <p>{recruitObject?.fukuri?.fukuri6}</p>
-              </li>
-              <li>
-                <p>{recruitObject?.fukuri?.soudan}</p>
-              </li>
-            </ul>
-          </div>
+            )}
+          </ul>
         </div>
+      )}
+      <div
+        className={`${styles.detail_content} ${mobileStyles.detail_content}`}
+      >
         <div
-          className={`${styles.oubo_button_wrapper} ${mobileStyles.oubo_button_wrapper}`}
+          className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
         >
-          <Link
-            href={{
-              pathname: `/recruit/${id}/oubo`,
-              query: { job_title: encodedTitle },
-            }}
-            className={`${styles.oubo_button} ${mobileStyles.oubo_button}`}
-          >
-            応募する
-          </Link>
+          <h3>応募条件</h3>
         </div>
+        <ul>
+          <li>
+            <p>{recruitObject?.condition?.condition1}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.condition?.condition2}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.condition?.condition3}</p>
+          </li>
+
+          <li>
+            <p>{recruitObject?.condition?.condition4}</p>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        className={`${styles.detail_content} ${mobileStyles.detail_content}`}
+      >
+        <div
+          className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
+        >
+          <h3>募集人数・募集背景</h3>
+        </div>
+        <p>{recruitObject?.bosyu_background}</p>
+        <p>{recruitObject?.bosyu_detail1}</p>
+        <p>{recruitObject?.bosyu_detail2}</p>
+        <p>{recruitObject?.bosyu_detail3}</p>
+      </div>
+
+      <div
+        className={`${styles.detail_content} ${mobileStyles.detail_content}`}
+      >
+        <div
+          className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
+        >
+          <h3>勤務地</h3>
+        </div>
+        <p>{recruitObject?.area?.job_area}</p>
+        <p>{recruitObject?.area?.job_area_hosoku1}</p>
+        <p>{recruitObject?.area?.job_area_hosoku2}</p>
+      </div>
+
+      <div
+        className={`${styles.detail_content} ${mobileStyles.detail_content}`}
+      >
+        <div
+          className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
+        >
+          <h3>勤務時間</h3>
+        </div>
+        <p>
+          {recruitObject?.time?.job_start_time} ～{" "}
+          {recruitObject?.time?.job_end_time} <br />
+          {recruitObject?.time?.job_time_hosoku}
+        </p>
+      </div>
+
+      <div
+        className={`${styles.detail_content} ${mobileStyles.detail_content}`}
+      >
+        <div
+          className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
+        >
+          <h3>給与</h3>
+        </div>
+        <p>
+          年俸　{recruitObject?.payment?.payment_low}　～　
+          {recruitObject?.payment?.payment_high}
+          <br />
+          {recruitObject?.payment?.payment_hosoku}
+          <br />
+          {recruitObject?.payment?.payment_hosoku2}
+        </p>
+      </div>
+
+      <div
+        className={`${styles.detail_content} ${mobileStyles.detail_content}`}
+      >
+        <div
+          className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
+        >
+          <h3>休日休暇</h3>
+        </div>
+        <ul>
+          <li>
+            <p>{recruitObject?.holiday?.jouken1}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.holiday?.jouken2}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.holiday?.jouken3}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.holiday?.jouken4}</p>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        className={`${styles.detail_content} ${mobileStyles.detail_content}`}
+      >
+        <div
+          className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
+        >
+          <h3>福利厚生</h3>
+        </div>
+
+        <ul>
+          <li>
+            <p>{recruitObject?.fukuri?.fukuri1}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.fukuri?.fukuri2}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.fukuri?.fukuri3}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.fukuri?.fukuri4}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.fukuri?.fukuri5}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.fukuri?.fukuri6}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.fukuri?.fukuri7}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.fukuri?.fukuri8}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.fukuri?.fukuri9}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.fukuri?.soudan}</p>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        className={`${styles.detail_content} ${mobileStyles.detail_content}`}
+      >
+        <div
+          className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
+        >
+          <h3>会社からのメッセージ</h3>
+        </div>
+        <ul>
+          <li>
+            {" "}
+            <p>{recruitObject?.company_message?.l1}</p>
+          </li>
+          <li>
+            {" "}
+            <p>{recruitObject?.company_message?.l2}</p>
+          </li>
+          <li>
+            {" "}
+            <p>{recruitObject?.company_message?.l3}</p>
+          </li>
+          <li>
+            {" "}
+            <p>{recruitObject?.company_message?.l4}</p>
+          </li>
+          <li>
+            {" "}
+            <p>{recruitObject?.company_message?.l5}</p>
+          </li>
+          <li>
+            {" "}
+            <p>{recruitObject?.company_message?.l6}</p>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        className={`${styles.oubo_button_wrapper} ${mobileStyles.oubo_button_wrapper}`}
+      >
+        <Link
+          href={{
+            pathname: `/recruit/${id}/oubo`,
+            query: { job_title: encodedTitle },
+          }}
+          className={`${styles.oubo_button} ${mobileStyles.oubo_button}`}
+        >
+          応募する
+        </Link>
       </div>
     </>
   );

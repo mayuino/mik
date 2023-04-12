@@ -27,6 +27,7 @@ export const Content_SNS = (props) => {
           <div
             className={`${styles.twitter_content} ${mobileStyles.twitter_content}`}
           >
+            <TwitterTweetEmbed tweetId={"1646002903310819329"} />
             <TwitterTweetEmbed tweetId={"1633115952328876033"} />
             <TwitterTweetEmbed tweetId={"1617807023860781057"} />
           </div>

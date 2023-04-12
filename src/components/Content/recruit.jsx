@@ -3,10 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import mobileStyles from "@/styles/mobile.module.css";
+import { useRouter } from "next/router";
 
 export const Content_Recruit = () => {
   const [info, setInfo] = useState([]);
-  const [isfilter,setIsfilter] = useState(false);
+  const [isfilter, setIsfilter] = useState(false);
   //地域で探す
   const [checkedSapporo, setCheckedSapporo] = useState(false);
   const [checkedMorioka, setCheckedMorioka] = useState(false);
@@ -98,11 +99,16 @@ export const Content_Recruit = () => {
           (checkedFukuoka && item.search_items.area === "fukuoka")) &&
         (checkedTypesCount === 0 ||
           (checkedSoftware && item.search_items.type === "software") ||
+          (checkedSoftware && item.search_items.type === "all") ||
           (checkedSystem && item.search_items.type === "system") ||
+          (checkedSystem && item.search_items.type === "all") ||
           (checkedServer && item.search_items.type === "server") ||
+          (checkedServer && item.search_items.type === "all") ||
           (checkedNetwork && item.search_items.type === "network") ||
+          (checkedNetwork && item.search_items.type === "all") ||
           (checkedIdoutai && item.search_items.type === "idoutai") ||
           (checkedCloud && item.search_items.type === "cloud") ||
+          (checkedCloud && item.search_items.type === "all") ||
           (checkedHelp && item.search_items.type === "helpdesk")) &&
         (checkedLanguagesCount === 0 ||
           (checkedCprus && item.search_items.language === "C+") ||
@@ -120,22 +126,32 @@ export const Content_Recruit = () => {
     setIsfilter(true);
   };
 
+  const router = useRouter();
+  const handleContactClick = () =>{
+    router.push("/inquiry")
+  }
+
   return (
-    <div className={`${styles.content_recruit} ${mobileStyles.content_recruit}`}>
+    <div
+      className={`${styles.content_recruit} ${mobileStyles.content_recruit}`}
+    >
       <div className={`${styles.recruit_title} ${mobileStyles.recruit_title}`}>
         <h1>エンジニア採用情報</h1>
         <p>
           あなたが探しているお仕事の条件にチェックを入れ、「検索する」ボタンをクリックしてください。
         </p>
       </div>
-    
 
       <div className={`${styles.recruit_frame} ${mobileStyles.recruit_frame}`}>
-        <div className={`${styles.recruit_search_frame} ${mobileStyles.recruit_search_frame}`}>
+        <div
+          className={`${styles.recruit_search_frame} ${mobileStyles.recruit_search_frame}`}
+        >
           <div className={`${styles.search_1} ${mobileStyles.search_1}`}>
             <h4>地域で探す</h4>
             <ul className={`${styles.search_area} ${mobileStyles.search_area}`}>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedSapporo}
@@ -144,7 +160,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">札幌</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   id="area_morioka"
@@ -153,7 +171,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">盛岡</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   id="area_oosaka"
@@ -162,7 +182,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">大阪</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   id="area_kyouto"
@@ -171,7 +193,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">京都</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   id="area_koube"
@@ -180,7 +204,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">神戸</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   id="area_fukuoka"
@@ -191,8 +217,12 @@ export const Content_Recruit = () => {
               </li>
             </ul>
             <h4>職種で探す</h4>
-            <ul className={`${styles.search_condition} ${mobileStyles.search_condition}`}>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+            <ul
+              className={`${styles.search_condition} ${mobileStyles.search_condition}`}
+            >
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedSoftware}
@@ -200,7 +230,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">ソフトウェアエンジニア</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedSystem}
@@ -208,7 +240,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">システムエンジニア</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedServer}
@@ -217,7 +251,9 @@ export const Content_Recruit = () => {
                 <label for="areas">サーバーエンジニア</label>
               </li>
 
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedNetwork}
@@ -226,7 +262,9 @@ export const Content_Recruit = () => {
                 <label for="areas">ネットワークエンジニア</label>
               </li>
 
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedIdoutai}
@@ -235,7 +273,9 @@ export const Content_Recruit = () => {
                 <label for="areas">移動体通信エンジニア</label>
               </li>
 
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedCloud}
@@ -244,7 +284,9 @@ export const Content_Recruit = () => {
                 <label for="areas">クラウドエンジニア</label>
               </li>
 
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedHelp}
@@ -257,8 +299,12 @@ export const Content_Recruit = () => {
 
           <div className={`${styles.search_2} ${mobileStyles.search_2}`}>
             <h4>言語で探す</h4>
-            <ul className={`${styles.search_condition} ${mobileStyles.search_condition}`}>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+            <ul
+              className={`${styles.search_condition} ${mobileStyles.search_condition}`}
+            >
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedCprus}
@@ -266,7 +312,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">C++</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedCsharp}
@@ -274,7 +322,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">C#</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedPython}
@@ -282,7 +332,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">Python</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedJava}
@@ -290,7 +342,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">Java</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedJavascript}
@@ -300,8 +354,12 @@ export const Content_Recruit = () => {
               </li>
             </ul>
             <h4>条件で探す</h4>
-            <ul className={`${styles.search_condition} ${mobileStyles.search_condition}`}>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+            <ul
+              className={`${styles.search_condition} ${mobileStyles.search_condition}`}
+            >
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedTsuukin}
@@ -309,7 +367,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">通勤あり</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedRemort}
@@ -317,7 +377,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">リモートワーク</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedMikiken}
@@ -325,7 +387,9 @@ export const Content_Recruit = () => {
                 ></input>
                 <label for="areas">未経験者歓迎</label>
               </li>
-              <li className={`${styles.search_items} ${mobileStyles.search_items}`}>
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
                 <input
                   type="checkbox"
                   checked={checkedFemale}
@@ -335,21 +399,31 @@ export const Content_Recruit = () => {
               </li>
             </ul>
           </div>
-          <button className={`${styles.search_button} ${mobileStyles.search_button}`} onClick={handleFilter}>
+          <button
+            className={`${styles.search_button} ${mobileStyles.search_button}`}
+            onClick={handleFilter}
+          >
             検索する
           </button>
         </div>
 
         {filteredData && filteredData.length > 0 && (
           <div>
-            <div className={`${styles.recruit_title_mid} ${mobileStyles.recruit_title_mid}`}>
+            <div
+              className={`${styles.recruit_title_mid} ${mobileStyles.recruit_title_mid}`}
+            >
               <h2>中途採用情報</h2>
             </div>
 
-            <ul className={`${styles.recruit_mid_content} ${mobileStyles.recruit_mid_content}`}>
+            <ul
+              className={`${styles.recruit_mid_content} ${mobileStyles.recruit_mid_content}`}
+            >
               {filteredData.map((item) => {
                 return (
-                  <li className={`${styles.recruit_mid_items} ${mobileStyles.recruit_mid_items}`} key={item.id}>
+                  <li
+                    className={`${styles.recruit_mid_items} ${mobileStyles.recruit_mid_items}`}
+                    key={item.id}
+                  >
                     <Link href={`/recruit/${item.id}`}>
                       <h3>{item.name}</h3>
 
@@ -372,12 +446,13 @@ export const Content_Recruit = () => {
           </div>
         )}
         {isfilter === true && filteredData.length === 0 && (
-          <div>
+          <div　className={`${styles.search_message_wrapper} ${mobileStyles.search_message_wrapper}`}>
             <p>
-              申し訳ありません。お探しの条件に該当するお仕事は公開求人の中に確認できません。
-              非公開求人等も含めて確認されたい場合は、こちらからお申し込みください。
+              申し訳ありません。お探しの条件に該当するお仕事は公開求人の中に確認できません。<br/>
+              非公開求人等も含めて確認されたい場合は、こちらからお問い合わせください。
             </p>
-            <button>求人問い合わせ</button>
+            <button onClick={handleContactClick} className={`${styles.search_button} ${mobileStyles.search_button}`}>MIK
+          に直接確認する</button>
           </div>
         )}
       </div>
