@@ -138,8 +138,52 @@ export const Content_Recruit_Detail = (props) => {
           <li>
             <p>{recruitObject?.condition?.condition4}</p>
           </li>
+          <li>
+            <p>{recruitObject?.condition?.condition5}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.condition?.condition6}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.condition?.condition7}</p>
+          </li>
+          <li>
+            <p>{recruitObject?.condition?.condition8}</p>
+          </li>
         </ul>
       </div>
+      {recruitObject?.welcome && (
+        <div
+          className={`${styles.detail_content} ${mobileStyles.detail_content}`}
+        >
+          <div
+            className={`${styles.detail_content_title} ${mobileStyles.detail_content_title}`}
+          >
+            <h3>積極採用</h3>
+          </div>
+          <ul>
+            <li>
+              <p>{recruitObject?.welcome?.welcome_l1}</p>
+            </li>
+            <li>
+              <p>{recruitObject?.welcome?.welcome_l2}</p>
+            </li>
+            <li>
+              <p>{recruitObject?.welcome?.welcome_l3}</p>
+            </li>
+
+            <li>
+              <p>{recruitObject?.welcome?.welcome_l4}</p>
+            </li>
+            <li>
+              <p>{recruitObject?.welcome?.welcome_l5}</p>
+            </li>
+            <li>
+              <p>{recruitObject?.welcome?.welcome_l6}</p>
+            </li>
+          </ul>
+        </div>
+      )}
 
       <div
         className={`${styles.detail_content} ${mobileStyles.detail_content}`}

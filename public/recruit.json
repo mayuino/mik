@@ -275,5 +275,103 @@
       "mikeiken": true,
       "female": false
     }
+  },
+  {
+    "id": 5,
+    "name": "【札幌】ITエンジニア （経験者優遇・未経験者歓迎）",
+    "job_detail": {
+      "gaiyou": "Web系、アプリ開発、インフラ系など。経験・スキル・希望に沿ってプロジェクトを決められます。(リモートワーク可)",
+      "midashi": "",
+      "job1": "",
+      "job2": "",
+      "job3": "",
+      "job4": "",
+      "hosoku": ""
+    },
+    "condition": {
+      "condition1": "学歴不問/未経験OK",
+      "condition2":"マネジメントと同時に開発実務をこなせる方" ,
+      "condition3": "新しいことに好奇心を旺盛に持ち、チャレンジする方",
+      "condition4": "他者を尊重・尊敬できるマインドを持っている方",
+      "condition5": "社内や社外でコミュニケーションをとりながら仕事を楽しめる方",
+      "condition6": "基本的なPCスキルがあればOK",
+      "condition7": "ブランクOK",
+      "condition8": "研修・教育制度あり"
+
+    },
+    "welcome":{
+      "welcome_l1":"1年以上のIT業界経験者を希望（なんらかの開発言語経験者）",
+      "welcome_l2":"ヘルプデスクなどIT関連の実務経験がある方",
+      "welcome_l3":"情報系・理工系出身などIT分野の就学経験がある方",
+      "welcome_l4":"独学や趣味でプログラミングや自作PCの経験がある方",
+      "welcome_l5":"実務経験は無いがIT資格を保有されている方",
+      "welcome_l6":"勤怠、コミュニケーション良好な方、自ら積極的に動ける方"
+    },
+    "environment": {
+      "OS": "Windows、Linux、UNIX",
+      "language": "Java(Spring Boot)、Python（Django）、Kotlin、Go、C、C++",
+      "framework": "AWS、Azure、GCP、Windows Server、Linux、UNIX、AIX、VMware",
+      "DB": "",
+      "package": "SAP、ServiceNow、Salesforce、Tableau"
+    },
+    "bosyu_background": "業績好調のため、増員募集。",
+    "bosyu_detail1": "・マネジメントと同時に開発実務をこなせる方",
+    "bosyu_detail2": "・新しいことに好奇心を旺盛に持ち、チャレンジする方",
+    "bosyu_detail3": "・他者を尊重・尊敬できるマインドを持っている方",
+    "area": {
+      "job_area": "北海道札幌市内",
+      "job_area_hosoku1": "",
+      "job_area_hosoku2": "※転勤はありません。"
+    },
+    "time": {
+      "job_start_time": "9:00",
+      "job_end_time": "18:00",
+      "job_time_hosoku": ""
+    
+    },
+    "payment": {
+      "payment_low": "4,000,000円",
+      "payment_high": "6,000,000円",
+      "payment_hosoku": "※月給制：年俸の12分の１を毎月支給にて支払い。",
+      "payment_hosoku2":""
+    },
+    "holiday": {
+      "jouken1": "完全週休2日制",
+      "jouken2": "年間休日120日以上祝日・GW・年次有給休暇・慶弔休暇あり",
+      "jouken3": "夏季休暇",
+      "jouken4": "年末年始休暇"
+    },
+    "fukuri": {
+      "fukuri1": "雇用保険",
+      "fukuri2": "労災保険",
+      "fukuri3": "厚生年金",
+      "fukuri4": "健康保険",
+      "fukuri5": "交通費支給あり",
+      "fukuri6": "資格取得支援・手当てあり",
+      "fukuri7": "寮・社宅・住宅手当あり",
+      "fukuri8": "退職金保険（米国ドル建てリタイアメント・インカム）",
+      "fukuri9": "U・Iターン支援あり",
+      "soudan": ""
+    },
+    "company_message":{
+      "l1":"他社では実現不可能な事でも弊社では実現可能する可能性あります！",
+      "l2":"「給与や評価制度に納得して働きたい」",
+      "l3":"「スキル・キャリアアップしたい」",
+      "l4":"「福利厚生、休日休暇など、働く環境が整った職場を希望している」など",
+      "l5":"ご応募いただき直接ご質問やご意見をお聞かせください。",
+      "l6":"ご応募をお待ちしております！！"
+    } ,
+    "koushin_bi": "2023年4月7日",
+
+    "search_items": {
+      "area": "sapporo",
+      "type": "all",
+      "language": "",
+      "tsuukin": true,
+      "remote": false,
+      "mikeiken": true,
+      "female": false
+    }
   }
+
 ]
