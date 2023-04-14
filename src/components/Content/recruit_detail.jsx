@@ -79,8 +79,12 @@ export const Content_Recruit_Detail = (props) => {
             <li>
               <p>{recruitObject?.job_detail?.job4}</p>
             </li>
+            <li>
+              <p>{recruitObject?.job_detail?.job5}</p>
+            </li>
           </ul>
           <p>{recruitObject?.job_detail?.hosoku}</p>
+          <p>{recruitObject?.job_detail?.hosoku2}</p>
         </div>
       </div>
 
@@ -152,7 +156,7 @@ export const Content_Recruit_Detail = (props) => {
           </li>
         </ul>
       </div>
-      {recruitObject?.welcome && (
+      {recruitObject?.welcome.welcome_l1 && (
         <div
           className={`${styles.detail_content} ${mobileStyles.detail_content}`}
         >
@@ -197,6 +201,13 @@ export const Content_Recruit_Detail = (props) => {
         <p>{recruitObject?.bosyu_detail1}</p>
         <p>{recruitObject?.bosyu_detail2}</p>
         <p>{recruitObject?.bosyu_detail3}</p>
+        <p>{recruitObject?.bosyu_detail4}</p>
+        <p>{recruitObject?.bosyu_detail5}</p>
+        <p>{recruitObject?.bosyu_detail6}</p>
+        <p>{recruitObject?.bosyu_detail7}</p>
+        <p>{recruitObject?.bosyu_detail8}</p>
+        <p>{recruitObject?.bosyu_detail9}</p>
+        <p>{recruitObject?.bosyu_detail10}</p>
       </div>
 
       <div
@@ -344,6 +355,14 @@ export const Content_Recruit_Detail = (props) => {
           <li>
             {" "}
             <p>{recruitObject?.company_message?.l6}</p>
+          </li>
+          <li>
+            {" "}
+            <p>{recruitObject?.company_message?.l7}</p>
+          </li>
+          <li>
+            {" "}
+            <p>{recruitObject?.company_message?.l8}</p>
           </li>
         </ul>
       </div>

@@ -24,6 +24,8 @@ export const Content_Recruit = () => {
   const [checkedCloud, setCheckedCloud] = useState(false);
   const [checkedHelp, setCheckedHelp] = useState(false);
   const [checkedIdoutai, setCheckedIdoutai] = useState(false);
+  const [checkedTest, setCheckedTest] = useState(false);
+  
 
   //言語で探す
   const [checkedCprus, setCheckedCprus] = useState(false);
@@ -53,6 +55,7 @@ export const Content_Recruit = () => {
     checkedNetwork,
     checkedIdoutai,
     checkedCloud,
+    checkedTest,
     checkedHelp,
   ];
   const checkedLanguages = [
@@ -109,6 +112,7 @@ export const Content_Recruit = () => {
           (checkedIdoutai && item.search_items.type === "idoutai") ||
           (checkedCloud && item.search_items.type === "cloud") ||
           (checkedCloud && item.search_items.type === "all") ||
+          (checkedTest && item.search_items.type === "test") ||
           (checkedHelp && item.search_items.type === "helpdesk")) &&
         (checkedLanguagesCount === 0 ||
           (checkedCprus && item.search_items.language === "C+") ||
@@ -282,6 +286,17 @@ export const Content_Recruit = () => {
                   onChange={() => setCheckedCloud(!checkedCloud)}
                 ></input>
                 <label for="areas">クラウドエンジニア</label>
+              </li>
+
+              <li
+                className={`${styles.search_items} ${mobileStyles.search_items}`}
+              >
+                <input
+                  type="checkbox"
+                  checked={checkedTest}
+                  onChange={() => setCheckedTest(!checkedTest)}
+                ></input>
+                <label for="areas">テストエンジニア</label>
               </li>
 
               <li

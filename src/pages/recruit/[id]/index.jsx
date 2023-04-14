@@ -10,7 +10,7 @@ export default function Recruit() {
 
   return (
     <>
-      <HeadElement title="採用情報" />
+      <HeadElement title="株式会社MIK|採用情報" />
      <SecondHeader/>
       <Content_Recruit_Detail id = {router.query.id}/>
       <Footer />

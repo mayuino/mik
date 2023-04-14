@@ -351,13 +351,14 @@
       "fukuri7": "寮・社宅・住宅手当あり",
       "fukuri8": "退職金保険（米国ドル建てリタイアメント・インカム）",
       "fukuri9": "U・Iターン支援あり",
+      "fukuri10": "・研修・教育制度あり",
       "soudan": ""
     },
     "company_message":{
-      "l1":"他社では実現不可能な事でも弊社では実現可能する可能性あります！",
-      "l2":"「給与や評価制度に納得して働きたい」",
-      "l3":"「スキル・キャリアアップしたい」",
-      "l4":"「福利厚生、休日休暇など、働く環境が整った職場を希望している」など",
+      "l1":"※MIKチーム内での就業となりますので、サポート環境は整っております。",
+      "l2":"エンジニアファーストを掲げております。",
+      "l3":"（副業に関しましても問題なくご対応頂けます。）",
+      "l4":"同業他社では実現不可能な様な事でも弊社では実現可能する可能性あります！",
       "l5":"ご応募いただき直接ご質問やご意見をお聞かせください。",
       "l6":"ご応募をお待ちしております！！"
     } ,
@@ -365,7 +366,919 @@
 
     "search_items": {
       "area": "sapporo",
-      "type": "all",
+      "type": "system",
+      "language": "",
+      "tsuukin": true,
+      "remote": false,
+      "mikeiken": true,
+      "female": false
+    }
+  },
+  {
+    "id": 6,
+    "name": "【札幌】移動体通信エンジニア【経験者優遇・未経験者歓迎】",
+    "job_detail": {
+      "gaiyou": "",
+      "midashi": "",
+      "job1": "・通信設備（高速通信／無線LANシステム等）建設工事",
+      "job2": "・無線機器据付・調整・試験",
+      "job3": "・無線基地局装置保守、移動体交換システム運用",
+      "job4": "・電波測定/調査分析、エリア設計",
+      "job5": "・ワイヤレス通信品質最適化",
+      "hosoku": "※興味ある方はまずはお気軽にご応募ください！！",
+      "hosoku2": "※移動体の基地局工事、作業現場など経験者優遇"
+    },
+    "condition": {
+      "condition1": "高卒以上/未経験OK",
+      "condition2":"" ,
+      "condition3": "新しいことに好奇心を旺盛に持ち、チャレンジする方",
+      "condition4": "他者を尊重・尊敬できるマインドを持っている方",
+      "condition5": "社内や社外でコミュニケーションをとりながら仕事を楽しめる方",
+      "condition6": "基本的なPCスキルがあればOK",
+      "condition7": "",
+      "condition8": ""
+
+    },
+    "welcome":{
+      "welcome_l1":"",
+      "welcome_l2":"",
+      "welcome_l3":"",
+      "welcome_l4":"",
+      "welcome_l5":"",
+      "welcome_l6":"",
+      "welcome_l7":"",
+      "welcome_l8":"",
+      "welcome_l9":"",
+      "welcome_l10":""
+    },
+    "environment": {
+      "OS": "",
+      "language": "",
+      "framework": "",
+      "DB": "",
+      "package": ""
+    },
+    "bosyu_background": "【必須経験・スキル】",
+    "bosyu_detail1": "・無線や移動体通信に関する何らかの業務経験または知識をお持ちの方",
+    "bosyu_detail2": "【歓迎する経験・スキル】",
+    "bosyu_detail3": "・LTEエリアオプティマイズ、現地測定、データ解析等の経験",
+    "bosyu_detail4": "・基地局の品質調査／品質統計処理に強い方",
+    "bosyu_detail5": "・第1級陸上特殊無線技士",
+    "bosyu_detail6": "・電気工事士",
+    "bosyu_detail7": "・工事担任者",
+    "bosyu_detail8": "・電気通信主任技術者",
+    "bosyu_detail9": "・電気工事施工管理技士",
+    "bosyu_detail10": "",
+    "area": {
+      "job_area": "北海道札幌市内",
+      "job_area_hosoku1": "",
+      "job_area_hosoku2": ""
+    },
+    "time": {
+      "job_start_time": "9:00",
+      "job_end_time": "18:00",
+      "job_time_hosoku": "実働８時間　休憩１時間"
+    
+    },
+    "payment": {
+      "payment_low": "4,000,000円",
+      "payment_high": "6,000,000円",
+      "payment_hosoku": "※月給制：年俸の12分の１を毎月支給にて支払い。",
+      "payment_hosoku2":""
+    },
+    "holiday": {
+      "jouken1": "完全週休2日制",
+      "jouken2": "年間休日120日以上祝日・GW・年次有給休暇・慶弔休暇あり",
+      "jouken3": "夏季休暇",
+      "jouken4": "年末年始休暇"
+    },
+    "fukuri": {
+      "fukuri1": "◇雇用保険",
+      "fukuri2": "◇労災保険",
+      "fukuri3": "◇厚生年金",
+      "fukuri4": "◇健康保険",
+      "fukuri5": "◇交通費支給あり",
+      "fukuri6": "◇資格取得支援・手当てあり",
+      "fukuri7": "◇寮・社宅・住宅手当あり",
+      "fukuri8": "◇退職金保険（米国ドル建てリタイアメント・インカム）",
+      "fukuri9": "◇U・Iターン支援あり",
+      "fukuri10": "◇服装自由",
+      "fukuri11": "◇時短勤務制度あり",
+      "soudan": ""
+    },
+    "company_message":{
+      "l1":"※実務未経験の方でも応募可",
+      "l2":"※就業開始時期については事前相談可",
+      "l3":"同業他社では実現不可能な様な事でも弊社では実現可能する可能性あります！",
+      "l4":"エンジニアファーストを掲げております。",
+      "l5":"（副業に関しましても問題なくご対応頂けます。）",
+      "l6":"ご応募いただき直接ご質問やご意見をお聞かせください。",
+      "l7":"ご応募をお待ちしております！！",
+      "l8":""
+    } ,
+    "koushin_bi": "2023年4月7日",
+
+    "search_items": {
+      "area": "sapporo",
+      "type": "idoutai",
+      "language": "",
+      "tsuukin": true,
+      "remote": false,
+      "mikeiken": true,
+      "female": false
+    }
+  },
+  {
+    "id": 7,
+    "name": "【札幌】携帯キャリア企業内でのサポート業務【経験者優遇・未経験者歓迎】",
+    "job_detail": {
+      "gaiyou": "",
+      "midashi": "",
+      "job1": "携帯キャリア内でのサポート業務になります。",
+      "job2": "業務内容として施工会社の管理・データ入力・問い合わせ対応・障害切り分け・他附随する事務作業となります。",
+      "job3": "チーム全体の人数は30名弱となり、平均年齢も28歳と若いです。",
+      "job4": "未経験の方でも、一から丁寧に教えて頂ける環境となります。",
+      "job5": "",
+      "hosoku": "※正社員全員が業界未経験からスタート",
+      "hosoku2": ""
+    },
+    "condition": {
+      "condition1": "高卒以上/未経験OK",
+      "condition2":"" ,
+      "condition3": "新しいことに好奇心を旺盛に持ち、チャレンジする方",
+      "condition4": "他者を尊重・尊敬できるマインドを持っている方",
+      "condition5": "基本的なPCスキルがあればOK",
+      "condition6": "",
+      "condition7": "",
+      "condition8": ""
+
+    },
+    "welcome":{
+      "welcome_l1":"",
+      "welcome_l2":"",
+      "welcome_l3":"",
+      "welcome_l4":"",
+      "welcome_l5":"",
+      "welcome_l6":"",
+      "welcome_l7":"",
+      "welcome_l8":"",
+      "welcome_l9":"",
+      "welcome_l10":""
+    },
+    "environment": {
+      "OS": "",
+      "language": "",
+      "framework": "",
+      "DB": "",
+      "package": ""
+    },
+    "bosyu_background": "【増員】",
+    "bosyu_detail1": "就業開始時期については事前相談可",
+    "bosyu_detail2": "弊社の強みとして経験豊富なエンジニアが多数在籍しており、社内での研修や教育体制に力を注いでおりますので、独学や職業訓練での経験の方も積極的に採用しております。",
+    "bosyu_detail3": "※独学、職業訓練での経験だけでは新たに就業がする事が非常に難しい状況ですが、弊社としてはチャレンジ精神を大事にし、新たな仲間を募集しております。",
+    "bosyu_detail4": "",
+    "bosyu_detail5": "",
+    "bosyu_detail6": "",
+    "bosyu_detail7": "",
+    "bosyu_detail8": "",
+    "bosyu_detail9": "",
+    "bosyu_detail10": "",
+    "area": {
+      "job_area": "北海道札幌市内",
+      "job_area_hosoku1": "",
+      "job_area_hosoku2": ""
+    },
+    "time": {
+      "job_start_time": "9:00",
+      "job_end_time": "18:00",
+      "job_time_hosoku": "実働８時間　休憩１時間"
+    
+    },
+    "payment": {
+      "payment_low": "2,500,000円",
+      "payment_high": "4,000,000円",
+      "payment_hosoku": "※月給制：年俸の12分の１を毎月支給にて支払い。",
+      "payment_hosoku2":""
+    },
+    "holiday": {
+      "jouken1": "完全週休2日制",
+      "jouken2": "年間休日120日以上祝日・GW・年次有給休暇・慶弔休暇あり",
+      "jouken3": "夏季休暇",
+      "jouken4": "年末年始休暇"
+    },
+    "fukuri": {
+      "fukuri1": "◇雇用保険",
+      "fukuri2": "◇労災保険",
+      "fukuri3": "◇厚生年金",
+      "fukuri4": "◇健康保険",
+      "fukuri5": "◇交通費支給あり",
+      "fukuri6": "◇資格取得支援・手当てあり",
+      "fukuri7": "◇寮・社宅・住宅手当あり",
+      "fukuri8": "◇退職金保険（米国ドル建てリタイアメント・インカム）",
+      "fukuri9": "◇U・Iターン支援あり",
+      "fukuri10": "◇服装自由",
+      "fukuri11": "◇時短勤務制度あり",
+      "soudan": ""
+    },
+    "company_message":{
+      "l1":"※実務未経験の方でも応募可",
+      "l2":"※就業開始時期については事前相談可",
+      "l3":"同業他社では実現不可能な様な事でも弊社では実現可能する可能性あります！",
+      "l4":"エンジニアファーストを掲げております。",
+      "l5":"（副業に関しましても問題なくご対応頂けます。）",
+      "l6":"ご応募いただき直接ご質問やご意見をお聞かせください。",
+      "l7":"ご応募をお待ちしております！！",
+      "l8":""
+    } ,
+    "koushin_bi": "2023年4月7日",
+
+    "search_items": {
+      "area": "sapporo",
+      "type": "helpdesk",
+      "language": "",
+      "tsuukin": true,
+      "remote": false,
+      "mikeiken": true,
+      "female": false
+    }
+  },
+  {
+    "id": 8,
+    "name": "【札幌】法人向けヘルプデスク業務【経験者優遇・未経験者歓迎】",
+    "job_detail": {
+      "gaiyou": "システム導入されている法人向けヘルプデスク業務",
+      "midashi": "",
+      "job1": "利用方法の案内",
+      "job2": "障害発生時の1次対応",
+      "job3": "社内検証",
+      "job4": "回答業務",
+      "job5": "",
+      "hosoku": "※TEL、メールにて対応",
+      "hosoku2": ""
+    },
+    "condition": {
+      "condition1": "学歴不問/未経験OK",
+      "condition2":"" ,
+      "condition3": "",
+      "condition4": "",
+      "condition5": "",
+      "condition6": "",
+      "condition7": "",
+      "condition8": ""
+
+    },
+    "welcome":{
+      "welcome_l1":"【応募歓迎経験】",
+      "welcome_l2":"システム開発や設計、構築、提案",
+      "welcome_l3":"テクニカルサポート",
+      "welcome_l4":"システムの営業",
+      "welcome_l5":"社内SE ",
+      "welcome_l6":"社内外の方と円滑にコミュニケーションが取れる方",
+      "welcome_l7":"",
+      "welcome_l8":"",
+      "welcome_l9":"",
+      "welcome_l10":""
+    },
+    "environment": {
+      "OS": "",
+      "language": "",
+      "framework": "",
+      "DB": "",
+      "package": ""
+    },
+    "bosyu_background": "",
+    "bosyu_detail1": "",
+    "bosyu_detail2": "弊社の強みとして経験豊富なエンジニアが多数在籍しており、社内での研修や教育体制に力を注いでおりますので、独学や職業訓練での経験の方も積極的に採用しております。",
+    "bosyu_detail3": "※独学、職業訓練での経験だけでは新たに就業がする事が非常に難しい状況ですが、弊社としてはチャレンジ精神を大事にし、新たな仲間を募集しております。",
+    "bosyu_detail4": "",
+    "bosyu_detail5": "",
+    "bosyu_detail6": "",
+    "bosyu_detail7": "",
+    "bosyu_detail8": "",
+    "bosyu_detail9": "",
+    "bosyu_detail10": "",
+    "area": {
+      "job_area": "北海道札幌市内",
+      "job_area_hosoku1": "",
+      "job_area_hosoku2": ""
+    },
+    "time": {
+      "job_start_time": "9:00",
+      "job_end_time": "18:00",
+      "job_time_hosoku": "実働８時間　休憩１時間"
+    
+    },
+    "payment": {
+      "payment_low": "4,000,000円",
+      "payment_high": "6,000,000円",
+      "payment_hosoku": "※月給制：年俸の12分の１を毎月支給にて支払い。",
+      "payment_hosoku2":""
+    },
+    "holiday": {
+      "jouken1": "完全週休2日制",
+      "jouken2": "年間休日120日以上祝日・GW・年次有給休暇・慶弔休暇あり",
+      "jouken3": "夏季休暇",
+      "jouken4": "年末年始休暇"
+    },
+    "fukuri": {
+      "fukuri1": "◇雇用保険",
+      "fukuri2": "◇労災保険",
+      "fukuri3": "◇厚生年金",
+      "fukuri4": "◇健康保険",
+      "fukuri5": "◇交通費支給あり",
+      "fukuri6": "◇資格取得支援・手当てあり",
+      "fukuri7": "◇寮・社宅・住宅手当あり",
+      "fukuri8": "◇退職金保険（米国ドル建てリタイアメント・インカム）",
+      "fukuri9": "",
+      "fukuri10": "",
+      "fukuri11": "",
+      "soudan": ""
+    },
+    "company_message":{
+      "l1":"",
+      "l2":"",
+      "l3":"同業他社では実現不可能な様な事でも弊社では実現可能する可能性あります！",
+      "l4":"エンジニアファーストを掲げております。",
+      "l5":"（副業に関しましても問題なくご対応頂けます。）",
+      "l6":"ご応募いただき直接ご質問やご意見をお聞かせください。",
+      "l7":"ご応募をお待ちしております！！",
+      "l8":""
+    } ,
+    "koushin_bi": "2022年9月28日",
+
+    "search_items": {
+      "area": "sapporo",
+      "type": "helpdesk",
+      "language": "",
+      "tsuukin": true,
+      "remote": false,
+      "mikeiken": true,
+      "female": false
+    }
+  },
+  {
+    "id": 9,
+    "name": "【札幌】Web・アプリ開発【未経験者】",
+    "job_detail": {
+      "gaiyou": "Web・アプリ開発(設計・製造・テスト)",
+      "midashi": "",
+      "job1": "スマートフォンアプリの開発",
+      "job2": "製品サイトの企画や開発",
+      "job3": "顔認証ソフトウェア開発",
+      "job4": "IoTシステム開発",
+      "job5": "",
+      "hosoku": "",
+      "hosoku2": ""
+    },
+    "condition": {
+      "condition1": "学歴不問/未経験OK",
+      "condition2":"" ,
+      "condition3": "",
+      "condition4": "",
+      "condition5": "",
+      "condition6": "",
+      "condition7": "",
+      "condition8": ""
+
+    },
+    "welcome":{
+      "welcome_l1":"【応募歓迎】",
+      "welcome_l2":"情報系・理工系出身などIT分野の素養がある方",
+      "welcome_l3":"職業訓練や独学や趣味でプログラミングや自作PCの経験がある方",
+      "welcome_l4":"勤怠、コミュニケーション良好な方、自ら積極的に動ける方",
+      "welcome_l5":"",
+      "welcome_l6":"",
+      "welcome_l7":"",
+      "welcome_l8":"",
+      "welcome_l9":"",
+      "welcome_l10":""
+    },
+    "environment": {
+      "OS": "",
+      "language": "",
+      "framework": "",
+      "DB": "",
+      "package": ""
+    },
+    "bosyu_background": "",
+    "bosyu_detail1": "",
+    "bosyu_detail2": "弊社の強みとして経験豊富なエンジニアが多数在籍しており、社内での研修や教育体制に力を注いでおりますので、独学や職業訓練での経験の方も積極的に採用しております。",
+    "bosyu_detail3": "※独学、職業訓練での経験だけでは新たに就業がする事が非常に難しい状況ですが、弊社としてはチャレンジ精神を大事にし、新たな仲間を募集しております。",
+    "bosyu_detail4": "",
+    "bosyu_detail5": "",
+    "bosyu_detail6": "",
+    "bosyu_detail7": "",
+    "bosyu_detail8": "",
+    "bosyu_detail9": "",
+    "bosyu_detail10": "",
+    "area": {
+      "job_area": "北海道札幌市内",
+      "job_area_hosoku1": "",
+      "job_area_hosoku2": ""
+    },
+    "time": {
+      "job_start_time": "9:00",
+      "job_end_time": "18:00",
+      "job_time_hosoku": "実働８時間　休憩１時間"
+    
+    },
+    "payment": {
+      "payment_low": "2,640,000円",
+      "payment_high": "3,000,000円",
+      "payment_hosoku": "※月給制：年俸の12分の１を毎月支給にて支払い。",
+      "payment_hosoku2":""
+    },
+    "holiday": {
+      "jouken1": "完全週休2日制",
+      "jouken2": "年間休日120日以上祝日・GW・年次有給休暇・慶弔休暇あり",
+      "jouken3": "夏季休暇",
+      "jouken4": "年末年始休暇"
+    },
+    "fukuri": {
+      "fukuri1": "◇雇用保険",
+      "fukuri2": "◇労災保険",
+      "fukuri3": "◇厚生年金",
+      "fukuri4": "◇健康保険",
+      "fukuri5": "◇交通費支給あり",
+      "fukuri6": "◇資格取得支援・手当てあり",
+      "fukuri7": "◇寮・社宅・住宅手当あり",
+      "fukuri8": "◇退職金保険（米国ドル建てリタイアメント・インカム）",
+      "fukuri9": "",
+      "fukuri10": "",
+      "fukuri11": "",
+      "soudan": ""
+    },
+    "company_message":{
+      "l1":"IT分野で就業するには実務経験が重要視され、未経験者が採用されることが難しい状況となっております。",
+      "l2":"弊社は自社研修に注力し未経験者を積極的に採用してます。",
+      "l3":"同業他社では実現不可能な様な事でも弊社では実現可能する可能性あります！",
+      "l4":"ブランクがある方、経験の浅い方も歓迎いたします。",
+      "l5":"（副業に関しましても問題なくご対応頂けます。）",
+      "l6":"ご応募いただき直接ご質問やご意見をお聞かせください。",
+      "l7":"ご応募をお待ちしております！！",
+      "l8":"※MIKチーム内での就業となりますので、サポート環境は整っております"
+    } ,
+    "koushin_bi": "2022年7月6日",
+
+    "search_items": {
+      "area": "sapporo",
+      "type": "software",
+      "language": "",
+      "tsuukin": true,
+      "remote": false,
+      "mikeiken": true,
+      "female": false
+    }
+  },
+  {
+    "id": 10,
+    "name": "【盛岡市】ソフトウェア開発（経験者優遇・未経験者歓迎）",
+    "job_detail": {
+      "gaiyou": "WEBシステム開発(設計～製造～テスト)",
+      "midashi": "",
+      "job1": "※言語：Java、C#、python",
+      "job2": "アプリ開発",
+      "job3": "販売管理システム開発",
+      "job4": "ECサイト、ポータルサイト開発",
+      "job5": "",
+      "hosoku": "※何らかの言語での開発経験者応募可",
+      "hosoku2": "※開発経験は無いがテスト又は運用経験のある方も応募可"
+    },
+    "condition": {
+      "condition1": "学歴不問/未経験OK",
+      "condition2":"" ,
+      "condition3": "",
+      "condition4": "",
+      "condition5": "",
+      "condition6": "",
+      "condition7": "",
+      "condition8": ""
+
+    },
+    "welcome":{
+      "welcome_l1":"",
+      "welcome_l2":"",
+      "welcome_l3":"",
+      "welcome_l4":"",
+      "welcome_l5":"",
+      "welcome_l6":"",
+      "welcome_l7":"",
+      "welcome_l8":"",
+      "welcome_l9":"",
+      "welcome_l10":""
+    },
+    "environment": {
+      "OS": "",
+      "language": "",
+      "framework": "",
+      "DB": "",
+      "package": ""
+    },
+    "bosyu_background": "【増員】",
+    "bosyu_detail1": "経験豊富なエンジニアが多数在籍しており社内での研修や教育体制に力を注いでおりますので、独学や職業訓練での経験の方も積極的に採用しております。",
+    "bosyu_detail2": "※独学、職業訓練での経験だけでは新たに就業がする事が非常に難しい状況ですが弊社としてはチャレンジ精神を大事にし、新たな仲間を募集しております",
+    "bosyu_detail3": "エンジニアファーストを掲げております。",
+    "bosyu_detail4": "他社では実現不可能な事でも弊社では実現可能する可能性あります！",
+    "bosyu_detail5": "「給与や評価制度に納得して働きたい」",
+    "bosyu_detail6": "「スキル・キャリアアップしたい」",
+    "bosyu_detail7": "「福利厚生、休日休暇など、働く環境が整った職場を希望している」など",
+    "bosyu_detail8": "ご応募いただき直接ご質問やご意見をお聞かせください。",
+    "bosyu_detail9": "ご応募をお待ちしております！！",
+    "bosyu_detail10": "",
+    "area": {
+      "job_area": "岩手県盛岡市",
+      "job_area_hosoku1": "※転勤はありません。",
+      "job_area_hosoku2": ""
+    },
+    "time": {
+      "job_start_time": "9:00",
+      "job_end_time": "18:00",
+      "job_time_hosoku": "実働８時間　休憩１時間"
+    
+    },
+    "payment": {
+      "payment_low": "2,800,000円",
+      "payment_high": "5,500,000円",
+      "payment_hosoku":"※経験・能力に応じて考慮",
+      "payment_hosoku2":"※月給制：年俸の12分の１を毎月支給にて支払い。"
+    },
+    "holiday": {
+      "jouken1": "完全週休2日制",
+      "jouken2": "年間休日120日以上祝日・GW・年次有給休暇・慶弔休暇あり",
+      "jouken3": "夏季休暇",
+      "jouken4": "年末年始休暇"
+    },
+    "fukuri": {
+      "fukuri1": "◇雇用保険",
+      "fukuri2": "◇労災保険",
+      "fukuri3": "◇厚生年金",
+      "fukuri4": "◇健康保険",
+      "fukuri5": "◇交通費支給あり",
+      "fukuri6": "◇資格取得支援・手当てあり",
+      "fukuri7": "◇寮・社宅・住宅手当あり",
+      "fukuri8": "◇退職金保険（米国ドル建てリタイアメント・インカム）",
+      "fukuri9": "◇U・Iターン支援あり",
+      "fukuri10": "◇テレワーク・在宅OK",
+      "fukuri11": "",
+      "soudan": ""
+    },
+    "company_message":{
+      "l1":"IT分野で就業するには実務経験が重要視され、未経験者が採用されることが難しい状況となっております。",
+      "l2":"弊社は自社研修に注力し未経験者を積極的に採用してます。",
+      "l3":"同業他社では実現不可能な様な事でも弊社では実現可能する可能性あります！",
+      "l4":"ブランクがある方、経験の浅い方も歓迎いたします。",
+      "l5":"（副業に関しましても問題なくご対応頂けます。）",
+      "l6":"ご応募いただき直接ご質問やご意見をお聞かせください。",
+      "l7":"ご応募をお待ちしております！！",
+      "l8":"※MIKチーム内での就業となりますので、サポート環境は整っております"
+    } ,
+    "koushin_bi": "2022年4月26日",
+
+    "search_items": {
+      "area": "morioka",
+      "type": "software",
+      "language": "",
+      "tsuukin": true,
+      "remote": false,
+      "mikeiken": true,
+      "female": false
+    }
+  },
+  {
+    "id": 11,
+    "name": "【盛岡市】GISシステム開発（経験者優遇・未経験者歓迎）",
+    "job_detail": {
+      "gaiyou": "GISシステム開発",
+      "midashi": "",
+      "job1": "顧客先パッケージシステムのカスタマイズ開発",
+      "job2": "※対応工程：設計～結合テスト（アジャイル）",
+      "job3": "",
+      "job4": "",
+      "job5": "",
+      "hosoku": "",
+      "hosoku2": ""
+    },
+    "condition": {
+      "condition1": "学歴不問/未経験OK",
+      "condition2":"" ,
+      "condition3": "",
+      "condition4": "",
+      "condition5": "",
+      "condition6": "",
+      "condition7": "",
+      "condition8": ""
+
+    },
+    "welcome":{
+      "welcome_l1":"(1)Webシステム開発経験3年以上（JavaScriptによる開発経験）",
+      "welcome_l2":"(2)JavaScript開発2年以上",
+      "welcome_l3":"(3)C++開発経験（C++でのWebAPI開発経験）",
+      "welcome_l4":"(4)GoogleMapsAPI使用経験,AWS経験",
+      "welcome_l5":"(1)～(4)までの経験者優遇",
+      "welcome_l6":"※何らかの言語での開発経験者応募可",
+      "welcome_l7":"ブランクがある方、経験の浅い方も歓迎いたします。",
+      "welcome_l8":"（勤怠、コミュニケーション良好な方、自ら積極的に動ける方）",
+      "welcome_l9":"※MIKチーム内での就業となりますので、サポート環境は整っております。",
+      "welcome_l10":""
+    },
+    "environment": {
+      "OS": "Windows/Linux",
+      "language": "VB.NET,C#,Javascript,Oracle",
+      "framework": "",
+      "DB": "",
+      "package": ""
+    },
+    "bosyu_background": "【増員】",
+    "bosyu_detail1": "経験豊富なエンジニアが多数在籍しており社内での研修や教育体制に力を注いでおりますので、独学や職業訓練での経験の方も積極的に採用しております。",
+    "bosyu_detail2": "※独学、職業訓練での経験だけでは新たに就業がする事が非常に難しい状況ですが弊社としてはチャレンジ精神を大事にし、新たな仲間を募集しております",
+    "bosyu_detail3": "エンジニアファーストを掲げております。",
+    "bosyu_detail4": "他社では実現不可能な事でも弊社では実現可能する可能性あります！",
+    "bosyu_detail5": "「給与や評価制度に納得して働きたい」",
+    "bosyu_detail6": "「スキル・キャリアアップしたい」",
+    "bosyu_detail7": "「福利厚生、休日休暇など、働く環境が整った職場を希望している」など",
+    "bosyu_detail8": "ご応募いただき直接ご質問やご意見をお聞かせください。",
+    "bosyu_detail9": "ご応募をお待ちしております！！",
+    "bosyu_detail10": "",
+    "area": {
+      "job_area": "岩手県盛岡市",
+      "job_area_hosoku1": "※転勤はありません。",
+      "job_area_hosoku2": ""
+    },
+    "time": {
+      "job_start_time": "9:00",
+      "job_end_time": "18:00",
+      "job_time_hosoku": "実働８時間　休憩１時間"
+    
+    },
+    "payment": {
+      "payment_low": "3,500,000円",
+      "payment_high": "6,000,000円",
+      "payment_hosoku":"※経験・能力に応じて考慮",
+      "payment_hosoku2":"※月給制：年俸の12分の１を毎月支給にて支払い。"
+    },
+    "holiday": {
+      "jouken1": "完全週休2日制",
+      "jouken2": "年間休日120日以上祝日・GW・年次有給休暇・慶弔休暇あり",
+      "jouken3": "夏季休暇",
+      "jouken4": "年末年始休暇"
+    },
+    "fukuri": {
+      "fukuri1": "◇雇用保険",
+      "fukuri2": "◇労災保険",
+      "fukuri3": "◇厚生年金",
+      "fukuri4": "◇健康保険",
+      "fukuri5": "◇交通費支給あり",
+      "fukuri6": "◇資格取得支援・手当てあり",
+      "fukuri7": "◇寮・社宅・住宅手当あり",
+      "fukuri8": "◇退職金保険（米国ドル建てリタイアメント・インカム）",
+      "fukuri9": "◇U・Iターン支援あり",
+      "fukuri10": "◇テレワーク・在宅OK",
+      "fukuri11": "",
+      "soudan": ""
+    },
+    "company_message":{
+      "l1":"ご応募をお待ちしております！！",
+      "l2":"",
+      "l3":"",
+      "l4":"",
+      "l5":"",
+      "l6":"",
+      "l7":"",
+      "l8":""
+    } ,
+    "koushin_bi": "2022年4月26日",
+
+    "search_items": {
+      "area": "morioka",
+      "type": "system",
+      "language": "",
+      "tsuukin": true,
+      "remote": true,
+      "mikeiken": true,
+      "female": false
+    }
+  },
+  {
+    "id": 12,
+    "name": "【盛岡市】福祉向けシステム開発（経験者優遇・未経験者歓迎）",
+    "job_detail": {
+      "gaiyou": "福祉向けシステム開発",
+      "midashi": "",
+      "job1": "パッケージ製品への新規/改修対応",
+      "job2": "個別機能に対する新規／回収対応",
+      "job3": "※対応工程：基本設計～結合テスト",
+      "job4": "",
+      "job5": "",
+      "hosoku": "",
+      "hosoku2": ""
+    },
+    "condition": {
+      "condition1": "学歴不問/未経験OK",
+      "condition2":"" ,
+      "condition3": "",
+      "condition4": "",
+      "condition5": "",
+      "condition6": "",
+      "condition7": "",
+      "condition8": ""
+
+    },
+    "welcome":{
+      "welcome_l1":"(1)VB.NET,C#,Javascript,Oracleの⾔語を使った設計開発経験がある方",
+      "welcome_l2":"(2)開発の上流工程~下流工程の全フェーズの経験がある方",
+      "welcome_l3":"(3)メンバー、リーダーの指導、育成経験がある方",
+      "welcome_l4":"(1)～(3)までの経験者優遇",
+      "welcome_l5":"(1)～(4)までの経験者優遇",
+      "welcome_l6":"※何らかの言語での開発経験者応募可",
+      "welcome_l7":"※開発経験は無いがテスト又は運用経験のある方も応募可",
+      "welcome_l8":"ブランクがある方、経験の浅い方も歓迎いたします。",
+      "welcome_l9":"※MIKチーム内での就業となりますので、サポート環境は整っております。",
+      "welcome_l10":""
+    },
+    "environment": {
+      "OS": "Windows/Linux",
+      "language": "VB.NET,C#,Javascript",
+      "framework": "",
+      "DB": "Oracle",
+      "package": ""
+    },
+    "bosyu_background": "【増員】",
+    "bosyu_detail1": "経験豊富なエンジニアが多数在籍しており社内での研修や教育体制に力を注いでおりますので、独学や職業訓練での経験の方も積極的に採用しております。",
+    "bosyu_detail2": "※独学、職業訓練での経験だけでは新たに就業がする事が非常に難しい状況ですが弊社としてはチャレンジ精神を大事にし、新たな仲間を募集しております",
+    "bosyu_detail3": "エンジニアファーストを掲げております。",
+    "bosyu_detail4": "他社では実現不可能な事でも弊社では実現可能する可能性あります！",
+    "bosyu_detail5": "「給与や評価制度に納得して働きたい」",
+    "bosyu_detail6": "「スキル・キャリアアップしたい」",
+    "bosyu_detail7": "「福利厚生、休日休暇など、働く環境が整った職場を希望している」など",
+    "bosyu_detail8": "ご応募いただき直接ご質問やご意見をお聞かせください。",
+    "bosyu_detail9": "ご応募をお待ちしております！！",
+    "bosyu_detail10": "",
+    "area": {
+      "job_area": "岩手県盛岡市",
+      "job_area_hosoku1": "※転勤はありません。",
+      "job_area_hosoku2": ""
+    },
+    "time": {
+      "job_start_time": "9:00",
+      "job_end_time": "18:00",
+      "job_time_hosoku": "実働８時間　休憩１時間"
+    
+    },
+    "payment": {
+      "payment_low": "3,500,000円",
+      "payment_high": "6,000,000円",
+      "payment_hosoku":"※経験・能力に応じて考慮",
+      "payment_hosoku2":"※月給制：年俸の12分の１を毎月支給にて支払い。"
+    },
+    "holiday": {
+      "jouken1": "完全週休2日制",
+      "jouken2": "年間休日120日以上祝日・GW・年次有給休暇・慶弔休暇あり",
+      "jouken3": "夏季休暇",
+      "jouken4": "年末年始休暇"
+    },
+    "fukuri": {
+      "fukuri1": "◇雇用保険",
+      "fukuri2": "◇労災保険",
+      "fukuri3": "◇厚生年金",
+      "fukuri4": "◇健康保険",
+      "fukuri5": "◇交通費支給あり",
+      "fukuri6": "◇資格取得支援・手当てあり",
+      "fukuri7": "◇寮・社宅・住宅手当あり",
+      "fukuri8": "◇退職金保険（米国ドル建てリタイアメント・インカム）",
+      "fukuri9": "◇U・Iターン支援あり",
+      "fukuri10": "◇テレワーク・在宅OK",
+      "fukuri11": "",
+      "soudan": ""
+    },
+    "company_message":{
+      "l1":"ご応募をお待ちしております！！",
+      "l2":"",
+      "l3":"",
+      "l4":"",
+      "l5":"",
+      "l6":"",
+      "l7":"",
+      "l8":""
+    } ,
+    "koushin_bi": "2022年4月26日",
+
+    "search_items": {
+      "area": "morioka",
+      "type": "system",
+      "language": "",
+      "tsuukin": true,
+      "remote": true,
+      "mikeiken": true,
+      "female": false
+    }
+  },
+  {
+    "id": 13,
+    "name": "【盛岡市】テストエンジニア【経験者優遇・未経験者歓迎】",
+    "job_detail": {
+      "gaiyou": "◎組み込み系、オープン系、業務系システムのテスト業務",
+      "midashi": "",
+      "job1": "テスト項目表を元にテスト実施",
+      "job2": "バグが発生した際は開発エンジニアへフィードバック実施",
+      "job3": "(1)MIKチーム内での就業",
+      "job4": "(2)お客様先チーム内での就業",
+      "job5": "IT業界（システムエンジニア・プログラマー）で就業したいと思っている方で未だに実務経験のない方は、テスト業務を通じスキル向上に努め製造工程、設計工程へとステップアップしていただきます。",
+      "hosoku": "",
+      "hosoku2": ""
+    },
+    "condition": {
+      "condition1": "高卒以上/未経験OK",
+      "condition2":"" ,
+      "condition3": "",
+      "condition4": "",
+      "condition5": "",
+      "condition6": "",
+      "condition7": "",
+      "condition8": ""
+
+    },
+    "welcome":{
+      "welcome_l1":"※業務経験者優遇",
+      "welcome_l2":"（テスト項目表作成経験者優遇）",
+      "welcome_l3":"※1年未満～即戦力やブランクがある方、経験の浅い方、独学で勉強されている方、実務経験が無くても、有資格は歓迎いたします。",
+      "welcome_l4":"",
+      "welcome_l5":"",
+      "welcome_l6":"",
+      "welcome_l7":"",
+      "welcome_l8":"",
+      "welcome_l9":"",
+      "welcome_l10":""
+    },
+    "environment": {
+      "OS": "",
+      "language": "V",
+      "framework": "",
+      "DB": "",
+      "package": ""
+    },
+    "bosyu_background": "【増員】",
+    "bosyu_detail1": "経験豊富なエンジニアが多数在籍しており社内での研修や教育体制に力を注いでおりますので、独学や職業訓練での経験の方も積極的に採用しております。",
+    "bosyu_detail2": "※独学、職業訓練での経験だけでは新たに就業がする事が非常に難しい状況ですが弊社としてはチャレンジ精神を大事にし、新たな仲間を募集しております",
+    "bosyu_detail3": "就業開始時期については事前相談可",
+    "bosyu_detail4": "",
+    "bosyu_detail5": "",
+    "bosyu_detail6": "",
+    "bosyu_detail7": "",
+    "bosyu_detail8": "",
+    "bosyu_detail9": "",
+    "bosyu_detail10": "",
+    "area": {
+      "job_area": "岩手県盛岡市",
+      "job_area_hosoku1": "※転勤はありません。",
+      "job_area_hosoku2": ""
+    },
+    "time": {
+      "job_start_time": "9:00",
+      "job_end_time": "18:00",
+      "job_time_hosoku": "実働８時間　休憩１時間"
+    
+    },
+    "payment": {
+      "payment_low": "2,500,000円",
+      "payment_high": "4,000,000円",
+      "payment_hosoku":"",
+      "payment_hosoku2":"※月給制：年俸の12分の１を毎月支給にて支払い。"
+    },
+    "holiday": {
+      "jouken1": "完全週休2日制",
+      "jouken2": "年間休日120日以上祝日・GW・年次有給休暇・慶弔休暇あり",
+      "jouken3": "夏季休暇",
+      "jouken4": "年末年始休暇"
+    },
+    "fukuri": {
+      "fukuri1": "◇雇用保険",
+      "fukuri2": "◇労災保険",
+      "fukuri3": "◇厚生年金",
+      "fukuri4": "◇健康保険",
+      "fukuri5": "◇交通費支給あり",
+      "fukuri6": "◇資格取得支援・手当てあり",
+      "fukuri7": "◇寮・社宅・住宅手当あり",
+      "fukuri8": "◇退職金保険（米国ドル建てリタイアメント・インカム）",
+      "fukuri9": "",
+      "fukuri10": "",
+      "fukuri11": "",
+      "soudan": ""
+    },
+    "company_message":{
+      "l1":"ご応募をお待ちしております！！",
+      "l2":"",
+      "l3":"",
+      "l4":"",
+      "l5":"",
+      "l6":"",
+      "l7":"",
+      "l8":""
+    } ,
+    "koushin_bi": "2021年8月27日",
+
+    "search_items": {
+      "area": "morioka",
+      "type": "test",
       "language": "",
       "tsuukin": true,
       "remote": false,
@@ -373,5 +1286,6 @@
       "female": false
     }
   }
+
 
 ]
