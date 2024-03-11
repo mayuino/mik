@@ -62,6 +62,52 @@ export const Content_Range = () => {
       </div>
 
       <div className={`${styles.range} ${mobileStyles.range}`}>
+      <h1>通信</h1>
+        <div
+          className={`${styles.range_discription} ${mobileStyles.range_discription}`}
+        >
+         
+          <h3>大手通信会社向け基地局の保守運用</h3>
+          <p>機器の交換、設置ビルのオーナー要望対応</p>
+          <h3>大手通信会社向け基地局設計</h3>
+          <p>AutoCADでの図面作成・現地調査・書類作成</p>
+          <h3>大手通信会社向け基地局対向業務</h3>
+          <p>電波測定結果確認・データ入力修正・検収作業等</p>
+        </div>
+      </div>
+
+      <div className={`${styles.range} ${mobileStyles.range}`}>
+      <h1>建築・施工管理</h1>
+        <div
+          className={`${styles.range_discription} ${mobileStyles.range_discription}`}
+        >
+          
+
+          <h3>建築分野</h3>
+          <p>
+          共同住宅・オフィスビル・公共・医療福祉・商業施設
+          </p>
+          <h3>土木分野</h3>
+          <p>
+          道路・上下水道・ダム・河川・造園
+          </p>
+
+          <h3>設備・電気分野</h3>
+          <p>
+          一般電気電線・自動制御設備・防災消化設備・給排水衛生設備
+          </p>
+
+          <h3>プラント分野</h3>
+          <p>石油化学・各種発電・食品・医療品・非破壊検査</p>
+
+          <h3>建物管理分野</h3>
+          <p>物流倉庫・商業施設・オフィスビル・マンション</p>
+        </div>
+      </div>
+
+
+
+      <div className={`${styles.range} ${mobileStyles.range}`}>
         <h1>セキュリティ</h1>
         <div
           className={`${styles.range_discription} ${mobileStyles.range_discription}`}
@@ -87,21 +133,7 @@ export const Content_Range = () => {
         </div>
       </div>
 
-      <div className={`${styles.range} ${mobileStyles.range}`}>
-      <h1>通信</h1>
-        <div
-          className={`${styles.range_discription} ${mobileStyles.range_discription}`}
-        >
-         
-          <h3>大手通信会社向け基地局の保守運用</h3>
-          <p>機器の交換、設置ビルのオーナー要望対応</p>
-          <h3>大手通信会社向け基地局設計</h3>
-          <p>AutoCADでの図面作成・現地調査・書類作成</p>
-          <h3>大手通信会社向け基地局対向業務</h3>
-          <p>電波測定結果確認・データ入力修正・検収作業等</p>
-        </div>
-      </div>
-
+     
       <div className={`${styles.range} ${mobileStyles.range}`}>
       <h1>ヘルプデスク</h1>
         <div
@@ -115,32 +147,7 @@ export const Content_Range = () => {
         </div>
       </div>
 
-      <div className={`${styles.range} ${mobileStyles.range}`}>
-      <h1>建築等施工管理分野</h1>
-        <div
-          className={`${styles.range_discription} ${mobileStyles.range_discription}`}
-        >
-          
-
-          <h3>建築</h3>
-          <p>
-            商業施設、マンション、学校等の施工図作成・CAD業務・施工計画及び設計・積算ほか
-          </p>
-          <h3>土木</h3>
-          <p>
-            道路、宅地造成、トンネル、橋梁等の施工図作成・CAD業務・施工計画及び設計・積算ほか
-          </p>
-
-          <h3>電気</h3>
-          <p>
-            各種建築物受変電設備等の施工図作成・CAD業務・施工計画及び設計・積算ほか
-          </p>
-
-          <h3>設備</h3>
-          <p>病院、庁舎等の施工図作成・CAD業務・施工計画及び設計・積算ほか</p>
-        </div>
-      </div>
-
+    
       <div className={`${styles.range} ${mobileStyles.range}`}>
       <h1>その他</h1>
         <div
