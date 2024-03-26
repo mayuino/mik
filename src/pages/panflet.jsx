@@ -21,7 +21,7 @@ export default function Panflet() {
     <>
       <HeadElement title="MIKの会社パンフレット" />
 
-      <SecondHeader />
+      <Header />
       <Content_Panflet />
       <Footer />
     </>

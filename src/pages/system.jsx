@@ -17,10 +17,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function System() {
   return (
     <>
-    <HeadElement title="MIKの独自制度"/>
+    <HeadElement title="MIKの社内制度"/>
 
 
-    <Top />
+    <Header/>
 
         <Content_system/>
       <Footer />

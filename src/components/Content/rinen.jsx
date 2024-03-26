@@ -23,7 +23,7 @@ export const Content_Rinen = () =>{
             />
         <div className={`${styles.rinen_content_discription} ${mobileStyles.rinen_content_discription}`}>
       
-         <p>弊社では、社員の自主性や功績を最大限に認め、社員一人ひとりの希望に合った働き方、能力の育成、ライフスタイルの実現に貢献したいと考えています。</p>
+         <p>弊社では、社員の自主性や功績を最大限に認め、<br/>社員一人ひとりの希望に合った働き方、能力の育成、<br/>ライフスタイルの実現に貢献したいと考えています。</p>
         </div>
         </div>
       </div>
@@ -42,7 +42,7 @@ export const Content_Rinen = () =>{
             className={`${styles.rinen_image} ${mobileStyles.rinen_image}`}
             />
         <div className={`${styles.rinen_content_discription} ${mobileStyles.rinen_content_discription}`}>
-         <p>弊社のエンジニアたちが抱く理想は、みな違います。MIKでは、それぞれの「なりたいエンジニア」になることを「エンジニアとしての成功」と考えます。あなたが「なりたいエンジニア」になるために、MIKは全力で応援します。</p>
+         <p>弊社のエンジニアたちが抱く理想は、みな違います。<br/>MIKでは、それぞれの「なりたいエンジニア」になることを「エンジニアとしての成功」と考えます。<br/>あなたが「なりたいエンジニア」になるために、MIKは全力で応援します。</p>
         </div>
         </div>
       </div>
@@ -61,7 +61,7 @@ export const Content_Rinen = () =>{
             className={`${styles.rinen_image} ${mobileStyles.rinen_image}`}
             />
         <div className={`${styles.rinen_content_discription} ${mobileStyles.rinen_content_discription}`}>
-         <p>派遣先ごとに、求められるスキルは異なります。MIKでは、クライアントが求めるスキルや能力をしっかりヒアリングし、最も適した人材を育て、派遣します。
+         <p>派遣先ごとに、求められるスキルや能力は異なります。<br/>MIKでは、クライアントが求めるスキルや能力をしっかりヒアリングし、最も適した人材を育て、派遣します。<br/>
           また、クライアントの現場で求めるスキルに特化したチームを編成し、チーム単位でクライアントに貢献することも、MIKのフレキシブルサポートの一環です。
          </p>
         </div>

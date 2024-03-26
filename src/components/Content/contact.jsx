@@ -73,20 +73,15 @@ export const Content_Contact = () => {
           className={`${styles.content_contact} ${mobileStyles.content_contact}`}
         >
           <div
-            className={`${styles.contact_title} ${mobileStyles.contact_title}`}
+            className={styles.contact_title}
           >
             <h1>お問合せ</h1>
             <p>
-              弊社へのお問い合わせは、お電話または、下記フォームよりご連絡いただきますようお願いいたします。
+              弊社へのお問い合わせは、下記フォームよりご連絡いただきますようお願いいたします。
             </p>
           </div>
           <div className={`${styles.contact} ${mobileStyles.contact}`}>
-            <div
-              className={`${styles.contact_form} ${mobileStyles.contact_form}`}
-            >
-              <h2>電話</h2>
-              <h3>011-299-7361</h3>
-            </div>
+     
 
             <form
               onSubmit={handleSubmit}

@@ -20,8 +20,8 @@ export default function MainPage() {
   return (
     <>
       <HeadElement title="株式会社MIK" />
+      <Header />
       <Top />
-      <ContentMain />
       <Footer />
     </>
   );

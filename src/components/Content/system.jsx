@@ -5,10 +5,10 @@ export const Content_system = () => {
   return (
     <div className={`${styles.system_frame} ${mobileStyles.system_frame}`}>
       <div className={`${styles.system_title} ${mobileStyles.system_title}`}>
-        <h1>MIKの独自制度</h1>
+        <h1>MIKの社内制度</h1>
         <p>MIKは、エンジニアのための様々な制度を用意しています。</p>
       </div>
-      <div className={`${styles.system} ${mobileStyles.system}`}>
+      {/* <div className={`${styles.system} ${mobileStyles.system}`}>
         <h2>社員評価システム</h2>
         <div
           className={`${styles.system_content} ${mobileStyles.system_content}`}
@@ -28,20 +28,42 @@ export const Content_system = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className={`${styles.system} ${mobileStyles.system}`}>
-        <h2>社内貢献ポイント</h2>
+<div className={`${styles.system} ${mobileStyles.system}`}>
+        
         <div
           className={`${styles.system_content} ${mobileStyles.system_content}`}
         >
-          <Image
-            src="/kouken_point.jpg"
-            alt="line icon"
-            width={240}
-            height={240}
-            className={`${styles.system_image} ${mobileStyles.system_image}`}
-          />
+          <div>
+          <h2>社内教育制度</h2>
+       <img　className={styles.system_images} src="/images/new2024/system/kyouiku.png" alt="kyouiku_image"/>
+       </div>
+          <div
+            className={`${styles.system_discription} ${mobileStyles.system_discription}`}
+          >
+           
+            <p>
+            未経験の方、開発経験が浅い方が入社する際には、教育担当がつき、マンツーマンでのオンライン講習を行います。
+              講習の中では、オンライン講座で培った内容をもとに、WEBアプリなどの制作を行います。
+              在籍社員の方にも、新しい分野に挑戦される方への研修や、オンライン講座の受講や、書籍の貸し出しも行なっています。<br/>
+              <br/>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className={`${styles.system} ${mobileStyles.system}`}>
+        
+        <div
+          className={`${styles.system_content} ${mobileStyles.system_content}`}
+        >
+          <div>
+          <h2>社内貢献ポイント制度</h2>
+          <img　className={styles.system_images} src="/images/new2024/system/point.png" alt="point_image"/>
+          </div>
           <div
             className={`${styles.system_discription} ${mobileStyles.system_discription}`}
           >
@@ -51,26 +73,29 @@ export const Content_system = () => {
           </div>
         </div>
       </div>
+
+
       <div className={`${styles.system} ${mobileStyles.system}`}>
-        <h4>社員応援イベント</h4>
-        <h2>「MIKがんばったMVP」</h2>
+       
 
         <div
           className={`${styles.system_content} ${mobileStyles.system_content}`}
         >
-          <Image
-            src="/mvp.jpg"
-            alt="line icon"
-            width={240}
-            height={240}
-            className={`${styles.system_image} ${mobileStyles.system_image}`}
-          />
+          <div>
+        <h2>MIKがんばったMVP</h2>
+        <img　className={styles.system_images} src="/images/new2024/system/mvp.png" alt="mvp_image"/>
+          </div>
           <div
             className={`${styles.system_discription} ${mobileStyles.system_discription}`}
           >
             <p>
-              日頃から知り合うことのない派遣会社内で、お互いの仕事を知り、どんなことを頑張ったか、どんなふうに切り抜けたか、どんなことを学んだか、を発表し、社内の投票で、もっとも「がんばったMVP」を決める制度です。MVPにはインセンティブがあります。
-            </p>
+              弊社では、配属先常駐や、在宅勤務が多く、
+              なかなかコミュニケーションをとることが少ない中、
+              毎年１回、社員同士が、
+              お互いの仕事や、日常生活で頑張ったことを公表し合い、
+              MVPを決める制度があります。
+              遠くにいる同じ会社の仲間がどんなことを頑張っているのかを知ることのできる良い機会になっています。
+              </p>
           </div>
         </div>
       </div>

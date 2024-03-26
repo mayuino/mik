@@ -20,7 +20,7 @@ export default function Rinen() {
     <>
       <HeadElement title="経営理念" />
 
-      <SecondHeader />
+      <Header />
       <Content_Rinen />
       <Footer />
     </>

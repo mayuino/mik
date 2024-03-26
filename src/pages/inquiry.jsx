@@ -9,7 +9,7 @@ export default function Inquiry() {
     <>
       <HeadElement title="お問い合わせ" />
 
-      <SecondHeader />
+      <Header />
       <Content_Inquiry />
       <Footer />
     </>

@@ -6,8 +6,8 @@ export const ContentPeople = () => {
   return (
     <div>
     <div className={`${styles.people_title} ${mobileStyles.people_title}`}>
-    <h1>MIKのエンジニア</h1>
-    <p>今、弊社で活躍しているエンジニアの方々です。</p>
+    <h1>MIKの人々</h1>
+    <p>今、弊社で活躍している方々の声を一部紹介いたします。</p>
     </div>
     <div className={`${styles.people_frame_wrapper} ${mobileStyles.people_frame_wrapper}`}>
       <div className={`${styles.people_frame} ${mobileStyles.people_frame}`}>

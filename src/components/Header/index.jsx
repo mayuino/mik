@@ -7,16 +7,18 @@ import { useEffect, useState } from 'react'
 import HamburgerMenu from '../hamburger_menu'
 
 export const Header = () => {
-  const [isPhone, setIsPhone] = useState(false);
+  // const [isPhone, setIsPhone] = useState(false);
 
-  useEffect(() => {
-    const handleResize = ( ) => {
-      setIsPhone(window.innerWidth <= 600);
-    };
-    handleResize();
-    window.addEventListener('resize',handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  },[])
+  // useEffect(() => {
+  //   const handleResize = ( ) => {
+  //     setIsPhone(window.innerWidth <= 600);
+  //   };
+  //   handleResize();
+  //   window.addEventListener('resize',handleResize);
+  //   return () => window.removeEventListener('resize', handleResize);
+  // },[])
+
+
   return(
     <header className={`${styles.header} ${mobileStyles.header}`}>
     <Link href={"/"}>
@@ -26,8 +28,11 @@ export const Header = () => {
               width={250}
               height={108}
       /></Link>
-      {isPhone ?( <div className={mobileStyles.header_menu}><HamburgerMenu/></div>): 
-     <div><Header_MenuBar/></div>}
+
+
+      <Header_MenuBar/>
+      {/* {isPhone ?( <div className={mobileStyles.header_menu}><HamburgerMenu/></div>): 
+     <div></div>} */}
     </header>
   )
 }

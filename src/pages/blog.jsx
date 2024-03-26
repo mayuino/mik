@@ -15,7 +15,7 @@ export default function BLOG() {
     <>
       <HeadElement title="MIKのSNS" />
 
-      <Top />
+      <Header />
       <Content_BLOG />
       <Footer />
     </>

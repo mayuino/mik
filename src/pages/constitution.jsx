@@ -18,7 +18,7 @@ export default function Client() {
   return (
     <>
       <HeadElement title="MIKの構成" />
-      <Top />
+      <Header />
       <ContentConstitution />
       <Footer />
     </>

@@ -1,61 +1,79 @@
-@font-face {
-  font-family: "Glacial";
-  src: url("/fonts/GlacialIndifference-Regular.otf");
-  font-family: "Glacial-bold";
-  src: url("/fonts/GlacialIndifference-Bold.otf");
-}
+
 
 .header {
   width: 100%;
+  height:80px;
+  position:relative;
 
-  //background:#C9E265;
+
+  background:white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index:3;
+
+  
 }
 
 .second_header {
   width: 100%;
-  height: 100px;
+  height: 150px;
   background-image: linear-gradient(to right, #c9e265, #4f9dff);
   display: flex;
-  //align-items: space-between;
+
   justify-content: space-between;
 }
 .single_menu_bar {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 20px;
+  overflow: visible;
 }
 
-.single_menu_bar ul {
+.single_menu_bar_items {
   width: 700px;
   height: auto;
   display: flex;
 
   padding-top: 10px;
   padding-bottom: 10px;
-
   justify-content: space-around;
+  
 }
 
 .single_menu_tab {
   width: auto;
   white-space: nowrap;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 20px 20px;
+
   height: auto;
   display: flex;
-  font-weight: 300;
-  font-family: "Zen Maru Gothic", sans-serif;
-  color: #fff;
+  font-weight: 400;
+  font-family:  "Noto Serif JP", serif;
+  color: #576066;
+}
+.sub_menu {
+  width:180px;
+  height:200px;
+  display:flex;
+  flex-direction: column;
+  position:absolute;
+  margin-top:30px; 
+
+ 
+  list-style: none;
+}
+.sub_menu_item{
+  margin: 5px 5px;
+  font-size:15px;
+  background: linear-gradient(270deg,rgba(255,255,255,0) 0, #fff 80%) ;
+  padding-left:20px;
 }
 
-.top_image_frame {
-  background-image: url("/images/top_6.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+
+.top {
+  position:relative;
+  background-color:#C1FF72;
   width: 100%;
   height: 800px;
 
@@ -65,106 +83,528 @@
   padding-bottom: 20px;
   position: relative;
   overflow:auto;
+  z-index:0;
+  
 }
 
-.sitting_image {
+.top_sapporo {
   position: absolute;
-  top:400px;
-  left:320px;
+  width:1050px;
+  top:-50px;
+  left: -50px;
+
 }
 
-.main1 {
-  background-image: url("/images/man.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  max-width: 2000px;
-  height: 850px;
+.top_flexible {
+  width:40px;
+  position: absolute;
+  right: 30px;
+  top:50px;
 
-  display: flex;
-  padding: 20px;
+}
+.top_resourcecompany {
+  width:450px;
+  position: absolute;
+  left: 60px;
+  top:450px;
+
 }
 
-.main_left {
-  width: 50%;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 300px;
-  justify-content: center;
-  font-family: "Zen Maru Gothic", sans-serif;
+.top_efirst{
+  position:absolute;
+  top:180px;
+  left:50px;
+  width:750px;
+  animation-name:fadeUpAnime;
+  animation-duration:1.0s;
+  animation-fill-mode:forwards;
+  opacity:0;
 }
-.main_right {
-  width: 50%;
+
+.top_sakura{
+  position:absolute;
+  top:0px;
+  left:-20px;
+  width:400px;
+}
+
+.top_hanabira{
+  width:200px;
+  position:absolute;
+ 
+  animation-name:sakuraMove;
+  animation-duration:13.0s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+@keyframes sakuraMove{
+  0%{
+    opacity: 0.0;
+  transform: translate(0,0);
+ 
+  }
+
+
+  100%{
+    opacity: 1;
+  transform: translate(850px,250px) scale(4.5);
+
+  }
+}
+
+.top_box_tunagu{
+  width:460px;
+
+  position:absolute;
+  top:300px;
+  right:70px;
+
+  animation-name:fadeUpAnime;
+animation-duration:2.0s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+
+
+.joblist_wrapper{
+  width:100%;
+  position: absolute;
+  top:600px;
+}
+
+.joblist{
+  display:flex;
+  justify-content:space-around;
+  list-style: none;
+}
+
+.job_box{
+  position:relative;
+  width:180px;
+  height: 180px;
+  background-color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-left: 130px;
-  padding-bottom: 100px;
+  justify-content:center;
+  
 }
 
-.job_page_button {
-  width: 320px;
-  height: 300px;
-  border-radius: 30px;
-  border: none 0px;
-  font-size: 30px;
-  font-family: "Zen Maru Gothic";
-  background: #fff;
+.job_box:hover{
+  animation-name:jobfadeUpAnime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+ 
 }
 
-.main2 {
-  background-image: url("/images/woman.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  height: 900px;
-  display: flex;
+@keyframes jobfadeUpAnime{
+  from {
+    opacity: 1;
+  transform: translateY(0px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(-30px);
+  }
 }
 
-.menu_bar {
+.job_box:not(:hover) { 
+  animation-name: jobfadeDownAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes jobfadeDownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.job_name{
   position: absolute;
-  top: 630px;
-  max-width: 100%;
+  top:120px;
+  left:5px;
+  padding:5px 10px;
+  font-family: "Noto Serif JP", serif;
+  background-color:#7ED957 ;
+}
+
+.job_images{
+  width:150px;
+  
+}
+
+.about{
+  width:100%;
+  height: auto;
+  background-color: #fff;
+  position:relative;
+}
+
+.about_top{
+  display:flex;
+  justify-content: space-between;
+}
+
+.about_mik{
+  width:320px;
+  margin-top:50px;
+  margin-left:150px;
+
+}
+
+.about_top_text{
+  font-size:20px;
+  line-height: 35px;
+  font-family:"Noto Serif JP", serif; 
+  margin-top:70px;
+  margin-right:80px;
+  width:550px;
+  color:#576066;
+
+}
+
+.about_top_text h3{
+  font-size:48px;
+  margin-bottom: 30px;
+}
+
+.circle_wrapper{
+  display:flex;
+  justify-content: center;
+}
+.about_circle{
+  width:350px;
+  margin-top:-100px;
+
+}
+.about_description{
+  margin-left:150px;
+  font-size:22px;
+  font-family:"Noto Serif JP", serif;
+  color:#576066;
+  line-height: 20px;
+}
+.card_list_wrapper{
+  width:100%;
   height: auto;
   display: flex;
-  //background:white;
-  //background-image: linear-gradient(to right, #C9E265, #4F9DFF);
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.job_card_list{
+margin:0px 0  0  70px;
+  width:1000px;
+  display:flex;
+  justify-content:space-around;
+  list-style: none;
+  flex-wrap: wrap;
+  
+}
+
+.job_card{
+  position:relative;
+  margin-top:50px;
+  width:300px;
+  height:300px;
+  overflow:hidden;
+}
+
+.job_images_about{
+ position:absolute;
+  width:300px;
+  height:auto;
+  transition:0.5s;
+  
+  
+}
+.job_images_about:hover{
+  transform:scale(1.2);
+}
+.job_names_about{
+  width:300px;
+  height:60px;
+  background-color:#C1FF72;
+  position:absolute;
+  bottom:0px;
+  color:#576066;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.job_names_about h3{
+  font-family:"Noto Serif JP", serif; 
+}
+.job_name_web{
+  width:140px;
+}
+
+.job_name_server{
+  width:70px;
+}
+
+.job_name_idoutai{
+  width:220px;
+}
+
+.job_name_handoutai{
+  width:140px;
+}
+
+.job_name_cloud{
+  width:60px;
+}
+
+.job_name_kikan{
+  width:120px;
+}
+
+.job_name_network{
+  width:80px;
+}
+
+.job_name_security{
+  width:90px;
+}
+
+.job_name_medical{
+  width:80px;
+}
+
+.job_name_construct{
+  width:120px;
+}
+
+.job_name_logistics{
+  width:90px;
+}
+
+.job_name_doboku{
+  width:160px;
+}
+
+.job_name_plant{
+  width:50px;
+}
+
+.job_name_bilmane{
+  width:200px;
+}
+
+.job_name_help{
+  width:90px;
+}
+
+
+
+.strength{
+  width:100%;
+  height: auto;
+  background-color: #fff;
+  padding-left:50px;
+
+}
+
+.strength_top{
+  width:100%;
+  height:400px;
+
+}
+
+
+
+.strength_mik{
+  width:450px;
+  margin-left:100px;
+}
+
+.jinzairyoku_png{
+  width:550px;
+  margin-left:100px;
+}
+
+.strength_content{
+  width:100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.strength_jinzairyoku{
+  width:100%;
+  height:auto;
+  display:flex;
+  align-items: center;
+  font-family:"Noto Serif JP", serif; 
+  color:#576066;
+}
+
+.strength_jinzairyoku h3 {
+  margin-top:-100px;
+  margin-left:80px;
+  font-size:30px;
+  line-height: 50px;
+}
+.jinzairyoku_sentence {
+  width:500px;
+  font-size:20px;
+
+  line-height: 45px;
+
+  margin:30px 30px 30px 100px;
+
+}
+
+
+.strength_ikuseiryoku{
+  width:100%;
+  height:580px;
+  display:flex;
+  align-items: center;
+  font-family:"Noto Serif JP", serif; 
+  color:#576066;
+  position:relative;
+}
+
+.strength_ikusei_png{
+  width:620px;
+  position:absolute;
+  left:100px;
+  top:0px;
+  
+}
+.strength_ikuseiryoku h3 {
+  margin-left:80px;
+  font-size:30px;
+  position:absolute;
+  top:380px;
+  left:100px;
+  line-height: 50px;
+}
+.ikuseiryoku_sentence {
+  position:absolute;
+  top:-40px;
+  left:630px;
+  width:500px;
+  font-size:20px;
+  line-height: 45px;
+  padding:0 50px 0 50px;
+
+  margin:30px 30px 30px 80px;
+
+}
+
+.strength_taiouryoku{
+  width:100%;
+  height:800px;
+  display:flex;
+  align-items: center;
+  font-family:"Noto Serif JP", serif; 
+  color:#576066;
+
+}
+
+.strength_taiou_png1{
+  width:500px;
+  margin-left:100px;
+  margin-top:50px;
+}
+
+.strength_taiou_png2{
+  width:500px;
+  margin-left:50px;
+  margin-top:-70px;
+}
+
+.strength_taiouryoku h3 {
+  width:500px;
+  margin-top:80px;
+  margin-left:130px;
+  font-size:30px;
+  line-height: 50px;
+
+}
+
+.taiou_sentence{
+  width:500px;
+  font-size:20px;
+  line-height: 45px;
+  margin-top:-100px;
+  margin-left:100px;
+}
+
+
+
+.gyoumu{
+  width:100%;
+  height:auto;
+  font-family:"Noto Serif JP", serif;
+  color:#576066;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding-top: 10px;
-  padding-bottom: 10px;
+}
+.gyoumu_title{
+  font-size:30px;
+  margin-bottom: 50px;
 
-  overflow: auto;
+}
+.gyoumu_title p{
+  font-size:15px;
+  margin-bottom: 50px;
+
 }
 
-.menu_bar ul {
-  width: 100%;
-  display: flex;
-  margin-left: 6px;
-  margin-right: 6px;
-  flex-wrap: wrap;
-
-  justify-content: center;
+.colorbar{
+  background-color: #C1FF72;
+  width:20px;
+  margin-right:50px;
+  
 }
 
-.menu_tab {
-  width: 200px;
-  height: 45px;
-  color: #ffffff;
-  //background:#C9E265;
-  border: 3px solid #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
+.gyoumu_box{
+  display:flex;
+  width:900px;
+  margin-bottom: 50px;
 }
+
+.gyoumu_sentence{
+  margin-left:50px;
+}
+
+
+.job_images_gyoumu{
+  width:300px;
+}
+
+
+
+
+
+
 
 /* @media (max-width:600px){
 
@@ -391,46 +831,24 @@
   justify-content: space-around;
 }
 .footer {
-  background: black;
-  max-width: 100%;
-  height: auto;
-  font-family: "Hiragino Kaku Gothic ProN";
-}
-
-.footer_top {
+  background:#C1FF72;
   width: 100%;
-  height: 50px;
-  padding-top: 20px;
-  color: #ffffff;
-  font-size: 13px;
-
-  display: flex;
+  height: 70px;
+  display:flex;
   justify-content: center;
+  align-items: center;
+  
+
 }
 
-.footer_content {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  padding: 10px;
-
-  color: #ffffff;
+.footer_img{
+  width:300px;
 }
 
-.footer li {
-  width: 250px;
-  list-style: none;
-  font-weight: 700;
-  margin-bottom: 7px;
-  padding-left: 60px;
-}
 
-.footer_menu {
-  height: auto;
-}
+
+
+
 
 .company_data {
   display: flex;
@@ -946,40 +1364,52 @@
   width: 100%;
   height: 100vh;
   background: #ffffff;
-  //border: 18px solid rgb(0,0,0,0.1);
-  border-radius: 2px;
+  font-family:  "Noto Serif JP", serif;
+  color:#576066;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .gaiyou_title {
+  padding-top:50px;
   width: 100%;
-  height: 120px;
+
 
   padding-left: 65px;
+  padding-right:65px;
 
   display: flex;
   align-items: center;
+  font-size: 30px;
 }
 
-.gaiyou_title h1 {
-  //color:#C9E265;
-  font-size: 50px;
-}
+
 
 .gaiyou_table {
-  margin: 0px 30px;
-  width: 600x;
-  border: 0.5px solid;
-  border-collapse: collapse;
+  width: 900x;
+  margin-top:30px;
+  
+
+  
+  margin: 0 100px 0 100px;
+  padding:30px;
 }
-.gaiyou_th {
+
+.gaiyou_table table{
+  border-collapse: collapse;
+  
+}
+.gaiyou_table th {
   border: solid 0.5px;
   padding: 15px;
   width: 120px;
 }
 
-.gaiyou_td {
+.gaiyou_table td {
   border: solid 0.5px;
   padding: 15px;
+ 
 }
 
 /*社内公式LINE*/
@@ -1073,7 +1503,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family:  "Noto Serif JP", serif;
+  color: #576066;
+  font-size: 30px;
 }
 
 .system_title {
@@ -1089,6 +1521,7 @@
   background: #fff;
 }
 
+
 .system_title h1 {
   background-image: linear-gradient(to right, #0cc0df, #ffde59 50%);
   -webkit-background-clip: text;
@@ -1100,25 +1533,32 @@
 }
 
 .system {
-  width: 95%;
+  width: 900px;
   height: auto;
   border: 8px solid #0cc0df;
   border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
   border-image-slice: 1;
   border-radius: 10px;
+  
 
   padding: 20px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom:50px;
+  
 }
 
 .system h2 {
-  font-family: "Hiragino Mincho Pro";
-  padding-left: 20px;
-  font-size: 28px;
+    font-size:30px;
+  
+ 
+}
+
+.system_images{
+  width:300px;
 }
 
 .system_content {
+
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -1126,15 +1566,16 @@
 
 .system_discription {
   width: 500px;
+  padding-top:30px;
   padding-left: 50px;
   display: flex;
-
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 45px;
 }
 
 .content_rinen {
   width: 100%;
-  height: 1400px;
+  height: auto;
   background: #ffffff;
   border-radius: 2px;
 
@@ -1142,26 +1583,26 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-family:  "Noto Serif JP", serif;
+  color: #576066;
 }
 
 .rinen_title {
   width: 100%;
-  height: 120px;
-
-  padding-left: 65px;
+  
+  font-size: 30px;
+  padding-left: 100px;
+  margin:30px 0 30px 65px;
 
   display: flex;
   align-items: center;
 }
 
-.rinen_title h1 {
-  //color:#C9E265;
-  font-size: 50px;
-}
+
 
 .rinen {
   width: 900px;
-  height: 370px;
+  height: auto;
   border: 8px solid #c9e265;
   border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
   border-image-slice: 1;
@@ -1170,10 +1611,10 @@
 
   margin-bottom: 30px;
 }
-.rinen h1 {
+/* .rinen h1 {
   font-family: "Hiragino Mincho Pro";
   font-size: 35px;
-}
+} */
 
 .rinen_content {
   display: flex;
@@ -1181,9 +1622,11 @@
 }
 
 .rinen_content_discription {
-  width: 500px;
+  width: 550px;
   padding-left: 70px;
   display: flex;
+  font-size:18px;
+  line-height: 40px;
 
   margin-top: 40px;
 }
@@ -1198,21 +1641,23 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-family:  "Noto Serif JP", serif;
+  color: #576066;
 }
 
 .panflet_title {
-  width: 1000px;
-  height: 120px;
+  width: 100%;
+  padding-left:65px;
+  height: auto;
+  font-size:30px;
 
-  padding-left: 65px;
+  
 
   display: flex;
   align-items: center;
 }
 
-.panflet_title h1 {
-  font-size: 50px;
-}
+
 
 .panflet {
   width: 90%;
@@ -1244,7 +1689,7 @@
 
 .download_button {
   height: 55px;
-  background-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
+  background-image: linear-gradient(to right, #0cc0df 20%, #ffde59 150%);
   border: 0px none;
   border-radius: 10px;
   color: #fff;
@@ -1252,14 +1697,16 @@
   justify-content: center;
   align-items: center;
   font-size: 16px;
+  font-family:  "Hiragino Kaku Gothic ProN";
 }
 
 .content_range {
   width: 100%;
   height: auto;
   background: #ffffff;
-  //border: 18px solid #C9E265;
-  border-radius: 2px;
+
+  font-family:  "Noto Serif JP", serif;
+  color: #576066;
 
   display: flex;
   justify-content: center;
@@ -1276,7 +1723,7 @@
 }
 
 .range_title h1 {
-  //color:#C9E265;
+
   font-size: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1655,19 +2102,19 @@
   width: 100%;
   height: auto;
   background: #ffffff;
-  //border: 18px solid #C9E265;
-  border-radius: 2px;
-  //font-family: "Zen Maru Gothic", sans-serif;
+  font-family:"Noto Serif JP", serif;
+  color:#576066;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  
 }
 
 .contact_title {
   width: 100%;
-  height: 120px;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -1677,7 +2124,7 @@
 }
 
 .contact_title h1 {
-  //color:#C9E265;
+
   font-size: 50px;
 }
 .contact {
@@ -1693,7 +2140,7 @@
 }
 
 .contact_form {
-  width: 80%;
+  width: 800px;
   height: auto;
 
   padding: 20px;
@@ -2870,31 +3317,31 @@
     margin-bottom: 20px;
   }
   
-  /*会社概要*/
+  /* 会社概要
   .content_gaiyou {
     width: 100%;
     height: 1fr;
-    background: black;
-    //border: 18px solid rgb(0,0,0,0.1);
+    color: #576066;
+    
     border-radius: 2px;
   }
   
   .gaiyou_title {
     width: 100%;
     height: 120px;
-  
+    
     padding-left: 65px;
   
     display: flex;
     align-items: center;
   }
   
-  .gaiyou_title h1 {
+  /* .gaiyou_title h1 {
     //color:#C9E265;
     font-size: 50px;
-  }
+  } */
   
-  .gaiyou_table {
+  /* .gaiyou_table {
     margin: 0px 30px;
     width: 600x;
     border: 0.5px solid;
@@ -2909,7 +3356,7 @@
   .gaiyou_td {
     border: solid 0.5px;
     padding: 15px;
-  }
+  } */ 
   
   /*社内公式LINE*/
   .Internal_Line_frame {
@@ -3084,7 +3531,7 @@
   }
   
   .rinen_title h1 {
-    //color:#C9E265;
+
     font-size: 50px;
   }
   
@@ -3144,7 +3591,7 @@
   }
   
   .panflet {
-    width: 90%;
+    width: 800px;
     height: 500px;
     border: 8px solid #c9e265;
     border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
@@ -3181,6 +3628,7 @@
     justify-content: center;
     align-items: center;
     font-size: 16px;
+    font-family: "Hiragino Kaku Gothic ProN";
   }
   
   .content_range {
@@ -3577,10 +4025,10 @@
   .content_contact {
     width: 100%;
     height: auto;
-    background: black;
-    //border: 18px solid #C9E265;
-    border-radius: 2px;
-    //font-family: "Zen Maru Gothic", sans-serif;
+    
+ 
+    font-family:"Noto Serif JP", serif;
+    color:#576066;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -3590,13 +4038,13 @@
   
   .contact_title {
     width: 100%;
-    height: 120px;
+ 
   
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    margin-bottom: 40px;
+
   }
   
   .contact_title h1 {
@@ -3616,7 +4064,7 @@
   }
   
   .contact_form {
-    width: 80%;
+    width: 800px;
     height: auto;
   
     padding: 20px;

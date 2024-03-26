@@ -6,9 +6,9 @@ export const Footer = () => {
   
      
      <footer className={styles.footer}>
-      <div className={styles.footer_top}>
-      <p>Created by MIK /©︎MIK,inc 2023</p>
-      </div>
+ 
+      <img className={styles.footer_img} src="/images/new2024/footer_img.png" alt="created MIK"/>
+
    
     </footer>
  

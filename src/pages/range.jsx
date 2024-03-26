@@ -21,7 +21,7 @@ export default function Range() {
     <>
       <HeadElement title="MIKの事業領域" />
 
-      <SecondHeader />
+      <Header />
       <Content_Range />
       <Footer />
     </>
