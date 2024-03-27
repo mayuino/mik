@@ -10,15 +10,25 @@ import { Link } from "react-router-dom";
 
 export const Main = () => {
 
+  const [animationStarted, setAnimationStarted] = useState(false);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setAnimationStarted(true);
+  },3000);
+
+  return () => clearTimeout(timer);
+},[])
+
   return (
   
     <div
       className={`${styles.top} ${mobileStyles.top_image_frame}`}
     >
-     <img　className={styles.top_sapporo} src="/images/new2024/sapporo-city1.png" alt="sapporo_city_photo"/>
+     <img　className={styles.top_sapporo} src="/images/new2024/sapporo-city2.png" alt="sapporo_city_photo"/>
      <img　className={styles.top_flexible} src="/images/new2024/moji-flexible.png" alt="flexiblesupport"/>
      <img　className={styles.top_resourcecompany} src="/images/new2024/moji-resourcecompany.png" alt="resource_company"/>
-     <img　className={styles.top_efirst} src="/images/new2024/engineer-first-title.png" alt="engineer-first"/>
+   <img　className={styles.top_efirst} src="/images/new2024/engineer-first-title.png" alt="engineer-first"/>;
      <img　className={styles.top_sakura} src="/images/new2024/sakura_eda.png" alt="engineer-first"/>
      
      <img　className={styles.top_hanabira} src="/images/new2024/hanabira.png" alt="messagebox"/>

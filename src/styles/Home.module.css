@@ -178,7 +178,7 @@ animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
   left:50px;
   width:750px;
   animation-name:fadeUpAnime;
-  animation-duration:1.0s;
+  animation-duration:6.0s;
   animation-fill-mode:forwards;
   opacity:0;
 }
@@ -223,7 +223,7 @@ animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
   right:70px;
 
   animation-name:fadeUpAnime;
-animation-duration:2.0s;
+animation-duration:8.0s;
 animation-fill-mode:forwards;
 opacity:0;
 }
