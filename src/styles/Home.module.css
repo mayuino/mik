@@ -15,6 +15,11 @@
   
 }
 
+.mik_logo{
+  width: 250px;
+  height:108px;
+}
+
 .loading{
   position:fixed;
   width: 100%;
@@ -162,8 +167,8 @@ animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
 .top_flexible {
   width:40px;
   position: absolute;
-  right: 30px;
-  top:50px;
+  right: 60px;
+  top:130px;
 
 }
 .top_resourcecompany {
@@ -223,7 +228,8 @@ animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
 
   position:absolute;
   top:300px;
-  right:70px;
+
+  left:550px;
   animation-delay: 7.0s;
   animation-name:fadeUpAnime;
   animation-duration:3.0s;
@@ -255,9 +261,11 @@ opacity:0;
   top:30px;
   display: flex;
   align-items: center;
-  padding-left:30px;
+  padding-left:20px;
   border-left: 10px solid #C1FF72;
-  font-family: "Noto Serif JP", serif; ;
+  font-family: "Noto Serif JP", serif; 
+  color:#576066;
+  box-shadow:10px 3px 6px #bbb;
 
   
 
@@ -270,9 +278,16 @@ opacity:0;
 
 }
 
+.top_button_span{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color:#C1FF72;
+  margin-right: 10px;
+}
 
 .material-symbols-outlined {
   font-size:30px;
+  font-weight: bold;
   color:#ddd;
   padding-left:20px;
 }
@@ -283,7 +298,7 @@ opacity:0;
   width:100%;
   position: absolute;
   top:600px;
-}
+  }
 
 .joblist{
   display:flex;
@@ -299,7 +314,6 @@ opacity:0;
   display: flex;
   align-items: center;
   justify-content:center;
-  
 }
 
 .job_box:hover{
@@ -358,28 +372,38 @@ opacity:0;
   height: auto;
   background-color: #fff;
   position:relative;
+  
+
 }
 
 .about_top{
-  display:flex;
-  justify-content: space-between;
+  position:relative;
+  width:100%;
+  height:850px;
+  overflow-x: auto;
+  overflow-y: unset;
+ 
+ 
 }
 
 .about_mik{
   width:320px;
   margin-top:50px;
-  margin-left:150px;
+  margin-left:220px;
 
 }
 
 .about_top_text{
-  font-size:20px;
+  position:absolute;
+  font-size:19px;
   line-height: 35px;
   font-family:"Noto Serif JP", serif; 
-  margin-top:70px;
-  margin-right:80px;
+  margin-left:50px;
+
   width:550px;
   color:#576066;
+  top:70px;
+  left:560px;
 
 }
 
@@ -390,11 +414,15 @@ opacity:0;
 
 .circle_wrapper{
   display:flex;
-  justify-content: center;
+  width:100%;
+  height:auto;
+  align-items: center;
+
 }
 .about_circle{
-  width:350px;
-  margin-top:-100px;
+  
+  width:500px;
+  margin-left:400px;
 
 }
 .about_description{
@@ -427,6 +455,7 @@ margin:0px 0  0  70px;
   margin-top:50px;
   width:300px;
   height:300px;
+  
   overflow:hidden;
 }
 

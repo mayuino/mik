@@ -22,12 +22,8 @@ export const Header = () => {
   return(
     <header className={`${styles.header} ${mobileStyles.header}`}>
     <Link href={"/"}>
-    <Image
-              src="/mik_logo_black.svg"
-              alt="mik title Logo"
-              width={250}
-              height={108}
-      /></Link>
+    <img className={`${styles.mik_logo} ${mobileStyles.mik_logo}`} src="/mik_logo_black.svg" alt="mik title Logo"/>
+</Link>
 
 
       <Header_MenuBar/>

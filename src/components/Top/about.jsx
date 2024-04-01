@@ -1,27 +1,28 @@
 import styles from "@/styles/Home.module.css";
+import mobileStyles from "@/styles/mobile.module.css";
 
 export const About = () => {
 
     return (
-      <div className={styles.about}>
-        <div className={styles.about_top} >
-        <img className={styles.about_mik} src="/images/new2024/about_mik.png" alt="aboutMIK"/>
-        <div className={styles.about_top_text}><h3>私たちは、</h3>
-        <p>北海道札幌市を拠点として「人材力」、「育成力」、<br/>「柔軟な対応力」を武器に、
-あらゆる技術分野へ<br/>最適な人材リソースを提供するオールエンジニアリング型<br/>ヒューマンソリューションカンパニーです。</p>
+      <div className={`${styles.about} ${mobileStyles.about}`}>
+        <div className={`${styles.about_top} ${mobileStyles.about_top}`} >
+        <img className={`${styles.about_mik} ${mobileStyles.about_mik}`} src="/images/new2024/about_mik.png" alt="aboutMIK"/>
+        <div className={`${styles.about_top_text} ${mobileStyles.about_top_text}`}><h3>私たちは、</h3>
+        <p>北海道札幌市を拠点として<br/>「人材力」、「育成力」、「柔軟な対応力」を武器に、<br/>
+あらゆる技術分野へ最適な人材リソースを提供する<br/>オールエンジニアリング型<br/>ヒューマンソリューションカンパニーです。</p>
         </div>
 
      　
-        </div>
-        　<div className={styles.circle_wrapper} >
-     <img className={styles.about_circle} src="/images/new2024/circle.png" alt="aboutMIK"/>
+        
+        　<div className={`${styles.circle_wrapper} ${mobileStyles.circle_wrapper}`} >
+     <img className={`${styles.about_circle} ${mobileStyles.about_circle}`} src="/images/new2024/circle3.png" alt="aboutMIK"/>
      </div>
-
-     <div　className={styles.about_description}><p>エンジニアリングに関わる様々な分野で、</p><br/>
+     </div>
+     <div　className={`${styles.about_description} ${mobileStyles.about_description}`}><p>エンジニアリングに関わる様々な分野で、</p><br/>
      <p>弊社のエンジニアが活躍しています。</p></div>
 
-     <div className={styles.card_list_wrapper}><ul
-      className={styles.job_card_list}>
+     <div className={`${styles.card_list_wrapper} ${mobileStyles.card_list_wrapper}`}><ul
+      className={`${styles.job_card_list} ${mobileStyles.job_card_list}`}>
         
         <li>
         <div className={styles.job_card}>
