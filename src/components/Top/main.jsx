@@ -1,12 +1,10 @@
 import styles from "@/styles/Home.module.css";
-import Image from "next/image";
-import { Header } from "../Header";
-import { MenuBar } from "../MenuBar";
+
 import mobileStyles from "@/styles/mobile.module.css";
 import { useEffect, useState } from "react";
-import { About } from "./about";
-import { Strength } from "./strength";
-import { Link } from "react-router-dom";
+
+import Link from "next/link";
+
 
 export const Main = () => {
 
@@ -25,6 +23,7 @@ useEffect(() => {
     <div
       className={`${styles.top} ${mobileStyles.top_image_frame}`}
     >
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
      <img　className={styles.top_sapporo} src="/images/new2024/sapporo-city2.png" alt="sapporo_city_photo"/>
      <img　className={styles.top_flexible} src="/images/new2024/moji-flexible.png" alt="flexiblesupport"/>
      <img　className={styles.top_resourcecompany} src="/images/new2024/moji-resourcecompany.png" alt="resource_company"/>
@@ -33,6 +32,12 @@ useEffect(() => {
      
      <img　className={styles.top_hanabira} src="/images/new2024/hanabira.png" alt="messagebox"/>
      <img　className={styles.top_box_tunagu} src="/images/new2024/box_tunagu1.png" alt="messagebox"/>
+
+     <Link href={"/blog"}><div className={styles.top_button}>新入社員インタビュー掲載中！<span class="material-symbols-outlined">
+chevron_right
+</span></div></Link>
+
+
     <div className={styles.joblist_wrapper}>
      <ul className={styles.joblist}>
       <li><div className={styles.job_box}>
