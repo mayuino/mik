@@ -46,15 +46,15 @@ export default function BlogId({blog}) {
       <HeadElement title="MIKのブログ" />
 
       <Header />
-      <div className={styles.blog_detail}>
+      <div className={`${styles.blog_detail} ${mobileStyles.blog_detail}`}>
       
-        <div className={styles.blog_detail_title}>
+        <div className={`${styles.blog_detail_title} ${mobileStyles.blog_detail_title}`}>
         <div className={styles.publish_date}>{formatDateTime(blog.publishedAt)}</div>
             <h1>{blog.title}</h1></div>
 
 
-<img className={styles.blog_detail_img} src={blog.eyecatch.url} />
-<div className={styles.blog_detail_content} dangerouslySetInnerHTML={{__html: `${blog.content}`}}></div>
+<img className={`${styles.blog_detail_img} ${mobileStyles.blog_detail_img}`} src={blog.eyecatch.url} />
+<div className={ `${styles.blog_detail_content} ${mobileStyles.blog_detail_content}`} dangerouslySetInnerHTML={{__html: `${blog.content}`}}></div>
 <Link href={"/blog"}>
 <div className={styles.blog_detail_return}>戻る</div></Link>
       </div>

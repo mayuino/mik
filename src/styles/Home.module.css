@@ -1671,10 +1671,6 @@ width:950px;
 .gaiyou_title {
   padding-top:100px;
   width: 900px;
-
-
-
-
   display: flex;
   align-items: center;
   font-size: 30px;
@@ -1686,10 +1682,6 @@ width:950px;
   width: 900px;
   margin-top:30px;
   margin-bottom: 100px;
-  
-
-  
-
 }
 
 .gaiyou_table table{
@@ -1705,7 +1697,6 @@ width:950px;
 .gaiyou_table td {
   border: solid 0.5px;
   padding: 15px;
- 
 }
 
 /*社内公式LINE*/

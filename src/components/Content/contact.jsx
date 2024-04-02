@@ -73,7 +73,7 @@ export const Content_Contact = () => {
           className={`${styles.content_contact} ${mobileStyles.content_contact}`}
         >
           <div
-            className={styles.contact_title}
+            className={`${styles.contact_title} ${mobileStyles.contact_title}`}
           >
             <h1>お問合せ</h1>
             <p>

@@ -37,12 +37,12 @@ export default function BLOG({blogs}) {
       <HeadElement title="MIKのブログ" />
 
       <Header />
-      <div className={styles.blog}>
-<div className={styles.blog_title}>
+      <div className={`${styles.blog} ${mobileStyles.blog}`}>
+<div className={`${styles.blog_title} ${mobileStyles.blog_title}`}>
 <h1>MIKブログ</h1>
 <p>弊社での最近の出来事をお伝えします。</p>
 </div>
-<div className={styles.blog_list}>
+<div className={`${styles.blog_list} ${mobileStyles.blog_list}`}>
   {blogs.map((blog) => (
     <li key={blog.id}>
       <Link href={`blog/${blog.id}`}>
