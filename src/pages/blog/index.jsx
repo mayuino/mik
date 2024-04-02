@@ -2,6 +2,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import HeadElement from "@/components/Head";
+import mobileStyles from "@/styles/mobile.module.css";
 
 import { client } from "libs/client";
 import Link from "next/link";
