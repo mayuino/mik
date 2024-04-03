@@ -46,9 +46,9 @@ export const Header_MenuBar = () => {
         <ul className={`${styles.sub_menu} ${mobileStyles.sub_menu}`}>
       
         <li className={`${styles.sub_menu_item} ${mobileStyles.sub_menu_item}`}><Link href={"/system"}>社内制度</Link></li>
-        <li className={`${styles.sub_menu_item} ${mobileStyles.sub_menu_item}`}><Link href={"/constitution"}>MIKの構成</Link></li>
+        {/* <li className={`${styles.sub_menu_item} ${mobileStyles.sub_menu_item}`}><Link href={"/constitution"}>MIKの構成</Link></li> */}
         <li className={`${styles.sub_menu_item} ${mobileStyles.sub_menu_item}`}><Link href={"/people"}>MIKの人々</Link></li>
-        <li className={`${styles.sub_menu_item} ${mobileStyles.sub_menu_item}`}><Link href={"/gyoumu"}>配属先と業務</Link></li>
+        {/* <li className={`${styles.sub_menu_item} ${mobileStyles.sub_menu_item}`}><Link href={"/gyoumu"}>配属先と業務</Link></li> */}
         <li className={`${styles.sub_menu_item} ${mobileStyles.sub_menu_item}`}><Link href={"/charge_up"}>収入アップ実績</Link></li>
         {/* <li className={styles.sub_menu_item}><Link href={"/different"}>他の派遣会社との違い</Link></li> */}
        

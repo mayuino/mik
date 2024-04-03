@@ -25,7 +25,7 @@ export const Strength = () => {
 入社後の社内教育により<br/>
 柔軟性の高いエンジニアへ。</h3>
 </div>
-<div className={`${styles.ikuseiryoku_sentence} ${mobileStyles.ikuseiryoku_sentence}`}>弊社の未経験スタート率は約40％。経験者が優遇されるIT業界において、この数字は決して小さくありません。
+<div className={`${styles.ikuseiryoku_sentence} ${mobileStyles.ikuseiryoku_sentence}`}>弊社の未経験スタート率は約15％。経験者が優遇されるIT業界において、この数字は決して小さくありません。
 マンツーマンという教育体制を貫き、数ヶ月という短い期間の学びの中で、たくさんのエンジニアが成長し、羽ばたいています。<br/><br/>
 
 配属後も、弊社内で結成されたチームへの配属が可能で、OJTとして生きた学びが得ながら、成長していくことができます。</div>
