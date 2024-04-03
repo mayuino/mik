@@ -2,6 +2,8 @@ import styles from '@/styles/Home.module.css'
 import mobileStyles from "@/styles/mobile.module.css";
 import Link from 'next/link'
 import { useState } from 'react';
+import HamburgerMenu from '../hamburger_menu';
+import { HamburgerMenu2 } from '../hamburger_menu2';
 
 export const Header_MenuBar = () => {
   const [isHoveredTab1, setIsHoveredTab1] = useState(false);
@@ -26,8 +28,9 @@ export const Header_MenuBar = () => {
 
 
   return(
+    <>
     <nav className={`${styles.single_menu_bar} ${mobileStyles.single_menu_bar}`}>
-      <div></div>
+     
     <ul className={`${styles.single_menu_bar_items} ${mobileStyles.single_menu_bar_items}`}>
       <li onMouseEnter={handleHoverTab1} onMouseLeave={handleHoverTab1} className={styles.single_menu_tab}>
         <Link href={"/gaiyou"}>会社概要</Link>{isHoveredTab1 && (
@@ -58,5 +61,10 @@ export const Header_MenuBar = () => {
     </ul>
 
     </nav>
+
+    <div className={`${styles.humberger} ${mobileStyles.humberger}`}>
+      <HamburgerMenu/>
+    </div>
+    </>
   )
 }

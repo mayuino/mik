@@ -36,7 +36,7 @@
   .header {
     width: 100%;
 
-    height: 150px;
+    height: 100px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -62,7 +62,7 @@
     color: rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
     margin-left: 5px;
-    font-family: "Zen Maru Gothic", sans-serif;
+    font-family:  "Noto Serif JP", serif;
   }
   .ham2_menu_item {
     width: 200px;
@@ -76,7 +76,7 @@
   }
 
 
-  .single_menu_bar {
+  /* .single_menu_bar {
     display: flex;
     position:absolute;
     left:20px;
@@ -84,6 +84,20 @@
     flex-direction: column;
     padding-top: 20px;
     overflow: visible;
+  } */
+  .single_menu_bar{
+    display:none;
+  }
+
+  .humberger{
+    display:block;
+    position:absolute;
+    right:10px;
+  
+  }
+
+  .ham_menu_list{
+    width:300px;
   }
   
   .single_menu_bar_items {
@@ -110,17 +124,25 @@
   }
   .sub_menu {
     width:180px;
-    height:200px;
+    height:auto;
     display:flex;
     flex-direction: column;
     position:absolute;
-    margin-top:30px; 
+    margin-top:0px; 
+    top:0px;
+    right:300px;
+    background-color: #fff;
+    padding:10px;
+    border-radius: 5px;
+    border:1px solid #576066;
+    z-index: 50;
+
   
    
     list-style: none;
   }
   .sub_menu_item{
-    margin: 5px 5px;
+    margin: 8px 5px;
     font-size:15px;
     background: linear-gradient(270deg,rgba(255,255,255,0) 0, #fff 80%) ;
     padding-left:20px;
@@ -128,6 +150,30 @@
   
   .sub_menu_item:hover{
     filter:brightness(0.9);
+  }
+
+  .ham_menu_item {
+    list-style: none;
+    padding-top: 8px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-family:  "Noto Serif JP", serif;
+    position:relative;
+  }
+
+  .hamburger_sub{
+    width:180px;
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    margin-top:30px;  
+    list-style: none;
+    right:100px;
+    overflow:visible;
+
   }
 
   .top {
@@ -2400,15 +2446,7 @@ top:0px;
       margin-right: 50px;
     }
 
-    .ham_menu_item {
-      list-style: none;
-      padding-top: 8px;
-      font-size: 16px;
-      color: rgba(0, 0, 0, 0.6);
-      margin-bottom: 20px;
-      margin-left: 5px;
-      font-family: "Zen Maru Gothic", sans-serif;
-    }
+  
     .ham2_menu_item {
       width: 200px;
       list-style: none;
