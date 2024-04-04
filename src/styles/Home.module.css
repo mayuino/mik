@@ -1993,6 +1993,12 @@ width:950px;
   font-family:  "Hiragino Kaku Gothic ProN";
 }
 
+.download_button:hover{
+  filter:brightness(0.9);
+
+}
+
+
 .content_range {
   width: 100%;
   height: auto;

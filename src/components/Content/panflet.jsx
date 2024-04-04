@@ -18,14 +18,14 @@ export const Content_Panflet = () => {
         <div
           className={`${styles.panflet_content_title} ${mobileStyles.panflet_content_title}`}
         >
-          <h2>株式会社MIK会社紹介パンフレット</h2>
+          <h2>株式会社MIKパンフレット</h2>
         </div>
         <div
           className={`${styles.panflet_content} ${mobileStyles.panflet_content}`}
         >
           <Image
-            src="/panf_hyoushi.jpg"
-            alt="engineer_first"
+            src="/images/new2024/panf/panflet.png"
+            alt="panflet"
             width={300}
             height={400}
             className={`${styles.panflet_image} ${mobileStyles.panflet_image}`}
@@ -34,8 +34,10 @@ export const Content_Panflet = () => {
             className={`${styles.panflet_content_discription} ${mobileStyles.panflet_content_discription}`}
           >
             <p>
-              株式会社MIKの制度やサービスなどもっと詳しく知りたい方は、
-              こちらのパンフレットをご覧ください。
+              2024年度版新パンフレットができました。
+              <br/>
+              MIKの全てがわかる新パンフレットは、<br/>
+              こちらからダウンロードいただけます。
             </p>
             <Link
               className={`${styles.download_button} ${mobileStyles.download_button}`}
