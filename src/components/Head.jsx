@@ -9,7 +9,7 @@ export default function HeadElement(props) {
         name="viewport"
         content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maxmum-scale=1.0, user-scalable=no"
       />
-      <link rel="icon" href="/mik_fabicon.png" />
+      <link rel="icon" href="/mik_fabicon.svg" />
    
     </Head>
   );
