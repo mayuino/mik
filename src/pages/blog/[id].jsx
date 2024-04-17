@@ -15,6 +15,7 @@ export const getStaticProps = async(context) => {
     return{
         props: {
             blog: data,
+            
         }
     }
 };

@@ -40,7 +40,7 @@ export default function BLOG({blogs}) {
       <div className={`${styles.blog} ${mobileStyles.blog}`}>
 <div className={`${styles.blog_title} ${mobileStyles.blog_title}`}>
 <h1>MIKブログ</h1>
-<p>弊社での最近の出来事をお伝えします。</p>
+<p>直近で入社いただいた方に、お話を聞いてみました。</p>
 </div>
 <div className={`${styles.blog_list} ${mobileStyles.blog_list}`}>
   {blogs.map((blog) => (
@@ -51,8 +51,8 @@ export default function BLOG({blogs}) {
       <div className={styles.blog_item_title}><h3>{blog.title}</h3>
       <div className={styles.blog_date}>{formatDate(blog.publishedAt)}</div>
       </div>
-      
       </div>
+
       </Link>
     </li>
   ))}
