@@ -6,17 +6,30 @@ export const About = () => {
     return (
       <div className={`${styles.about} ${mobileStyles.about}`}>
         <div className={`${styles.about_top} ${mobileStyles.about_top}`} >
-        <img className={`${styles.about_mik} ${mobileStyles.about_mik}`} src="/images/new2024/about_mik.png" alt="aboutMIK"/>
-        <div className={`${styles.about_top_text} ${mobileStyles.about_top_text}`}><h3>私たちは、</h3>
-        <p>北海道札幌市を拠点として<br/>「人材力」、「育成力」、「柔軟な対応力」を武器に、<br/>
-あらゆる技術分野へ最適な人材リソースを提供する<br/>オールエンジニアリング型<br/>ヒューマンソリューションカンパニーです。</p>
-        </div>
+
+          <div className={`${styles.about_square} ${mobileStyles.about_square}`} >
+            <div className={`${styles.about_square_column1} ${mobileStyles.about_square_column1}`}>
+              <div className={`${styles.about_square_column1_left} ${mobileStyles.about_square_column1_left}`}>
+              <img className={`${styles.about_mik} ${mobileStyles.about_mik}`} src="/images/new2024/about_mik.png" alt="aboutMIK"/>
+              </div>
+              <div className={`${styles.about_square_column1_right} ${mobileStyles.about_square_column1_right}`}>
+                <h3>私たちは、</h3>
+                  <p>北海道札幌市を拠点として<br/>「人材力」、「育成力」、「柔軟な対応力」を武器に、<br/>
+                  あらゆる技術分野へ最適な人材リソースを提供する<br/>オールエンジニアリング型<br/>ヒューマンソリューションカンパニーです。</p>
+                </div>
+              </div>
+            </div>
+            <div className={`${styles.about_square_column2} ${mobileStyles.about_square_column2}`} >
+            <img className={`${styles.about_circle} ${mobileStyles.about_circle}`} src="/images/new2024/circle3.png" alt="aboutMIK"/>
+          
+      
+
+          </div>
+       
 
      　
         
-        　<div className={`${styles.circle_wrapper} ${mobileStyles.circle_wrapper}`} >
-     <img className={`${styles.about_circle} ${mobileStyles.about_circle}`} src="/images/new2024/circle3.png" alt="aboutMIK"/>
-     </div>
+    
      </div>
      <div　className={`${styles.about_description} ${mobileStyles.about_description}`}><p>エンジニアリングに関わる様々な分野で、</p><br/>
      <p>弊社のエンジニアが活躍しています。</p></div>
