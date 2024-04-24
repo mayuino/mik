@@ -29,13 +29,20 @@ useEffect(() => {
 
      <img　className={`${styles.top_flexible} ${mobileStyles.top_flexible}`} src="/images/new2024/moji-flexible.png" alt="flexiblesupport"/>
      <img　className={`${styles.top_resourcecompany} ${mobileStyles.top_resourcecompany}`} src="/images/new2024/moji-resourcecompany.png" alt="resource_company"/>
-   <img　className={`${styles.top_efirst} ${mobileStyles.top_efirst}`} src="/images/new2024/engineer-first-title.png" alt="engineer-first"/>;
-     <img　className={`${styles.top_sakura} ${mobileStyles.top_sakura}`} src="/images/new2024/sakura_eda.png" alt="engineer-first"/>
-     
-     <img　className={ `${styles.top_hanabira} ${mobileStyles.top_hanabira}`} src="/images/new2024/hanabira.png" alt="messagebox"/>
+  
+  
+   {/* // engineer_firsg green
+   <img　className={`${styles.top_efirst} ${mobileStyles.top_efirst}`} src="/images/new2024/engineer-first-title.png" alt="engineer-first"/>; */}
+   <img　className={`${styles.top_efirst} ${mobileStyles.top_efirst}`} src="/images/new2024/May/engineer_first.png" alt="engineer-first"/>;
+     {/* 
+     //4月デコ
+     <img　className={`${styles.top_sakura} ${mobileStyles.top_sakura}`} src="/images/new2024/sakura_eda.png" alt="sakura_eda"/>    
+     <img　className={ `${styles.top_hanabira} ${mobileStyles.top_hanabira}`} src="/images/new2024/hanabira.png" alt="messagebox"/> */}
+
+  
      <img　className={`${styles.top_box_tunagu} ${mobileStyles.top_box_tunagu}`} src="/images/new2024/box_tunagu1.png" alt="messagebox"/>
 
-     <Link href={"/blog"}><div className={`${styles.top_button} ${mobileStyles.top_button}`}><span className={styles.top_button_span}>New</span> 新入社員インタビュー掲載中！<span class="material-symbols-outlined">
+     <Link href={"/blog"}><div className={`${styles.top_button} ${mobileStyles.top_button}`}><span className={styles.top_button_span}> <img　className={`${styles.top_koinobori} ${mobileStyles.top_koinobori}`} src="/images/new2024/May/koinobori.png" alt="koinobori"/>  </span> 新入社員インタビュー掲載中！<span class="material-symbols-outlined">
 chevron_right
 </span></div></Link>
 
