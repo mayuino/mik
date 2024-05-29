@@ -1,82 +1,80 @@
-
-
 .header {
   width: 100%;
-  height:80px;
-  position:relative;
+  height: 80px;
+  position: relative;
 
-
-  background:white;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index:3;
-
-  
+  z-index: 3;
 }
 
-.mik_logo{
+.mik_logo {
   width: 250px;
-  height:108px;
+  height: 108px;
 }
 
-.loading{
-  position:fixed;
+.loading {
+  position: fixed;
   width: 100%;
   height: 100vh;
-  background-color:rgba(193, 255, 114);
-  z-index:999;
+  background-color: rgba(193, 255, 114);
+  z-index: 999;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
+.loading_logo {
+  width: 250px;
 
-.loading_logo{
-  width:250px;
-  
-
-
--webkit-animation-fill-mode: both;
-animation-fill-mode: both;
--webkit-animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
-animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
-
-
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9)
+    infinite;
+  animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
 }
-
 
 @-webkit-keyframes square-spin {
   0% {
     -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
-    transform: perspective(100px) rotateX(0) rotateY(0); }
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
   30% {
     -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
-            transform: perspective(100px) rotateX(180deg) rotateY(0);  }
+    transform: perspective(100px) rotateX(180deg) rotateY(0);
+  }
   75% {
     -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
-            transform: perspective(100px) rotateX(0) rotateY(180deg); }
+    transform: perspective(100px) rotateX(0) rotateY(180deg);
+  }
   100% {
     -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
-            transform: perspective(100px) rotateX(0) rotateY(0); } }
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
+}
 
 @keyframes square-spin {
   0% {
     -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
-            transform: perspective(100px) rotateX(0) rotateY(0); }
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
   30% {
     -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
-    transform: perspective(100px) rotateX(180deg) rotateY(0);  }
+    transform: perspective(100px) rotateX(180deg) rotateY(0);
+  }
   75% {
     -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
-            transform: perspective(100px) rotateX(0) rotateY(180deg); }
+    transform: perspective(100px) rotateX(0) rotateY(180deg);
+  }
   100% {
     -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
-            transform: perspective(100px) rotateX(0) rotateY(0); } }
-
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
+}
 
 .second_header {
   width: 100%;
@@ -87,8 +85,8 @@ animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
   justify-content: space-between;
 }
 
-.humberger{
-  display:none;
+.humberger {
+  display: none;
 }
 .single_menu_bar {
   display: flex;
@@ -105,7 +103,6 @@ animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: space-around;
-  
 }
 
 .single_menu_tab {
@@ -116,35 +113,33 @@ animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
   height: auto;
   display: flex;
   font-weight: 400;
-  font-family:  "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", serif;
   color: #576066;
 }
 .sub_menu {
-  width:180px;
-  height:200px;
-  display:flex;
+  width: 180px;
+  height: 200px;
+  display: flex;
   flex-direction: column;
-  position:absolute;
-  margin-top:30px; 
+  position: absolute;
+  margin-top: 30px;
 
- 
   list-style: none;
 }
-.sub_menu_item{
+.sub_menu_item {
   margin: 5px 5px;
-  font-size:15px;
-  background: linear-gradient(270deg,rgba(255,255,255,0) 0, #fff 80%) ;
-  padding-left:20px;
+  font-size: 15px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0, #fff 80%);
+  padding-left: 20px;
 }
 
-.sub_menu_item:hover{
-  filter:brightness(0.9);
+.sub_menu_item:hover {
+  filter: brightness(0.9);
 }
-
 
 .top {
-  position:relative;
-  background-color:#C1FF72;
+  position: relative;
+  background-color: #c1ff72;
   width: 100%;
   height: 800px;
 
@@ -154,199 +149,179 @@ animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
   padding-bottom: 20px;
   position: relative;
 
-  z-index:0;
-
-
-  
+  z-index: 0;
 }
 
 .top_sapporo {
   position: absolute;
-  width:1050px;
-  top:-50px;
+  width: 1050px;
+  top: -50px;
   left: -50px;
-
 }
 
 .top_flexible {
-  width:40px;
+  width: 40px;
   position: absolute;
   right: 60px;
-  top:130px;
-
+  top: 130px;
 }
 .top_resourcecompany {
-  width:450px;
+  width: 450px;
   position: absolute;
   left: 60px;
-  top:420px;
-
+  top: 420px;
 }
 
-.top_efirst{
-  position:absolute;
-  top:150px;
-  left:50px;
-  width:750px;
-  animation-name:fadeUpAnime;
-  animation-delay: 6.0s;
-  animation-duration:3.0s;
-  animation-fill-mode:forwards;
-  opacity:0;
+.top_efirst {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 750px;
+  animation-name: fadeUpAnime;
+  animation-delay: 6s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-.top_sakura{
-  position:absolute;
-  top:0px;
-  left:-20px;
-  width:400px;
+.top_sakura {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 400px;
 }
 
-.top_hanabira{
-  width:200px;
-  position:absolute;
+.top_hanabira {
+  width: 200px;
+  position: absolute;
   animation-delay: 6.5s;
-  animation-name:sakuraMove;
-  animation-duration:13.0s;
-  animation-fill-mode:forwards;
-  opacity:0;
+  animation-name: sakuraMove;
+  animation-duration: 13s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-@keyframes sakuraMove{
-  0%{
-    opacity: 0.0;
-  transform: translate(0,0);
- 
+@keyframes sakuraMove {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
   }
 
-
-  100%{
+  100% {
     opacity: 1;
-  transform: translate(850px,250px) scale(4.5);
-
+    transform: translate(850px, 250px) scale(4.5);
   }
 }
 
-.top_box_tunagu{
-  width:460px;
+.top_box_tunagu {
+  width: 460px;
 
-  position:absolute;
-  top:300px;
+  position: absolute;
+  top: 300px;
 
-  left:530px;
-  animation-delay: 7.0s;
-  animation-name:fadeUpAnime;
-  animation-duration:3.0s;
-animation-fill-mode:forwards;
-opacity:0;
+  left: 530px;
+  animation-delay: 7s;
+  animation-name: fadeUpAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-@keyframes fadeUpAnime{
+@keyframes fadeUpAnime {
   from {
     opacity: 0;
-  transform: translateY(50px);
+    transform: translateY(50px);
   }
 
   to {
     opacity: 1;
-  transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
-
-
-.top_button{
-  width:350px;
-  height:60px;
+.top_button {
+  width: 330px;
+  height: 60px;
   background-color: #fff;
   position: absolute;
   z-index: 50;
-  right:0;
-  top:45px;
+  right: 0;
+  top: 45px;
   display: flex;
   align-items: center;
-  padding-left:40px;
-  border-left: 20px solid #ddd;
-  font-family: "Noto Serif JP", serif; 
-  color:#576066;
-  box-shadow:10px 3px 6px #bbb;
-  border-top-left-radius: 10px; 
-  border-bottom-left-radius: 10px; 
-  
-
+  padding-left: 20px;
+  border-left: 20px solid #c1ff72;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
+  box-shadow: 10px 3px 6px #bbb;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-.top_button:hover{
-  transform: translateX(15px); 
+.top_button:hover {
+  transform: translateX(15px);
   filter: brightness(90%);
   transition: transform 0.3s ease;
-
 }
 
-.top_button_span{
-
+.top_button_span {
   position: absolute;
-  left:-20px;
-  top:-20px;
-
+  left: -20px;
+  top: -20px;
 }
 
-.top_koinobori{
-
-  width:50px;
+.top_koinobori {
+  width: 50px;
 }
 
 .material-symbols-outlined {
-  font-size:30px;
+  font-size: 30px;
   font-weight: bold;
-  color:#ddd;
-  padding-left:20px;
+  color: #ddd;
+  padding-left: 20px;
 }
 
-
-
-.joblist_wrapper{
-  width:100%;
+.joblist_wrapper {
+  width: 100%;
   position: absolute;
-  top:600px;
-  }
+  top: 600px;
+}
 
-.joblist{
-  display:flex;
-  justify-content:space-around;
+.joblist {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
 }
 
-.job_box{
-  position:relative;
-  width:180px;
+.job_box {
+  position: relative;
+  width: 180px;
   height: 180px;
   background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
-.job_box:hover{
-  animation-name:jobfadeUpAnime;
-  animation-duration:1.5s;
-  animation-fill-mode:forwards;
- 
+.job_box:hover {
+  animation-name: jobfadeUpAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes jobfadeUpAnime{
+@keyframes jobfadeUpAnime {
   from {
     opacity: 1;
-  transform: translateY(0px);
+    transform: translateY(0px);
   }
 
   to {
     opacity: 1;
-  transform: translateY(-30px);
+    transform: translateY(-30px);
   }
 }
 
-.job_box:not(:hover) { 
+.job_box:not(:hover) {
   animation-name: jobfadeDownAnime;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
@@ -364,370 +339,333 @@ opacity:0;
   }
 }
 
-.job_name{
+.job_name {
   position: absolute;
-  top:120px;
-  left:5px;
-  padding:5px 10px;
+  top: 120px;
+  left: 5px;
+  padding: 5px 10px;
   font-family: "Noto Serif JP", serif;
-  background-color:#7ED957 ;
+  background-color: #7ed957;
 }
 
-.job_images{
-  width:150px;
-  
+.job_images {
+  width: 150px;
 }
 
-.about{
-  width:100%;
+.about {
+  width: 100%;
   height: auto;
   background-color: #fff;
-
-
-  
-
 }
 
-.about_top{
-
-  width:100%;
-  height:auto;
+.about_top {
+  width: 100%;
+  height: auto;
 
   text-align: left;
- 
- 
 }
 
-.about_square{
-  width:100%;
+.about_square {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.about_square_column1{
-  display:flex;
+.about_square_column1 {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about_square_column1_left{
-  width:500px;
-  padding:30px;
-  text-align:end;
+.about_square_column1_left {
+  width: 500px;
+  padding: 30px;
+  text-align: end;
 }
 
-.about_mik{
-  width:320px;
-
+.about_mik {
+  width: 320px;
 }
 
-.about_square_column1_right{
-  
-  font-size:19px;
+.about_square_column1_right {
+  font-size: 19px;
   line-height: 35px;
-  font-family:"Noto Serif JP", serif; 
-  margin-left:50px;
+  font-family: "Noto Serif JP", serif;
+  margin-left: 50px;
 
-  width:500px;
-  color:#576066;
+  width: 500px;
+  color: #576066;
   padding: 50px 0px 20px 0;
 }
 
-.about_square_column1_right h3{
-  font-size:48px;
+.about_square_column1_right h3 {
+  font-size: 48px;
   margin-bottom: 30px;
 }
 
-
-.about_square_column2{
-  display:flex;
-  width:100%;
-  height:auto;
+.about_square_column2 {
+  display: flex;
+  width: 100%;
+  height: auto;
   align-items: center;
-  justify-content:center;
-  margin-bottom:60px;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
-
-
-
-
-
-
-.about_circle{
-  
-  width:450px;
-
-
+.about_circle {
+  width: 450px;
 }
-.about_description{
-  margin-left:150px;
-  font-size:22px;
-  font-family:"Noto Serif JP", serif;
-  color:#576066;
+.about_description {
+  margin-left: 150px;
+  font-size: 22px;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
   line-height: 20px;
 }
-.card_list_wrapper{
-  width:100%;
+.card_list_wrapper {
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
 }
 
-.job_card_list{
-margin:0px 0  0  70px;
-  width:1000px;
-  display:flex;
-  justify-content:space-around;
+.job_card_list {
+  margin: 0px 0 0 70px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
   list-style: none;
   flex-wrap: wrap;
-  
 }
 
-.job_card{
-  position:relative;
-  margin-top:50px;
-  width:300px;
-  height:300px;
-  
-  overflow:hidden;
+.job_card {
+  position: relative;
+  margin-top: 50px;
+  width: 300px;
+  height: 300px;
+
+  overflow: hidden;
 }
 
-.job_images_about{
- position:absolute;
-  width:300px;
-  height:auto;
-  transition:0.5s;
-  
-  
+.job_images_about {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  transition: 0.5s;
 }
-.job_images_about:hover{
-  transform:scale(1.2);
+.job_images_about:hover {
+  transform: scale(1.2);
 }
-.job_names_about{
-  width:300px;
-  height:60px;
-  background-color:#C1FF72;
-  position:absolute;
-  bottom:0px;
-  color:#576066;
-  display:flex;
+.job_names_about {
+  width: 300px;
+  height: 60px;
+  background-color: #c1ff72;
+  position: absolute;
+  bottom: 0px;
+  color: #576066;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 30px;
 }
 
-.job_names_about h3{
-  font-family:"Noto Serif JP", serif; 
+.job_names_about h3 {
+  font-family: "Noto Serif JP", serif;
 }
-.job_name_web{
-  width:140px;
-}
-
-.job_name_server{
-  width:70px;
+.job_name_web {
+  width: 140px;
 }
 
-.job_name_idoutai{
-  width:220px;
+.job_name_server {
+  width: 70px;
 }
 
-.job_name_handoutai{
-  width:140px;
+.job_name_idoutai {
+  width: 220px;
 }
 
-.job_name_cloud{
-  width:60px;
+.job_name_handoutai {
+  width: 140px;
 }
 
-.job_name_kikan{
-  width:120px;
+.job_name_cloud {
+  width: 60px;
 }
 
-.job_name_network{
-  width:80px;
+.job_name_kikan {
+  width: 120px;
 }
 
-.job_name_security{
-  width:90px;
+.job_name_network {
+  width: 80px;
 }
 
-.job_name_medical{
-  width:80px;
+.job_name_security {
+  width: 90px;
 }
 
-.job_name_construct{
-  width:120px;
+.job_name_medical {
+  width: 80px;
 }
 
-.job_name_logistics{
-  width:90px;
+.job_name_construct {
+  width: 120px;
 }
 
-.job_name_doboku{
-  width:160px;
+.job_name_logistics {
+  width: 90px;
 }
 
-.job_name_plant{
-  width:50px;
+.job_name_doboku {
+  width: 160px;
 }
 
-.job_name_bilmane{
-  width:200px;
+.job_name_plant {
+  width: 50px;
 }
 
-.job_name_help{
-  width:90px;
+.job_name_bilmane {
+  width: 200px;
 }
 
+.job_name_help {
+  width: 90px;
+}
 
-
-.strength{
-  width:100%;
+.strength {
+  width: 100%;
   height: auto;
   background-color: #fff;
-  padding-left:50px;
-
+  padding-left: 50px;
 }
 
-.strength_top{
-  width:1000px;
-  height:400px;
-
+.strength_top {
+  width: 1000px;
+  height: 400px;
 }
 
-
-
-.strength_mik{
-  width:450px;
-  margin-left:100px;
+.strength_mik {
+  width: 450px;
+  margin-left: 100px;
 }
 
-.jinzairyoku_png{
-  max-width:500px;
-  margin-left:60px;
+.jinzairyoku_png {
+  max-width: 500px;
+  margin-left: 60px;
 }
 
-.strength_content{
-
-  width:100%;
+.strength_content {
+  width: 100%;
   height: auto;
   background-color: #fff;
 }
 
-.strength_jinzairyoku{
-  width:100%;
-  height:auto;
-  display:flex;
+.strength_jinzairyoku {
+  width: 100%;
+  height: auto;
+  display: flex;
   align-items: center;
-  font-family:"Noto Serif JP", serif; 
-  color:#576066;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
   overflow-x: auto;
 }
 
 .strength_jinzairyoku h3 {
-  margin-top:-120px;
-  margin-left:80px;
-  font-size:29px;
+  margin-top: -120px;
+  margin-left: 80px;
+  font-size: 29px;
   line-height: 50px;
 }
 .jinzairyoku_sentence {
-  width:480px;
-  font-size:19px;
+  width: 480px;
+  font-size: 19px;
 
   line-height: 45px;
 
-  margin:30px 30px 30px 80px;
-
+  margin: 30px 30px 30px 80px;
 }
 
-
-.strength_ikuseiryoku{
-  width:100%;
-  height:580px;
-  display:flex;
+.strength_ikuseiryoku {
+  width: 100%;
+  height: 580px;
+  display: flex;
   align-items: center;
-  font-family:"Noto Serif JP", serif; 
-  color:#576066;
-  position:relative;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
+  position: relative;
   overflow-x: auto;
 }
 
-.strength_ikusei_png{
-  width:620px;
-  position:absolute;
-  left:60px;
-  top:0px;
-  
+.strength_ikusei_png {
+  width: 620px;
+  position: absolute;
+  left: 60px;
+  top: 0px;
 }
 .strength_ikuseiryoku h3 {
-  margin-left:80px;
-  font-size:29px;
-  position:absolute;
-  top:380px;
-  left:20px;
+  margin-left: 80px;
+  font-size: 29px;
+  position: absolute;
+  top: 380px;
+  left: 20px;
   line-height: 50px;
 }
 .ikuseiryoku_sentence {
-  position:absolute;
-  top:-40px;
-  left:610px;
-  width:500px;
-  font-size:19px;
+  position: absolute;
+  top: -40px;
+  left: 610px;
+  width: 500px;
+  font-size: 19px;
   line-height: 45px;
-  padding:0 50px 0 50px;
+  padding: 0 50px 0 50px;
 
-  margin:30px 30px 30px 50px;
-
+  margin: 30px 30px 30px 50px;
 }
 
-.strength_taiouryoku{
-  width:100%;
-  height:800px;
-  display:flex;
+.strength_taiouryoku {
+  width: 100%;
+  height: 800px;
+  display: flex;
   align-items: center;
-  font-family:"Noto Serif JP", serif; 
-  color:#576066;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
   overflow-x: auto;
 }
 
-.strength_taiou_png1{
-  width:480px;
-  margin-left:60px;
-  margin-top:50px;
+.strength_taiou_png1 {
+  width: 480px;
+  margin-left: 60px;
+  margin-top: 50px;
 }
 
-.strength_taiou_png2{
-  width:480px;
-  margin-left:30px;
-  margin-top:-70px;
+.strength_taiou_png2 {
+  width: 480px;
+  margin-left: 30px;
+  margin-top: -70px;
 }
 
 .strength_taiouryoku h3 {
-  width:500px;
-  margin-top:80px;
-  margin-left:100px;
-  font-size:29px;
+  width: 500px;
+  margin-top: 80px;
+  margin-left: 100px;
+  font-size: 29px;
   line-height: 50px;
-
 }
 
-.taiou_sentence{
-  width:500px;
-  font-size:19px;
+.taiou_sentence {
+  width: 500px;
+  font-size: 19px;
   line-height: 45px;
-  margin-top:-100px;
-  margin-left:60px;
+  margin-top: -100px;
+  margin-left: 60px;
 }
 
-
-
-.gyoumu{
-  width:100%;
-  height:auto;
-  font-family:"Noto Serif JP", serif;
-  color:#576066;
+.gyoumu {
+  width: 100%;
+  height: auto;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -750,192 +688,171 @@ margin:0px 0  0  70px;
   font-size: 25px;
   /* font-family: "Zen Maru Gothic", sans-serif; */
   padding-left: 60px;
-
 }
 
-.gyoumu_title p{
-  font-size:15px;
-  margin-bottom: 50px;
-
-}
-
-.colorbar{
-  background-color: #C1FF72;
-  width:20px;
-  margin-right:50px;
-  
-}
-
-.gyoumu_box{
-  display:flex;
-  width:900px;
+.gyoumu_title p {
+  font-size: 15px;
   margin-bottom: 50px;
 }
 
-.gyoumu_sentence{
-  margin-left:50px;
+.colorbar {
+  background-color: #c1ff72;
+  width: 20px;
+  margin-right: 50px;
 }
 
-
-.job_images_gyoumu{
-  width:300px;
+.gyoumu_box {
+  display: flex;
+  width: 900px;
+  margin-bottom: 50px;
 }
 
-.blog{
-  width:100%;
+.gyoumu_sentence {
+  margin-left: 50px;
+}
+
+.job_images_gyoumu {
+  width: 300px;
+}
+
+.blog {
+  width: 100%;
   height: auto;
   background-color: #fff;
-  font-family:"Noto Serif JP", serif;
-  color:#576066;
-  font-size:30px;
-  display:flex;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
+  font-size: 30px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
-
-.blog_title{
-width:950px;
+.blog_title {
+  width: 950px;
   margin-bottom: 50px;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
-.blog_title h1{
+.blog_title h1 {
   /* background-image: linear-gradient(to left, #0cc0df, #ffde59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
- 
 }
 
-.blog_title p{
-  font-size:18px;
+.blog_title p {
+  font-size: 18px;
 }
 
-.blog_list{
-  width:1000px;
+.blog_list {
+  width: 1000px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  background-color:#C1FF72;
+  background-color: #c1ff72;
   justify-content: center;
   border-radius: 12px;
   margin-bottom: 50px;
-
 }
 
-.blog_item{
-  width:300px;
-  height:350px;
+.blog_item {
+  width: 300px;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  margin:30px 10px 30px 10px;
+  margin: 30px 10px 30px 10px;
   background-color: #fff;
- 
 
   border-radius: 10px;
   border: 3px solid #ddd;
   padding: 10px;
   transition: 0.3s;
-
-  
 }
 
-.blog_item:hover{
-  transform:scale(1.1);
+.blog_item:hover {
+  transform: scale(1.1);
 }
 
-.blog_item_title{
-
-  width:100%;
-  height:50px;
+.blog_item_title {
+  width: 100%;
+  height: 50px;
   text-align: center;
-
- 
 }
 
-.blog_img{
-  width:280px;
+.blog_img {
+  width: 280px;
   height: 230px;
   object-fit: cover;
-  border-radius:5px;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
-.blog_item_title h3{
-  font-size:18px;
+.blog_item_title h3 {
+  font-size: 18px;
 }
 
-.blog_date{
-  font-size:15px;
+.blog_date {
+  font-size: 15px;
   text-align: right;
-  padding-right:10px;
+  padding-right: 10px;
 }
 
-.blog_detail{
-  width:100%;
+.blog_detail {
+  width: 100%;
   height: auto;
   background-color: #fff;
-  font-family:"Noto Serif JP", serif;
-  color:#576066;
-  font-size:20px;
-  display:flex;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
+  font-size: 20px;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Zen Maru Gothic", sans-serif;}
-
-.blog_detail_title{
-  width:900px;
-  margin-top:50px;
-  margin-bottom:50px;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
-.publish_date{
-  font-size:20px;
+.blog_detail_title {
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.blog_detail_img{
-  width:800px;
+.publish_date {
+  font-size: 20px;
+}
+
+.blog_detail_img {
+  width: 800px;
   height: 350px;
   object-fit: cover;
-  border-radius:30px;
+  border-radius: 30px;
   margin-bottom: 10px;
 }
 
-.blog_detail_content{
-  width:900px;
+.blog_detail_content {
+  width: 900px;
   line-height: 45px;
 }
 
-.blog_detail_content h3{
+.blog_detail_content h3 {
   font-size: 30px;
   margin: 50px 0 30px 0;
 }
 
-
-.blog_detail_return{
-  width:250px;
-  height:50px;
+.blog_detail_return {
+  width: 250px;
+  height: 50px;
   background-color: #f9db64;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  margin:50px;
+  margin: 50px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.blog_detail_return:hover{
-
-  filter:brightness(0.8);
-
+.blog_detail_return:hover {
+  filter: brightness(0.8);
 }
-
-
-
-
-
-
 
 /* @media (max-width:600px){
 
@@ -1162,24 +1079,17 @@ width:950px;
   justify-content: space-around;
 }
 .footer {
-  background:#C1FF72;
+  background: #c1ff72;
   width: 100%;
   height: 70px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  
-
 }
 
-.footer_img{
-  width:300px;
+.footer_img {
+  width: 300px;
 }
-
-
-
-
-
 
 .company_data {
   display: flex;
@@ -1695,33 +1605,30 @@ width:950px;
   width: 100%;
   height: 750px;
   background: #ffffff;
-  font-family:  "Noto Serif JP", serif;
-  color:#576066;
-  display:flex;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 .gaiyou_title {
-  padding-top:100px;
+  padding-top: 100px;
   width: 900px;
   display: flex;
   align-items: center;
   font-size: 30px;
 }
 
-
-
 .gaiyou_table {
   width: 900px;
-  margin-top:30px;
+  margin-top: 30px;
   margin-bottom: 100px;
 }
 
-.gaiyou_table table{
+.gaiyou_table table {
   border-collapse: collapse;
-  
 }
 .gaiyou_table th {
   border: solid 0.5px;
@@ -1825,7 +1732,7 @@ width:950px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family:  "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", serif;
   color: #576066;
   font-size: 30px;
 }
@@ -1842,7 +1749,6 @@ width:950px;
   padding-left: 60px;
   background: #fff;
 }
-
 
 .system_title h1 {
   background-image: linear-gradient(to right, #0cc0df, #ffde59 50%);
@@ -1861,26 +1767,21 @@ width:950px;
   border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
   border-image-slice: 1;
   border-radius: 10px;
-  
 
   padding: 20px;
   margin-top: 30px;
-  margin-bottom:50px;
-  
+  margin-bottom: 50px;
 }
 
 .system h2 {
-    font-size:30px;
-  
- 
+  font-size: 30px;
 }
 
-.system_images{
-  width:300px;
+.system_images {
+  width: 300px;
 }
 
 .system_content {
-
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -1888,7 +1789,7 @@ width:950px;
 
 .system_discription {
   width: 500px;
-  padding-top:30px;
+  padding-top: 30px;
   padding-left: 50px;
   display: flex;
   font-size: 18px;
@@ -1905,22 +1806,20 @@ width:950px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family:  "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", serif;
   color: #576066;
 }
 
 .rinen_title {
   width: 900px;
-  
+
   font-size: 30px;
 
-  margin:30px 0 30px 0px;
+  margin: 30px 0 30px 0px;
 
   display: flex;
   align-items: center;
 }
-
-
 
 .rinen {
   width: 900px;
@@ -1947,7 +1846,7 @@ width:950px;
   width: 550px;
   padding-left: 70px;
   display: flex;
-  font-size:18px;
+  font-size: 18px;
   line-height: 40px;
 
   margin-top: 40px;
@@ -1963,7 +1862,7 @@ width:950px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family:  "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", serif;
   color: #576066;
 }
 
@@ -1971,16 +1870,12 @@ width:950px;
   width: 900px;
 
   height: auto;
-  font-size:30px;
-  margin:20px 0 20px 0;
-
-  
+  font-size: 30px;
+  margin: 20px 0 20px 0;
 
   display: flex;
   align-items: center;
 }
-
-
 
 .panflet {
   width: 900px;
@@ -1995,7 +1890,6 @@ width:950px;
 }
 
 .panflet_content {
-
   display: flex;
   justify-content: center;
 
@@ -2021,50 +1915,44 @@ width:950px;
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  font-family:  "Hiragino Kaku Gothic ProN";
+  font-family: "Hiragino Kaku Gothic ProN";
 }
 
-.download_button:hover{
-  filter:brightness(0.9);
-
+.download_button:hover {
+  filter: brightness(0.9);
 }
-
 
 .content_range {
   width: 100%;
   height: auto;
   background: #ffffff;
 
-  font-family:  "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", serif;
   color: #576066;
 
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-size:30px;
+  font-size: 30px;
 }
-.content_range h3{
-  font-size:25px;
+.content_range h3 {
+  font-size: 25px;
   padding: 5px 0 10px 0;
-
 }
 
-.content_range p{
-  font-size:18px;
+.content_range p {
+  font-size: 18px;
 }
 
 .range_title {
   width: 900px;
-
 
   display: flex;
   align-items: center;
 }
 
 .range_title h1 {
-
-
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -2075,7 +1963,7 @@ width:950px;
   border: 10px solid #c9e265;
   border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
   border-image-slice: 1;
-  
+
   padding: 20px;
 
   margin-bottom: 30px;
@@ -2086,7 +1974,6 @@ width:950px;
 .range h1 {
   margin-top: 20px;
   margin-bottom: 20px;
-
 
   font-size: 35px;
 }
@@ -2250,13 +2137,13 @@ width:950px;
   align-self: flex-end;
 }
 
-.search_message_wrapper{
-  margin-top:50px;
-  width:70%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+.search_message_wrapper {
+  margin-top: 50px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content_recruit_detail {
@@ -2299,7 +2186,7 @@ width:950px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background:#FFF;
+  background: #fff;
   padding: 10px;
 }
 .detail_content p {
@@ -2442,14 +2329,13 @@ width:950px;
   width: 100%;
   height: auto;
   background: #ffffff;
-  font-family:"Noto Serif JP", serif;
-  color:#576066;
+  font-family: "Noto Serif JP", serif;
+  color: #576066;
 
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .contact_title {
@@ -2464,7 +2350,6 @@ width:950px;
 }
 
 .contact_title h1 {
-
   font-size: 50px;
 }
 .contact {
@@ -2734,19 +2619,16 @@ width:950px;
   justify-content: space-around;
 }
 
-
-
 @media (prefers-color-scheme: dark) {
-
   .header {
     width: 100%;
-  
+
     //background:#C9E265;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .second_header {
     width: 100%;
     height: 100px;
@@ -2760,18 +2642,18 @@ width:950px;
     flex-direction: column;
     padding-top: 50px;
   }
-  
+
   .single_menu_bar ul {
     width: 700px;
     height: auto;
     display: flex;
-  
+
     padding-top: 10px;
     padding-bottom: 10px;
-  
+
     justify-content: space-around;
   }
-  
+
   .single_menu_tab {
     width: auto;
     white-space: nowrap;
@@ -2783,7 +2665,7 @@ width:950px;
     font-family: "Zen Maru Gothic", sans-serif;
     color: #fff;
   }
-  
+
   .top_image_frame {
     background-image: url("/images/top_6.png");
     background-size: cover;
@@ -2791,32 +2673,32 @@ width:950px;
     background-position: center center;
     width: 100%;
     height: 800px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 20px;
     position: relative;
-    overflow:auto;
+    overflow: auto;
   }
-  
+
   .sitting_image {
     position: absolute;
-    top:400px;
-    left:320px;
+    top: 400px;
+    left: 320px;
   }
-  
+
   .main1 {
     background-image: url("/images/man.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 850px;
-  
+
     display: flex;
     padding: 20px;
   }
-  
+
   .main_left {
     width: 50%;
     display: flex;
@@ -2833,7 +2715,7 @@ width:950px;
     padding-left: 130px;
     padding-bottom: 100px;
   }
-  
+
   .job_page_button {
     width: 320px;
     height: 300px;
@@ -2843,7 +2725,7 @@ width:950px;
     font-family: "Zen Maru Gothic";
     background: #aaa;
   }
-  
+
   .main2 {
     background-image: url("/images/woman.png");
     background-size: cover;
@@ -2853,7 +2735,7 @@ width:950px;
     height: 900px;
     display: flex;
   }
-  
+
   .menu_bar {
     position: absolute;
     top: 630px;
@@ -2867,20 +2749,20 @@ width:950px;
     flex-wrap: wrap;
     padding-top: 10px;
     padding-bottom: 10px;
-  
+
     overflow: auto;
   }
-  
+
   .menu_bar ul {
     width: 100%;
     display: flex;
     margin-left: 6px;
     margin-right: 6px;
     flex-wrap: wrap;
-  
+
     justify-content: center;
   }
-  
+
   .menu_tab {
     width: 200px;
     height: 45px;
@@ -2897,9 +2779,7 @@ width:950px;
     margin-left: 15px;
     margin-right: 15px;
   }
-  
- 
-  
+
   .content_main_frame {
     width: 100%;
     height: auto;
@@ -2907,35 +2787,35 @@ width:950px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  
+
     overflow: scroll;
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .content_main_title {
     width: 100%;
     height: 200px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 25px;
-  
+
     padding-left: 60px;
   }
-  
+
   .content_main_title h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .hajime_content {
     display: flex;
     justify-content: space-around;
     padding: 20px;
   }
-  
+
   .main_message {
     width: 40%;
     height: 1300px;
@@ -2948,7 +2828,7 @@ width:950px;
   .main_message p {
     margin-bottom: 50px;
   }
-  
+
   .sns_back {
     width: 100%;
     height: 1590px;
@@ -2957,39 +2837,39 @@ width:950px;
     align-items: center;
     flex-direction: column;
   }
-  
+
   /*SNS(Twitter)*/
-  
+
   .twitter_frame {
     width: 100%;
     height: auto;
     background: black;
     //border: 18px solid #C9E265;
     border-radius: 2px;
-  
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .twitter {
     width: 100%;
     height: auto;
     padding: 0px 10px 10px 10px;
-  
+
     background: black;
     border-radius: 10px;
     display: flex;
-  
+
     justify-content: center;
   }
-  
+
   .twitter_title {
     width: 100%;
     height: 220px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2999,7 +2879,7 @@ width:950px;
     padding-top: 20px;
     background: black;
   }
-  
+
   .twitter_title h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59 50%);
     -webkit-background-clip: text;
@@ -3010,7 +2890,7 @@ width:950px;
     font-size: 15px;
     padding-bottom: 20px;
   }
-  
+
   .twitter_content {
     width: 70%;
     height: auto;
@@ -3020,19 +2900,19 @@ width:950px;
     border-image-slice: 1;
     border-radius: 10px;
     padding: 10px;
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .twitter_logo {
     position: absolute;
     padding-top: 15px;
     display: flex;
     justify-content: center;
   }
-  
+
   .line_frame {
     width: 100%;
     height: 400px;
@@ -3041,14 +2921,14 @@ width:950px;
     align-items: center;
     background: black;
   }
-  
+
   .line_title {
     width: 800px;
     height: 70px;
     display: flex;
     align-items: center;
   }
-  
+
   .line {
     margin-top: -18px;
     padding: 40px;
@@ -3059,11 +2939,11 @@ width:950px;
     justify-content: center;
     align-items: center;
   }
-  
+
   .line h2 {
     padding: 20px 20px;
   }
-  
+
   .line_content {
     display: flex;
     justify-content: center;
@@ -3075,7 +2955,7 @@ width:950px;
   .line_QR {
     padding: 10px;
   }
-  
+
   .line_paragrah {
     display: flex;
     flex-direction: column;
@@ -3087,30 +2967,30 @@ width:950px;
     height: auto;
     font-family: "Hiragino Kaku Gothic ProN";
   }
-  
+
   .footer_top {
     width: 100%;
     height: 50px;
     padding-top: 20px;
     color: #ffffff;
     font-size: 13px;
-  
+
     display: flex;
     justify-content: center;
   }
-  
+
   .footer_content {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
+
     padding: 10px;
-  
+
     color: #ffffff;
   }
-  
+
   .footer li {
     width: 250px;
     list-style: none;
@@ -3118,11 +2998,11 @@ width:950px;
     margin-bottom: 7px;
     padding-left: 60px;
   }
-  
+
   .footer_menu {
     height: auto;
   }
-  
+
   .company_data {
     display: flex;
     padding: 20px;
@@ -3137,7 +3017,7 @@ width:950px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-  
+
     font-weight: 900;
   }
   .mik_name h1 {
@@ -3146,26 +3026,26 @@ width:950px;
     font-family: system-ui;
     letter-spacing: 5px;
   }
-  
+
   .mik_name h4 {
     margin-bottom: -10px;
     letter-spacing: 5px;
   }
-  
+
   .footer_icon {
     color: #ffffff;
   }
-  
+
   .syozaichi {
     font-size: 14px;
     width: 330px;
   }
   /*MIKで働く人々*/
-  
+
   .people_title {
     width: 100%;
     height: 200px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3174,7 +3054,7 @@ width:950px;
     padding-left: 60px;
     background: black;
   }
-  
+
   .people_title h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59);
     -webkit-background-clip: text;
@@ -3184,7 +3064,7 @@ width:950px;
     padding-left: 20px;
     font-size: 15px;
   }
-  
+
   .people_frame_wrapper {
     width: 100%;
     display: flex;
@@ -3193,7 +3073,7 @@ width:950px;
     align-items: center;
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .people_frame {
     width: 90%;
     height: auto;
@@ -3203,14 +3083,14 @@ width:950px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
-  
+
     display: flex;
     align-items: center;
     flex-direction: column;
-  
+
     padding-top: 50px;
   }
-  
+
   .staff_frame {
     width: 550px;
     height: 1100px;
@@ -3220,14 +3100,14 @@ width:950px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
-  
+
     display: flex;
     align-items: center;
     flex-direction: column;
-  
+
     padding-top: 50px;
   }
-  
+
   .people_frame_left {
     width: 50%;
     height: auto;
@@ -3238,11 +3118,11 @@ width:950px;
     align-items: center;
     //box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
-  
+
   .people_frame_right {
     width: 90%;
     height: auto;
-  
+
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -3251,31 +3131,31 @@ width:950px;
   .people_frame_right p {
     line-height: 30px;
   }
-  
+
   .people_frame_right h2 {
     font-size: 40px;
     //color: #fff;
   }
-  
+
   .content_people h3 {
     margin-left: 75px;
     margin-top: 60px;
   }
-  
+
   .people_sub_title h3 {
     align-self: flex-start;
     padding-left: 50px;
     font-size: 40px;
     color: #fff;
   }
-  
+
   .people_sub_title {
     width: 100%;
     height: 45px;
     //background:#FFF;
     margin-bottom: 50px;
   }
-  
+
   .people_frame_right hr {
     width: 100%;
     height: 0px;
@@ -3283,7 +3163,7 @@ width:950px;
     margin-top: 10px;
     margin-bottom: 15px;
   }
-  
+
   .people {
     min-width: 870px;
     height: auto;
@@ -3298,7 +3178,7 @@ width:950px;
     margin-bottom: 40px;
     overflow: scroll;
   }
-  
+
   .people_left {
     width: 35%;
     display: flex;
@@ -3311,7 +3191,7 @@ width:950px;
     display: flex;
     flex-direction: column;
   }
-  
+
   .people_right p {
     line-height: 30px;
     font-size: 13px;
@@ -3320,47 +3200,47 @@ width:950px;
     font-size: 40px;
     margin-bottom: 15px;
   }
-  
+
   /*他の派遣会社との違い*/
-  
+
   .content_consul_frame {
     width: 100%;
     height: 1500px;
     background: black;
     border: 18px solid #c9e265;
     border-radius: 2px;
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .content_different_frame {
     width: 100%;
     height: auto;
     background: black;
     border-radius: 2px;
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .content_different_title {
     width: 100%;
     height: 200px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 25px;
     font-family: "Zen Maru Gothic", sans-serif;
     padding-left: 60px;
-    background:black;
+    background: black;
   }
-  
+
   .content_different_title h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59);
     -webkit-background-clip: text;
@@ -3370,7 +3250,7 @@ width:950px;
     padding-left: 20px;
     font-size: 15px;
   }
-  
+
   .different {
     width: 90%;
     height: auto;
@@ -3381,94 +3261,93 @@ width:950px;
     padding-bottom: 20px;
   }
 
-  .different h1{ 
-    color:black;
+  .different h1 {
+    color: black;
   }
 
-  .different h4{ 
-    color:black;
+  .different h4 {
+    color: black;
   }
 
-  
   .different_top {
     padding-top: 20px;
     padding-left: 30px;
   }
-  
+
   .different_discription {
     display: flex;
     justify-content: center;
   }
-  
+
   .different_other {
     width: 500px;
     height: 100px;
-  
+
     background: #bbb;
     border-radius: 5px;
     padding: 10px 10px 10px 20px;
   }
-  
+
   .different_mik {
     width: 500px;
     height: 100px;
     border-radius: 5px;
     background: #ffffff;
-    color:black;
-  
+    color: black;
+
     padding: 10px 10px 10px 20px;
     margin-bottom: 20px;
   }
-  
+
   .different_left {
     margin: 10px 10px 10px 20px;
     background-image: linear-gradient(to right, #0cc0df, #ffde59 120%);
     padding: 20px;
     border-radius: 10px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .different_left p {
     font-size: 15px;
     padding-top: 5px;
     padding-left: 10px;
   }
-  
+
   .different_right {
     width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .content_chargeup {
     width: 100%;
     height: auto;
     background: black;
     border-radius: 2px;
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .content_chargeup_top {
     width: 100%;
     height: 200px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 25px;
-  
+
     padding-left: 60px;
   }
-  
+
   .content_chargeup_top h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59);
     -webkit-background-clip: text;
@@ -3478,12 +3357,12 @@ width:950px;
     padding-left: 20px;
     font-size: 15px;
   }
-  
+
   .chargeup_outframe {
     display: flex;
     justify-content: center;
   }
-  
+
   .chargeup_frame {
     width: 100%;
     height: 504px;
@@ -3495,25 +3374,25 @@ width:950px;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 80px;
-    color:black;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .chargeup_image {
     align-self: center;
   }
-  
+
   .chargeup_discription {
     align-self: center;
     margin-top: 20px;
     width: 830px;
     font-size: 14px;
   }
-  
+
   /*MIKの構成*/
-  
+
   .content_constitution {
     width: 100%;
     height: auto;
@@ -3523,11 +3402,11 @@ width:950px;
     align-items: center;
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .content_constitution_title {
     width: 100%;
     height: 200px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3536,7 +3415,7 @@ width:950px;
     padding-left: 60px;
     background: black;
   }
-  
+
   .content_constitution_title h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59);
     -webkit-background-clip: text;
@@ -3546,7 +3425,7 @@ width:950px;
     padding-left: 20px;
     font-size: 15px;
   }
-  
+
   .constitution_suii_frame {
     width: 90%;
     height: auto;
@@ -3558,39 +3437,37 @@ width:950px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color:black;
+    color: black;
   }
-  
+
   .constition_suii_right {
     width: 40%;
     height: auto;
-    
   }
-  
+
   .constition_suii_right p {
     padding-top: 20px;
     font-size: 15px;
-    
   }
-  
+
   .content_flow {
     width: 100%;
     height: auto;
     background: black;
     //border: 18px solid #C9E265;
     border-radius: 2px;
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Zen Maru Gothic", sans-serif;
     margin-bottom: 50px;
   }
-  
+
   .flow_title {
     width: 100%;
     height: 200px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3599,7 +3476,7 @@ width:950px;
     padding-left: 60px;
     background: black;
   }
-  
+
   .flow_title h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59);
     -webkit-background-clip: text;
@@ -3609,7 +3486,7 @@ width:950px;
     padding-left: 20px;
     font-size: 15px;
   }
-  
+
   .step_frame {
     width: 800px;
     height: 270px;
@@ -3619,32 +3496,32 @@ width:950px;
     border-radius: 5px;
     padding: 20px;
   }
-  
+
   .step_frame h1 {
     font-size: 27px;
   }
-  
+
   .step_content {
     display: flex;
     justify-content: space-around;
   }
-  
+
   .step_discription {
     margin-top: 20px;
     width: 450px;
     display: flex;
     align-items: center;
   }
-  
+
   .step_image {
     margin-top: 20px;
   }
-  
+
   .flow_down {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
   /* 会社概要
   .content_gaiyou {
     width: 100%;
@@ -3668,7 +3545,7 @@ width:950px;
     //color:#C9E265;
     font-size: 50px;
   } */
-  
+
   /* .gaiyou_table {
     margin: 0px 30px;
     width: 600x;
@@ -3684,26 +3561,26 @@ width:950px;
   .gaiyou_td {
     border: solid 0.5px;
     padding: 15px;
-  } */ 
-  
+  } */
+
   /*社内公式LINE*/
   .Internal_Line_frame {
     width: 100%;
     height: auto;
     background: black;
-  
+
     border-radius: 2px;
-  
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  
+
     overflow: scroll;
-  
+
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .Internal_Line_title {
     width: 78%;
     height: 200px;
@@ -3714,7 +3591,7 @@ width:950px;
     padding-top: 30px;
     margin-bottom: 40px;
   }
-  
+
   .Internal_Line_title h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59);
     -webkit-background-clip: text;
@@ -3723,20 +3600,20 @@ width:950px;
   .Internal_Line_title p {
     padding-left: 20px;
   }
-  
+
   .Line_title_left {
     width: 100%;
-  
+
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .Internal_Line_title h1 {
     color: #c9e265;
     font-size: 50px;
   }
-  
+
   .Internal_Line_merit {
     width: 850px;
     height: 330px;
@@ -3744,46 +3621,46 @@ width:950px;
     border-image: linear-gradient(#ffde59 -90%, #0cc0df 130%);
     border-image-slice: 1;
     border-radius: 5px;
-  
+
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
+
   .merit_content {
     display: flex;
     justify-content: center;
     margin-top: 10px;
   }
-  
+
   .merit_discription {
     width: 500px;
     padding-left: 60px;
     display: flex;
     align-items: center;
-  
+
     font-size: 15px;
   }
-  
+
   /*社内制度*/
-  
+
   .system_frame {
     width: 100%;
     height: auto;
     background: black;
     border-radius: 2px;
-  
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .system_title {
     width: 100%;
     height: 200px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3792,7 +3669,7 @@ width:950px;
     padding-left: 60px;
     background: black;
   }
-  
+
   .system_title h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59 50%);
     -webkit-background-clip: text;
@@ -3802,7 +3679,7 @@ width:950px;
     padding-left: 20px;
     font-size: 15px;
   }
-  
+
   .system {
     width: 95%;
     height: auto;
@@ -3810,100 +3687,98 @@ width:950px;
     border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
     border-image-slice: 1;
     border-radius: 10px;
-  
+
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
+
   .system h2 {
     font-family: "Hiragino Mincho Pro";
     padding-left: 20px;
     font-size: 28px;
   }
-  
+
   .system_content {
     display: flex;
     justify-content: center;
     margin-top: 10px;
   }
-  
+
   .system_discription {
     width: 500px;
     padding-left: 50px;
     display: flex;
-  
+
     font-size: 14px;
   }
-  
+
   .content_rinen {
     width: 100%;
     height: 1400px;
     background: black;
     border-radius: 2px;
-  
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .rinen_title {
     width: 100%;
     height: 120px;
-  
+
     padding-left: 65px;
-  
+
     display: flex;
     align-items: center;
   }
-  
-  .rinen_title h1 {
 
+  .rinen_title h1 {
     font-size: 50px;
   }
-  
+
   .rinen {
     width: 900px;
     height: 370px;
     border: 8px solid #c9e265;
     border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
     border-image-slice: 1;
-  
+
     padding: 20px;
-  
+
     margin-bottom: 30px;
   }
   .rinen h1 {
     font-family: "Hiragino Mincho Pro";
     font-size: 35px;
   }
-  
+
   .rinen_content {
     display: flex;
     justify-content: center;
   }
-  
+
   .rinen_content_discription {
     width: 500px;
     padding-left: 70px;
     display: flex;
-  
+
     margin-top: 40px;
   }
-  
+
   .content_panflet {
     width: 100%;
     height: 1200px;
     background: black;
     border-radius: 2px;
-  
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  
 
   .panflet {
     width: 800px;
@@ -3911,19 +3786,19 @@ width:950px;
     border: 8px solid #c9e265;
     border-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
     border-image-slice: 1;
-  
+
     padding: 20px;
-  
+
     margin-bottom: 30px;
   }
-  
+
   .panflet_content {
     display: flex;
     justify-content: center;
-  
+
     margin-top: 10px;
   }
-  
+
   .panflet_content_discription {
     width: 500px;
     padding-left: 70px;
@@ -3932,7 +3807,7 @@ width:950px;
     flex-direction: column;
     justify-content: space-around;
   }
-  
+
   .download_button {
     height: 55px;
     background-image: linear-gradient(to right, #0cc0df -20%, #ffde59 150%);
@@ -3945,35 +3820,35 @@ width:950px;
     font-size: 16px;
     font-family: "Hiragino Kaku Gothic ProN";
   }
-  
+
   .content_range {
     width: 100%;
     height: auto;
     background: black;
     //border: 18px solid #C9E265;
     border-radius: 2px;
-  
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .range_title {
     width: 100%;
     padding-left: 65px;
-  
+
     display: flex;
     align-items: center;
   }
-  
+
   .range_title h1 {
     //color:#C9E265;
     font-size: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
   .range {
     width: 90%;
     height: auto;
@@ -3982,27 +3857,27 @@ width:950px;
     border-image-slice: 1;
     background-image: ;
     padding: 20px;
-  
+
     margin-bottom: 30px;
-  
+
     font-family: "Hiragino Mincho Pro";
     line-height: 30px;
   }
   .range h1 {
     margin-top: 20px;
     margin-bottom: 20px;
-  
+
     font-family: "Hiragino Mincho Pro";
     font-size: 35px;
   }
-  
+
   .range_discription {
     width: 700px;
     display: flex;
     flex-direction: column;
     padding-left: 35px;
   }
-  
+
   .content_recruit {
     width: 100%;
     height: auto;
@@ -4017,11 +3892,11 @@ width:950px;
     padding-bottom: 50px;
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .recruit_title {
     width: 90%;
     height: auto;
-    
+
     display: flex;
     justify-content: center;
     //lign-items: center;
@@ -4035,32 +3910,32 @@ width:950px;
     -webkit-text-fill-color: transparent;
     font-family: "Zen Maru Gothic", sans-serif;
   }
-  
+
   .recruit_search_frame {
     width: 100%;
     height: 550px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+
     border: 5px solid #c9e265;
     border-image: linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
     border-image-slice: 1;
     border-radius: 2px;
-  
+
     margin-top: 20px;
     padding: 10px 10px 20px 10px;
   }
-  
+
   .search_1 {
     width: 600px;
     display: flex;
     justify-content: space-between;
     padding: 10px;
   }
-  
+
   .search_2 {
     margin-top: 15px;
     width: 600px;
@@ -4068,7 +3943,7 @@ width:950px;
     justify-content: space-between;
     padding: 10px;
   }
-  
+
   .search_items {
     margin-top: 5px;
     list-style: none;
@@ -4076,7 +3951,7 @@ width:950px;
   .search_items label {
     padding-left: 5px;
   }
-  
+
   .search_button {
     width: 400px;
     margin-top: 20px;
@@ -4089,35 +3964,35 @@ width:950px;
     font-weight: 700;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
-  
+
   .recruit_frame {
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: scroll;
   }
-  
+
   .recruit_mid_content {
     width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .recruit_title_mid {
     width: 100%;
     height: 45px;
     background-image: linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
     color: #ffffff;
-  
+
     margin-top: 40px;
     margin-bottom: 10px;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .recruit_mid_items {
     width: 100%;
     height: 270px;
@@ -4128,61 +4003,61 @@ width:950px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 20px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .recruit_mid_items h3 {
     margin-bottom: 10px;
   }
-  
+
   .recruit_mid_items hr {
     border: 0.5px solid rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
   }
-  
+
   .recruit_mid_items h4 {
     padding-left: 30px;
     margin-top: 10px;
   }
-  
+
   .recruit_mid_items p {
     margin-top: 10px;
-  
+
     font-size: 12px;
     align-self: flex-end;
   }
-  
-  .search_message_wrapper{
-    margin-top:50px;
-    width:70%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+
+  .search_message_wrapper {
+    margin-top: 50px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   .content_recruit_detail {
     width: 100%;
     height: auto;
     background: black;
     //border: 18px solid #C9E265;
     border-radius: 2px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
+
     overflow: wrap;
   }
-  
+
   .recruit_detail_title {
     font-size: 13px;
     width: 100%;
     height: auto;
-  
+
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -4192,13 +4067,13 @@ width:950px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
   .detail_content {
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background:black;
+    background: black;
     padding: 10px;
   }
   .detail_content p {
@@ -4206,30 +4081,30 @@ width:950px;
     font-size: 13px;
     line-height: 23px;
   }
-  
+
   .detail_content h5 {
     line-height: 23px;
     padding-left: 10px;
   }
-  
+
   .detail_content ul {
     list-style: none;
     padding-left: 0;
   }
-  
+
   .detail_content_title {
     height: auto;
     background: #aaa;
     width: 100%;
-  
+
     display: flex;
     align-items: center;
-  
+
     color: #fff;
     padding-left: 10px;
     margin-bottom: 15px;
   }
-  
+
   .oubo_button_wrapper {
     display: flex;
     width: 100%;
@@ -4237,7 +4112,7 @@ width:950px;
     align-items: center;
     justify-content: center;
   }
-  
+
   .oubo_button {
     width: 270px;
     height: 55px;
@@ -4252,7 +4127,7 @@ width:950px;
     justify-content: center;
     align-items: center;
   }
-  
+
   .content_inquiry {
     width: 100%;
     height: auto;
@@ -4264,7 +4139,7 @@ width:950px;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .inquiry_title {
     width: 70%;
     padding-top: 30px;
@@ -4272,7 +4147,7 @@ width:950px;
     flex-direction: column;
     margin-bottom: 30px;
   }
-  
+
   .inquiry_title h1 {
     background-image: linear-gradient(to right, #0cc0df, #ffde59);
     -webkit-background-clip: text;
@@ -4280,39 +4155,39 @@ width:950px;
     font-family: "Zen Maru Gothic", sans-serif;
     font-size: 50px;
   }
-  
+
   .inquiry_form {
     width: 70%;
     height: auto;
-  
+
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  
+
     margin-bottom: 50px;
   }
   .inquiry_form h2 {
     margin-bottom: 20px;
   }
-  
+
   .inquiry_form input {
     width: 380px;
     height: 45px;
-  
+
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  
+
   .inquiry_input {
     width: 600px;
     display: flex;
     flex-direction: column;
   }
-  
+
   .inquiry_textarea {
     width: 100%;
     height: 200px;
@@ -4321,7 +4196,7 @@ width:950px;
     border-radius: 10px;
     margin: 10px;
   }
-  
+
   .inquiry_form button {
     width: 80%;
     margin-top: 20px;
@@ -4335,33 +4210,30 @@ width:950px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     margin-left: 40px;
   }
-  
+
   /*お問合せ*/
   .content_contact {
     width: 100%;
     height: auto;
-    
- 
-    font-family:"Noto Serif JP", serif;
-    color:#576066;
+
+    font-family: "Noto Serif JP", serif;
+    color: #576066;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding-top: 40px;
   }
-  
+
   .contact_title {
     width: 100%;
- 
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-
   }
-  
+
   .contact_title h1 {
     //color:#C9E265;
     font-size: 50px;
@@ -4373,36 +4245,36 @@ width:950px;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contact_inputs {
     width: 90%;
   }
-  
+
   .contact_form {
     width: 800px;
     height: auto;
-  
+
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     border: 5px solid #c9e265;
     border-image: linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
     border-image-slice: 1;
     border-radius: 10px;
     margin-bottom: 50px;
   }
-  
+
   .contact_form h2 {
     margin-bottom: 20px;
   }
-  
+
   .contact_form h4 {
     align-self: flex-start;
     padding-left: 5px;
   }
-  
+
   .inquiry_textarea {
     width: 100%;
     height: 200px;
@@ -4411,7 +4283,7 @@ width:950px;
     border-radius: 10px;
     margin: 10px;
   }
-  
+
   .inquiry_form button {
     width: 80%;
     margin-top: 20px;
@@ -4425,7 +4297,7 @@ width:950px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     margin-left: 40px;
   }
-  
+
   /*応募画面*/
   .content_oubo {
     width: 100%;
@@ -4434,31 +4306,31 @@ width:950px;
     //background-image: linear-gradient(to right, #C9E265, #4F9DFF);
     //border: 18px solid #C9E265;
     border-radius: 2px;
-  
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .oubo_top_title {
     padding-top: 30px;
     padding-bottom: 20px;
   }
-  
+
   .oubo_top_bar {
     width: 100%;
     height: 60px;
     background-image: linear-gradient(to right, #c9e265 -10%, #4f9dff 120%);
-  
+
     color: #ffffff;
     font-weight: 700;
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .oubo_form {
     margin-top: 0px;
     width: 100%;
@@ -4471,7 +4343,7 @@ width:950px;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .oubo_form h4 {
     font-size: 14px;
     padding-left: 10px;
@@ -4479,7 +4351,7 @@ width:950px;
   .oubo_input_wrapper {
     width: 550px;
   }
-  
+
   .oubo_input_text {
     width: 70%;
     padding: 15px 10px;
@@ -4488,7 +4360,7 @@ width:950px;
     border: 1px solid #ddd;
     margin: 10px;
   }
-  
+
   .oubo_input_long {
     width: 500px;
     height: 45px;
@@ -4496,7 +4368,7 @@ width:950px;
     border: 1px solid #ddd;
     margin: 10px;
   }
-  
+
   .oubo_input_area {
     width: 500px;
     height: 200px;
@@ -4504,18 +4376,18 @@ width:950px;
     border: 1px solid #ddd;
     margin: 10px;
   }
-  
+
   .shikaku_wrapper {
     height: 900px;
     width: 600px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  
+
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
   .search_shikaku {
     display: flex;
     flex-direction: column;
@@ -4525,17 +4397,17 @@ width:950px;
     margin-top: 5px;
     margin-bottom: 20px;
   }
-  
+
   .language_select {
     width: 700px;
     height: 200px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  
+
     margin-top: 10px;
   }
-  
+
   .oubo_kakunin_button {
     width: 400px;
     margin-top: 20px;
@@ -4561,12 +4433,12 @@ width:950px;
     justify-content: center;
     align-items: center;
   }
-  
+
   .thanks p {
     margin-top: 30px;
     margin-bottom: 50px;
   }
-  
+
   .content_confirm {
     width: 100%;
     height: auto;
@@ -4574,16 +4446,16 @@ width:950px;
     //background-image: linear-gradient(to right, #C9E265, #4F9DFF);
     //border: 18px solid #C9E265;
     border-radius: 2px;
-  
+
     display: flex;
     //justify-content:center;
     flex-direction: column;
     align-items: center;
-  
+
     padding-top: 20px;
     padding-bottom: 50px;
   }
-  
+
   .oubo_confirm_bar {
     width: 95%;
     height: 40px;
@@ -4595,11 +4467,11 @@ width:950px;
     color: #fff;
     margin-top: 20px;
   }
-  
+
   .content_confirm h4 {
     width: 200px;
   }
-  
+
   .oubo_item {
     margin-top: 20px;
     display: flex;
@@ -4607,13 +4479,13 @@ width:950px;
   .oubo_data {
     padding-left: 50px;
   }
-  
+
   .oubo_data_wrapper {
     margin-top: 30px;
     margin-bottom: 50px;
     padding-bottom: 60px;
   }
-  
+
   .fix_button {
     width: 270px;
     height: 55px;
@@ -4621,17 +4493,15 @@ width:950px;
     border: 0px none;
     border-radius: 10px;
     font-size: 15px;
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .button_area {
     width: 90%;
     display: flex;
     justify-content: space-around;
   }
-  
-
 }
