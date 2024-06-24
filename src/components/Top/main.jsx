@@ -58,7 +58,7 @@ export const Main = () => {
         src="/images/new2024/box_tunagu1.png"
         alt="messagebox"
       />
-      <Link href={"/blog"}>
+      <Link href={"/blog/sk5nhbq10i6"}>
         <div className={`${styles.top_button} ${mobileStyles.top_button}`}>
           <span className={styles.top_button_span}>
             {" "}
@@ -69,9 +69,39 @@ export const Main = () => {
               src="/images/new2024/May/koinobori.png"
               alt="koinobori"
             />{" "} */}
-          </span>{" "}
-          新入社員インタビュー掲載中！
-          <span class="material-symbols-outlined">chevron_right</span>
+          </span>
+          <h5>
+            6/22 社員向け資産形成セミナーを
+            <br />
+            行いました
+          </h5>
+
+          <div
+            className={`${styles.top_button_icon} ${mobileStyles.top_button_icon}`}
+          >
+            {" "}
+            <div class="material-symbols-outlined">chevron_right</div>
+          </div>
+        </div>
+      </Link>
+      <Link href={"/blog"}>
+        <div className={`${styles.top_button2} ${mobileStyles.top_button2}`}>
+          <span className={styles.top_button_span}>
+            {/* 
+            //5月デコ
+            <img
+              className={`${styles.top_koinobori} ${mobileStyles.top_koinobori}`}
+              src="/images/new2024/May/koinobori.png"
+              alt="koinobori"
+            />{" "} */}
+          </span>
+          <h5>新入社員インタビュー掲載中！</h5>
+          <div
+            className={`${styles.top_button_icon} ${mobileStyles.top_button_icon}`}
+          >
+            {" "}
+            <div class="material-symbols-outlined">chevron_right</div>
+          </div>
         </div>
       </Link>
       <div

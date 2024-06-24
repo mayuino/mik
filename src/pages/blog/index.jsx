@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import HeadElement from "@/components/Head";
@@ -9,9 +8,6 @@ import Link from "next/link";
 
 import styles from "@/styles/Home.module.css";
 
-
-
-
 const formatDate = (dateString) => {
   const date = new Date(dateString);
   const year = date.getFullYear();
@@ -20,44 +16,62 @@ const formatDate = (dateString) => {
   return `${year}年${month}月${day}日`;
 };
 
-export const getStaticProps = async() => {
- 
-  const response = await client.get({endpoint: "blogs"})
-
-  return{
-    props:{
-      blogs:response.contents
-    }
-  };
-
+// 現在の日付と比較して1ヶ月以内かどうかをチェックする関数
+const isNew = (publishedAt) => {
+  const publishedDate = new Date(publishedAt);
+  const currentDate = new Date();
+  const oneMonthAgo = new Date(
+    currentDate.setMonth(currentDate.getMonth() - 1)
+  );
+  return publishedDate >= oneMonthAgo;
 };
-export default function BLOG({blogs}) {
+
+export const getStaticProps = async () => {
+  const response = await client.get({ endpoint: "blogs" });
+
+  return {
+    props: {
+      blogs: response.contents,
+    },
+  };
+};
+export default function BLOG({ blogs }) {
   return (
     <>
       <HeadElement title="MIKのブログ" />
 
       <Header />
       <div className={`${styles.blog} ${mobileStyles.blog}`}>
-<div className={`${styles.blog_title} ${mobileStyles.blog_title}`}>
-<h1>MIKブログ</h1>
-<p>直近で入社いただいた方に、お話を聞いてみました。</p>
-</div>
-<div className={`${styles.blog_list} ${mobileStyles.blog_list}`}>
-  {blogs.map((blog) => (
-    <li key={blog.id}>
-      <Link href={`blog/${blog.id}`}>
-      <div className={styles.blog_item}>
-      <img className={styles.blog_img} src={blog.eyecatch.url} />
-      <div className={styles.blog_item_title}><h3>{blog.title}</h3>
-      <div className={styles.blog_date}>{formatDate(blog.publishedAt)}</div>
-      </div>
-      </div>
+        <div className={`${styles.blog_title} ${mobileStyles.blog_title}`}>
+          <h1>MIKブログ</h1>
+          <p>MIKの最近の出来事をご紹介します。</p>
+        </div>
+        <div className={`${styles.blog_list} ${mobileStyles.blog_list}`}>
+          {blogs.map((blog) => (
+            <li key={blog.id}>
+              <Link href={`blog/${blog.id}`}>
+                <div className={styles.blog_item}>
+                  {isNew(blog.publishedAt) && (
+                    <img
+                      className={`${styles.blog_new} ${mobileStyles.blog_new}`}
+                      src="/images/new2024/blog/new.png"
+                      alt="new"
+                    />
+                  )}
 
-      </Link>
-    </li>
-  ))}
-</div>
-</div>
+                  <img className={styles.blog_img} src={blog.eyecatch.url} />
+                  <div className={styles.blog_item_title}>
+                    <h3>{blog.title}</h3>
+                    <div className={styles.blog_date}>
+                      {formatDate(blog.publishedAt)}
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </div>
+      </div>
       <Footer />
     </>
   );
