@@ -58,7 +58,7 @@ export const Main = () => {
         src="/images/new2024/box_tunagu1.png"
         alt="messagebox"
       />
-      <Link href={"/blog/sk5nhbq10i6"}>
+      <Link href={"/blog"}>
         <div className={`${styles.top_button} ${mobileStyles.top_button}`}>
           <span className={styles.top_button_span}>
             {" "}
@@ -71,9 +71,9 @@ export const Main = () => {
             />{" "} */}
           </span>
           <h5>
-            6/22 社員向け資産形成セミナーを
+            7/23,24 Developers Summit 2024に
             <br />
-            行いました
+            出席してきました！！
           </h5>
 
           <div
