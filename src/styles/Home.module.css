@@ -250,7 +250,7 @@
   display: flex;
   align-items: center;
   padding-left: 20px;
-  border-left: 20px solid #f03da0;
+  border-left: 20px solid #c1ff72;
   font-family: "Noto Serif JP", serif;
   color: #576066;
   box-shadow: 10px 3px 6px #bbb;
@@ -798,6 +798,7 @@
   padding: 10px;
   transition: 0.3s;
   position: relative;
+  overflow: hidden;
 }
 
 .blog_new {
@@ -989,34 +990,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-/*SNS(Twitter)*/
-
-.twitter_frame {
-  width: 100%;
-  height: auto;
-  background: #ffffff;
-  //border: 18px solid #C9E265;
-  border-radius: 2px;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Zen Maru Gothic", sans-serif;
-}
-
-.twitter {
-  width: 100%;
-  height: auto;
-  padding: 0px 10px 10px 10px;
-
-  background: #ffffff;
-  border-radius: 10px;
-  display: flex;
-
-  justify-content: center;
 }
 
 .twitter_title {

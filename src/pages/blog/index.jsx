@@ -20,10 +20,8 @@ const formatDate = (dateString) => {
 const isNew = (publishedAt) => {
   const publishedDate = new Date(publishedAt);
   const currentDate = new Date();
-  const oneMonthAgo = new Date(
-    currentDate.setMonth(currentDate.getMonth() - 1)
-  );
-  return publishedDate >= oneMonthAgo;
+  const oneWeekAgo = new Date(currentDate.setDate(currentDate.getDate() - 7));
+  return publishedDate >= oneWeekAgo;
 };
 
 export const getStaticProps = async () => {

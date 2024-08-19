@@ -70,32 +70,8 @@ export const Main = () => {
               alt="koinobori"
             />{" "} */}
           </span>
-          <h5>
-            7/23,24 Developers Summit 2024に
-            <br />
-            出席してきました！！
-          </h5>
+          <h5>社員インタビュー追加！！</h5>
 
-          <div
-            className={`${styles.top_button_icon} ${mobileStyles.top_button_icon}`}
-          >
-            {" "}
-            <div class="material-symbols-outlined">chevron_right</div>
-          </div>
-        </div>
-      </Link>
-      <Link href={"/blog"}>
-        <div className={`${styles.top_button2} ${mobileStyles.top_button2}`}>
-          <span className={styles.top_button_span}>
-            {/* 
-            //5月デコ
-            <img
-              className={`${styles.top_koinobori} ${mobileStyles.top_koinobori}`}
-              src="/images/new2024/May/koinobori.png"
-              alt="koinobori"
-            />{" "} */}
-          </span>
-          <h5>新入社員インタビュー掲載中！</h5>
           <div
             className={`${styles.top_button_icon} ${mobileStyles.top_button_icon}`}
           >
