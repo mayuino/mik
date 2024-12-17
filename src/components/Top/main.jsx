@@ -80,6 +80,25 @@ export const Main = () => {
           </div>
         </div>
       </Link>
+      <a
+        href="https://004-recruit.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className={`${styles.top_recruite} ${mobileStyles.top_recruite}`}>
+          <div>
+            MIKの
+            <br />
+            採用サイトができました!!
+          </div>
+
+          <div
+            className={`${styles.top_button_icon} ${mobileStyles.top_button_icon}`}
+          >
+            {" "}
+          </div>
+        </div>
+      </a>
       <div
         className={`${styles.joblist_wrapper} ${mobileStyles.joblist_wrapper}`}
       >

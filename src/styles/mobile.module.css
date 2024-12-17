@@ -268,7 +268,7 @@
   }
 
   .top_button {
-    width: 350px;
+    width: 220px;
     height: 60px;
     background-color: #fff;
     position: absolute;
@@ -278,10 +278,29 @@
     display: flex;
     align-items: center;
     padding-left: 20px;
-    border-left: 20px solid #f03da0;
+    border-left: 20px solid #c1ff72;
     font-family: "Noto Serif JP", serif;
     color: #576066;
     box-shadow: 10px 3px 6px #bbb;
+  }
+
+  .top_recruite {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 100px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    z-index: 999;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 20px;
   }
 
   .top_button2 {
