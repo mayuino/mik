@@ -45,6 +45,9 @@ const formatDateTime = (dateString) => {
 };
 
 export default function BlogId({ blog }) {
+  if (!blog) {
+    return <div>Loading...</div>; // ローディング中の表示
+  }
   return (
     <>
       <HeadElement title="MIKのブログ" />
