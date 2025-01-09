@@ -25,7 +25,11 @@ const isNew = (publishedAt) => {
 };
 
 export const getStaticProps = async () => {
-  const response = await client.get({ endpoint: "blogs" });
+  const response = await client.get({
+    endpoint: "blogs",
+    queries: { limit: 100 },
+  });
+  console.log("respons", response);
 
   return {
     props: {
