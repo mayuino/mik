@@ -62,7 +62,7 @@ export const Content_Gaiyou = () =>{
     
 
             <tr>     <th>その他</th>
-        <td><Link href={"/pdfs/hakenhou.pdf"} target="_blank">労働者派遣法第２３条第５項に基づく情報提供</Link></td>
+        <td><Link href={"/pdfs/hakenhou2026.pdf"} target="_blank">労働者派遣法第２３条第５項に基づく情報提供</Link></td>
        
        </tr>
 
