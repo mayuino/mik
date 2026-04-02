@@ -9,13 +9,9 @@ export const Top = () => {
 
   return (
     <div>
-  
-  
     <Main/>
-    
     <About />
     <Strength/>
-
     </div>
   );
 };

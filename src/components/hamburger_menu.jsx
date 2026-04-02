@@ -90,6 +90,8 @@ const HamburgerMenu = () => {
                 <li className={`${styles.sub_menu_item} ${mobileStyles.sub_menu_item}`}><Link href={"/range"}>事業領域</Link></li>
         </ul>
       )}</li>
+
+       <li className={mobileStyles.ham_menu_item}><Link href={"/business_content"}>業務内容</Link></li>
       <li　onMouseEnter={handleHoverTab2} onMouseLeave={handleHoverTab2} className={mobileStyles.ham_menu_item}>
         MIKについて
       {isHoveredTab2 && (

@@ -7,16 +7,16 @@ import { useEffect, useState } from 'react'
 import HamburgerMenu from '../hamburger_menu'
 
 export const Header = () => {
-  // const [isPhone, setIsPhone] = useState(false);
+  const [isPhone, setIsPhone] = useState(false);
 
-  // useEffect(() => {
-  //   const handleResize = ( ) => {
-  //     setIsPhone(window.innerWidth <= 600);
-  //   };
-  //   handleResize();
-  //   window.addEventListener('resize',handleResize);
-  //   return () => window.removeEventListener('resize', handleResize);
-  // },[])
+  useEffect(() => {
+    const handleResize = ( ) => {
+      setIsPhone(window.innerWidth <= 600);
+    };
+    handleResize();
+    window.addEventListener('resize',handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  },[])
 
 
   return(

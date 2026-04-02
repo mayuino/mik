@@ -6,15 +6,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export const Main = () => {
-  const [animationStarted, setAnimationStarted] = useState(false);
+  const [heroLoaded, setHeroLoaded] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAnimationStarted(true);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className={`${styles.top} ${mobileStyles.top}`}>
@@ -26,10 +19,14 @@ export const Main = () => {
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet"
       ></link>
-      <img
-        className={`${styles.top_sapporo} ${mobileStyles.top_sapporo}`}
-        src="/images/new2024/sapporo-city2.png"
-        alt="sapporo_city_photo"
+        <img
+        className={`${styles.top_sapporo} ${mobileStyles.top_sapporo} ${
+          heroLoaded ? styles.top_sapporo_loaded : ""
+        }`}
+        onLoad={() => setHeroLoaded(true)}
+        src="/images/new2026/sapporo-city-pc.webp"
+        loading="eager"
+        decoding="async"
       />
       <img
         className={`${styles.top_flexible} ${mobileStyles.top_flexible}`}
@@ -58,47 +55,47 @@ export const Main = () => {
         src="/images/new2024/box_tunagu1.png"
         alt="messagebox"
       />
-      <Link href={"/blog"}>
-        <div className={`${styles.top_button} ${mobileStyles.top_button}`}>
-          <span className={styles.top_button_span}>
-            {" "}
-            {/* 
-            //5月デコ
-            <img
-              className={`${styles.top_koinobori} ${mobileStyles.top_koinobori}`}
-              src="/images/new2024/May/koinobori.png"
-              alt="koinobori"
-            />{" "} */}
-          </span>
-          <h5>社員インタビュー追加！！</h5>
+    <Link href={"/blog"}>
+  <div
+    className={`
+      ${styles.top_cta}
+      ${styles.top_cta_interview}
+      ${mobileStyles.top_cta}
+      ${mobileStyles.top_cta_interview}
+    `}
+  >
+    <h5>新入社員インタビュー</h5>
 
-          <div
-            className={`${styles.top_button_icon} ${mobileStyles.top_button_icon}`}
-          >
-            {" "}
-            <div class="material-symbols-outlined">chevron_right</div>
-          </div>
-        </div>
-      </Link>
-      <a
-        href="https://004-recruit.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className={`${styles.top_recruite} ${mobileStyles.top_recruite}`}>
-          <div>
-            MIKの
-            <br />
-            採用サイトができました!!
-          </div>
+    <div className={`${styles.top_button_icon} ${mobileStyles.top_button_icon}`}>
+      <div className="material-symbols-outlined">chevron_right</div>
+    </div>
+  </div>
+</Link>
 
-          <div
-            className={`${styles.top_button_icon} ${mobileStyles.top_button_icon}`}
-          >
-            {" "}
-          </div>
-        </div>
-      </a>
+<a
+  href="https://004-recruit.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div
+    className={`
+      ${styles.top_cta}
+      ${styles.top_cta_recruit}
+      ${mobileStyles.top_cta}
+      ${mobileStyles.top_cta_recruit}
+    `}
+  >
+    <div>
+      エンジニア募集中
+      <br />
+      ▶ 採用ページへ
+    </div>
+
+    <div className={`${styles.top_button_icon} ${mobileStyles.top_button_icon}`}>
+      <div className="material-symbols-outlined">chevron_right</div>
+    </div>
+  </div>
+</a>
       <div
         className={`${styles.joblist_wrapper} ${mobileStyles.joblist_wrapper}`}
       >

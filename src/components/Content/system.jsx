@@ -4,8 +4,8 @@ import mobileStyles from "@/styles/mobile.module.css";
 export const Content_system = () => {
   return (
     <div className={`${styles.system_frame} ${mobileStyles.system_frame}`}>
-      <div className={`${styles.system_title} ${mobileStyles.system_title}`}>
-        <h1>MIKの社内制度</h1>
+      <div >
+        <h2>MIKの社内制度</h2>
         <p>MIKは、エンジニアのための様々な制度を用意しています。</p>
       </div>
       {/* <div className={`${styles.system} ${mobileStyles.system}`}>
